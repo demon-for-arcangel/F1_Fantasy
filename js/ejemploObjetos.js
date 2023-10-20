@@ -15,6 +15,4 @@ var pilotos = {
 	piloto[
 	{id:1,nombre:'Alexsander',apellidos:'Albon',nacionalidad:'',propiedadJugador: 2, rol:'Suplete'},
 	{id:2,nombre:'Carlos',apellidos:'Sainz',nacionalidad:'',propiedadJungador: '',rol:'Libre'},
-	
-	
 }
