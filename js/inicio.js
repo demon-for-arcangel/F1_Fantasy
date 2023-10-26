@@ -1,0 +1,1 @@
+//js para inicio.js

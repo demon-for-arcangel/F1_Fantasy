@@ -1,3 +1,4 @@
+
 function validarRegistro() {
     var nombre = document.getElementById("nombre").value;
     var apellidos = document.getElementById("apellidos").value;
@@ -58,3 +59,4 @@ function validarContraseña() {
         mensajeError.textContent = "La contraseña es inválida. Debe contener de 6 a 12 caracteres y puede incluir solo *, #, $ y caracteres alfanuméricos.";
     }
 }
+
