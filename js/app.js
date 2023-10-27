@@ -24,7 +24,7 @@ function validarInicio(){
     var mensaje = validarCorreo()
 
     if (mensaje === ''){
-        if (validarEmail.trim() == '' || contrasena.trim() == ''){
+        if (correo.trim() == '' || contrasena.trim() == ''){
             mensaje += 'El correo y la contraseña no pueden estar vacíos.'
             return mensaje
         }
@@ -41,7 +41,7 @@ export function validarCorreo(){
     var mensaje = ''
 
     if (correo.includes('@')){
-        var partes = email.split('@')
+        var partes = correo.split('@')
 
         if (partes.length > 2){
             mensaje = 'No puede contener más de un @'
