@@ -4,18 +4,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Index</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "stylesheet" href = "style/estilo.scss">
         <link rel="stylesheet" href="Skeleton/css/normalize.css">
         <link rel="stylesheet" href="Skeleton/css/skeleton.css">
     </head>
     <body>
-        <form return validarInicio>
-            Introduce el correo electrónico
-            <input type = "email" placeholder = "correo@ejemplo.com">
-            Introduce la contraseña
-            <input type = "password" placeholder = "contraseña">
-        </form>
-        <button id = "btnIniciarSesion">Iniciar Sesión</button>
-        <button id = "btnRegistrar">Registrar</button>
+        <div class = "container">
+            <form return validarInicio id = "formulario">
+                <label for = "email">Email</label>
+                <input type = "email" placeholder = "correo@ejemplo.com">
+                <label for = "password">Password</label>
+                <input type = "password" placeholder = "contraseña">
+            </form>
+            <button id = "btnIniciarSesion">Iniciar Sesión</button>
+            <button id = "btnRegistrar">Registrar</button>
+        </div>
     </body>
     <script src="app.js"></script>
 </html>
