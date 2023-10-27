@@ -20,3 +20,32 @@ function validarInicio(){
 
     }
 }
+
+function validarCorreo(){
+    var correo = document.querySelector('input[type="email').value
+    var mensaje = ''
+
+    if (correo.includes('@')){
+        var partes = email.split('@')
+
+        if (partes.length > 2){
+            mensaje = 'No puede contener más de un @'
+        }
+    }
+
+    if (!correo.includes('@')){
+        mensaje += 'No incluye @'
+    }
+
+    if (correo.charAt(0) == '@'){
+        mensaje += '\nNo puede empezar por @'
+    }
+
+    for (let i = email.length - 3; i < email.length; i++){
+        if (email.charAt(i) == '@'){
+            mensaje += '\nNo puede tener @ en las tres últimas letras'
+        }
+    }
+
+    return mensaje;
+}
