@@ -10,16 +10,26 @@
         <link rel="stylesheet" href="Skeleton/css/skeleton.css">
     </head>
     <body>
-        <div class = "container">
-            <form return validarInicio id = "formulario">
-                <label for = "email">Email</label>
-                <input type = "email" placeholder = "correo@ejemplo.com">
-                <label for = "password">Password</label>
-                <input type = "password" placeholder = "contraseña">
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="twelve columns">
+                        <nav class="navbar">
+                            <button id="btnIniciarSesion">Iniciar Sesión</button>
+                            <button id="btnRegistrar">Registrar</button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <form return validarInicio id="formulario">
+                <label for="email">Email address</label>
+                <input type="email" placeholder="correo@ejemplo.com">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter your password">
             </form>
-            <button id = "btnIniciarSesion">Iniciar Sesión</button>
-            <button id = "btnRegistrar">Registrar</button>
         </div>
+        <script src="app.js"></script>
     </body>
-    <script src="app.js"></script>
 </html>

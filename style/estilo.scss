@@ -1,11 +1,44 @@
-#formulario {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    padding: 20px;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+@import "Skeleton/css/normalize.css"; /* Importa el archivo de normalize */
+@import "Skeleton/css/skeleton.css"; /* Importa el archivo de skeleton */
+
+.header {
+    background-color: #000; /* Color de fondo de la cabecera */
+    color: #fff; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+        background-color: transparent;
+        border: none;
+        color: #ff0404;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 0 10px;
+        padding: 0;
+    }
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+form {
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+    }
 }
