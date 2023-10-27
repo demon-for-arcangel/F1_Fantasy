@@ -7,7 +7,7 @@ let usuario = {
 }
 
 function validarInicio(){
-    var correo = document.querySelector('input[type="email]').ariaValueMax
+    var correo = document.querySelector('input[type="email]').value
     var contrasena = document.querySelector('input[type = "password"]').value
     var mensaje = validarEmail()
 
