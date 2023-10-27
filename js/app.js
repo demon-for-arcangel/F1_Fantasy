@@ -1,4 +1,4 @@
-let usuario = {
+export const usuario = {
     nombre: "Marina",
     apellido1: "Laguna",
     apellido2: "Valdepeñas",
@@ -6,22 +6,37 @@ let usuario = {
     contrasena: "admin123"
 }
 
+function btnInicioSesion(){
+    window.location.href = "../index.html"
+}
+
+function btnRegistrar(){
+    window.location.href = "../registro.html"
+}
+
+function btnSignIn(){
+    window.location.href = "../inicio.html"
+}
+
 function validarInicio(){
     var correo = document.querySelector('input[type="email]').value
     var contrasena = document.querySelector('input[type = "password"]').value
-    var mensaje = validarEmail()
+    var mensaje = validarCorreo()
 
     if (mensaje === ''){
         if (validarEmail.trim() == '' || contrasena.trim() == ''){
             mensaje += 'El correo y la contraseña no pueden estar vacíos.'
             return mensaje
         }
-    }else{
-
+        if (contrasena.length < 8){
+            mensaje += 'La contraseña debe ser de 8 caracteres como mínimo.'
+            return mensaje
+        }
     }
+    return mensaje
 }
 
-function validarCorreo(){
+export function validarCorreo(){
     var correo = document.querySelector('input[type="email').value
     var mensaje = ''
 
@@ -46,6 +61,5 @@ function validarCorreo(){
             mensaje += '\nNo puede tener @ en las tres últimas letras'
         }
     }
-
     return mensaje;
 }
