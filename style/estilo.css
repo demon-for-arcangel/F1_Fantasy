@@ -1,0 +1,41 @@
+@import "Skeleton/css/normalize.css"; /* Importa el archivo de normalize */
+@import "Skeleton/css/skeleton.css"; /* Importa el archivo de skeleton */
+.header {
+  background-color: #000; /* Color de fondo de la cabecera */
+  color: #fff; /* Color del texto */
+  padding: 10px; /* Espaciado interno */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar button {
+  background-color: transparent;
+  border: none;
+  color: #ff0404;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 10px;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+/*# sourceMappingURL=estilo.css.map */
