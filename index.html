@@ -9,26 +9,34 @@
         <link rel="stylesheet" href="Skeleton/css/normalize.css">
         <link rel="stylesheet" href="Skeleton/css/skeleton.css">
     </head>
-    <body>
+    <body class = "Titillium">
         <header class="header">
             <img src = "imagenes/f1_logo.svg">
         </header>
         <div class="row">
             <div class="twelve columns">
                 <nav class="navbar">
-                    <button id="btnIniciarSesion" onclick = "btnInicioSesion()">Iniciar Sesión</button>
-                    <button id="btnRegistrar" onclick = "btnRegistrar()">Registrar</button>
+                    <button id="btnIniciarSesion" onclick = "btnInicioSesion()">Sign In</button>
+                    <button id="btnRegistrar" onclick = "btnRegistrar()">Register</button>
                 </nav>
             </div>
         </div>
         <div class="container">
-            <form onsubmit= "return validarInicio()">
-                <label for="email">Email address</label>
-                <input type="email" placeholder="correo@ejemplo.com">
-                <label for="password">Password</label>
-                <input type="password" placeholder="Enter your password">
-                <button>Sign In</button>
-            </form>
+            <div class = "signIn">
+                <div class = "title">
+                    <h2>SIGN IN</h2>
+                </div>
+                <hr>
+                <div class = "form">
+                    <form onsubmit= "return validarInicio()">
+                        <label for="email">Email address</label>
+                        <input type="email" placeholder="correo@ejemplo.com">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Enter your password">
+                    </form>
+                    <button>Sign In</button>
+                </div>
+            </div>
         </div>
         <script src="js/app.js"></script>
     </body>

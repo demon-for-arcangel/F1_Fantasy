@@ -7,9 +7,9 @@
 }
 
 .navbar {
-  background-color: gray;
+  background-color: #38383f;
   display: flex;
-  padding-left: 39%;
+  padding-left: 44%;
   align-items: center;
 }
 .navbar button {
@@ -22,21 +22,28 @@
   padding: 0;
 }
 
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
+.signIn {
+  padding-top: 20px;
 }
-
-form label {
+.signIn .title {
+  padding-left: 390px;
+}
+.signIn form {
+  padding-left: 270px;
+}
+.signIn form label {
   display: block;
   margin-bottom: 5px;
 }
-form input {
-  width: 75%;
-  padding: 8px;
-  margin-bottom: 10px;
+.signIn form input {
+  width: 55%;
+  height: 50px;
   border: 1px solid #090909;
+}
+.signIn .form button {
+  margin-left: 270px;
+  color: #FFFFFF;
+  background-color: #EE0000;
 }
 
 /*# sourceMappingURL=estilo.css.map */

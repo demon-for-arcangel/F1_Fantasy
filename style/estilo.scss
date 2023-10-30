@@ -8,9 +8,9 @@
 }
 
 .navbar {
-    background-color: gray;
+    background-color: #38383f;
     display: flex;
-    padding-left: 39%;
+    padding-left: 44%;
     align-items: center;
 
     button {
@@ -24,22 +24,33 @@
     }
 }
 
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+.signIn{
+    padding-top: 20px;
 
-form {
-    label {
-        display: block;
-        margin-bottom: 5px;
+    .title{
+        padding-left: 390px;
     }
 
-    input {
-        width: 75%;
-        padding: 8px;
-        margin-bottom: 10px;
-        border: 1px solid #090909;
+    form {
+        padding-left: 270px;
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+    
+        input {
+            width: 55%;
+            height: 50px;
+            border: 1px solid #090909;
+        }
+    }
+
+    .form {
+        button{
+            margin-left: 270px;
+            color: #FFFFFF;
+            background-color: #EE0000;
+        }
     }
 }
