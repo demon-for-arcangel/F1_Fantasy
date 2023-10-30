@@ -17,15 +17,15 @@ function validarRegistro() {
     var errores = [];
 
     if (!nombreRegExp.test(nombre)) {
-        errores.push("El campo Nombre es inválido.");
+        errores.push("El campo Nombre tiene que tener entre 2 y 20 caracteres.");   
     }
 
     if (!apellidosRegExp.test(apellidos)) {
-        errores.push("El campo Apellidos es inválido.");
+        errores.push("El campo Apellidos tiene que tener entre 2 y 30 caracteres.");
     }
 
     if (!contraseñaRegExp.test(contraseña)) {
-        errores.push("El campo Contraseña es inválido.");
+        errores.push("El campo Contraseña tiene que tener entre 6 y 12 caracteres y puede contener los siguientes caracteres especiales *#$.");
     }
 
     if (contraseña !== verificacionContraseña) {
@@ -37,7 +37,7 @@ function validarRegistro() {
     }
 
     if (!nickRegExp.test(nick)) {
-        errores.push("El campo Nick es inválido.");
+        errores.push("El campo Nick debe tener entre 4 y 10 caracteres y no puede contener caraceres especiales salvo (_ .)");
     }
 
     if (errores.length > 0) {
