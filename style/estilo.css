@@ -7,8 +7,9 @@
 }
 
 .navbar {
+  background-color: gray;
   display: flex;
-  padding-left: 325px;
+  padding-left: 39%;
   align-items: center;
 }
 .navbar button {
