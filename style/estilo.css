@@ -8,7 +8,7 @@
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  padding-left: 325px;
   align-items: center;
 }
 .navbar button {
