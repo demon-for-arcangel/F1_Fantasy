@@ -1,4 +1,22 @@
-export const usuario = {
+function cargarCabecera() {
+    document.getElementById("cabecera").innerHTML = 
+    `
+        <header>
+            <img src="imagenes/f1_logo.svg">
+        </header>
+        <div class="row">
+            <div class="twelve columns">
+                <nav class="navbar">
+                    <button id="btnIniciarSesion" onclick="btnInicioSesion()">Sign In</button>
+                    <button id="btnRegistrar" onclick="btnRegistrar()">Register</button>
+                </nav>
+            </div>
+        </div>
+    `;
+    console.log("la funcion cargarCabecera se ejecuto")
+}
+
+const usuario = {
     nombre: "Marina",
     apellido1: "Laguna",
     apellido2: "Valdepeñas",
@@ -36,7 +54,7 @@ function validarInicio(){
     return mensaje
 }
 
-export function validarCorreo(){
+function validarCorreo(){
     var correo = document.querySelector('input[type="email').value
     var mensaje = ''
 
