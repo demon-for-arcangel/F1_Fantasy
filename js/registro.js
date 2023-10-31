@@ -11,7 +11,7 @@ function validarRegistro() {
     var nombreRegExp = /^[A-Za-z]{2,20}$/;
     var apellidosRegExp = /^[A-Za-z]{2,30}$/;
     var contraseñaRegExp = /^[\w*#$]{6,12}$/;
-    var correoRegExp = /^[A-Za-z0-9_]{2,15}\.[A-Za-z]{3,4}$/;
+    var correoRegExp = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
     var nickRegExp = /^[A-Za-z_]{4,10}$/;
 
     var errores = [];
@@ -46,6 +46,8 @@ function validarRegistro() {
         alert("Registro exitoso. Redirigiendo a la página de inicio de sesión.");
     }
 }
+
+
 function validarContraseña() {
     var contraseña = document.getElementById("contraseña").value;
     var mensajeError = document.getElementById("mensajeErrorContraseña");
