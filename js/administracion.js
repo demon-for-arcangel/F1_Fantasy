@@ -1,0 +1,1 @@
+//js para administracion.html
