@@ -13,7 +13,21 @@ function cargarCabecera() {
             </div>
         </div>
     `;
-    console.log("la funcion cargarCabecera se ejecuto")
+}
+
+function cargarPiePagina(){
+    document.getElementById("piePagina").innerHTML = 
+    `
+    <footer>
+        <img src = "imagenes/f1_logo.svg">
+        <p>Privacy Policy</p>
+        <p>Subscription</p>
+        <p>Terms of Use</p>
+        <p>FAQs</p>
+        <p>Cookie Preferences</p>
+        <p>© 2023 - 2024 Marina and Ismael</p>
+    </footer>
+    `;
 }
 
 const usuario = {
