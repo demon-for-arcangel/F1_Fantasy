@@ -1,5 +1,6 @@
 @import "Skeleton/css/normalize.css"; /* Importa el archivo de normalize */
 @import "Skeleton/css/skeleton.css"; /* Importa el archivo de skeleton */
+/* index */
 body {
   background-color: #e0e1db;
 }
