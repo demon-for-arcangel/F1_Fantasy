@@ -61,11 +61,3 @@ function validarContrasena() {
         mensajeError.textContent = "La contrasena es inválida. Debe contener de 6 a 12 caracteres y puede incluir solo *, #, $ y caracteres alfanuméricos.";
     }
 }
-function limpiarCampos() {
-    document.getElementById("nombre").value = "";
-    document.getElementById("apellidos").value = "";
-    document.getElementById("contrasena").value = "";
-    document.getElementById("verificacionContrasena").value = "";
-    document.getElementById("correo").value = "";
-    document.getElementById("nick").value = "";
-}
