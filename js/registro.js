@@ -61,4 +61,11 @@ function validarContraseña() {
         mensajeError.textContent = "La contraseña es inválida. Debe contener de 6 a 12 caracteres y puede incluir solo *, #, $ y caracteres alfanuméricos.";
     }
 }
-
+function limpiarCampos() {
+    document.getElementById("nombre").value = "";
+    document.getElementById("apellidos").value = "";
+    document.getElementById("contraseña").value = "";
+    document.getElementById("verificacionContraseña").value = "";
+    document.getElementById("correo").value = "";
+    document.getElementById("nick").value = "";
+}
