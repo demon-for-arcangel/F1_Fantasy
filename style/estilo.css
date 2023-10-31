@@ -1,6 +1,10 @@
 @import "Skeleton/css/normalize.css"; /* Importa el archivo de normalize */
 @import "Skeleton/css/skeleton.css"; /* Importa el archivo de skeleton */
-.header {
+body {
+  background-color: #e0e1db;
+}
+
+header {
   background-color: #000; /* Color de fondo de la cabecera */
   color: #fff; /* Color del texto */
   padding: 10px; /* Espaciado interno */
@@ -28,6 +32,9 @@
 .signIn .title {
   padding-left: 390px;
 }
+.signIn hr {
+  border-color: #000;
+}
 .signIn form {
   padding-left: 270px;
 }
@@ -40,10 +47,30 @@
   height: 50px;
   border: 1px solid #090909;
 }
+.signIn .form {
+  padding-bottom: 65px;
+}
 .signIn .form button {
   margin-left: 270px;
   color: #FFFFFF;
   background-color: #EE0000;
+}
+.signIn .form p {
+  margin-left: 270px;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+}
+footer img {
+  width: 10%;
+  padding-right: 400px;
+}
+footer p {
+  display: inline-block;
+  padding-left: 40px;
 }
 
 /*# sourceMappingURL=estilo.css.map */
