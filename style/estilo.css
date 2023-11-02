@@ -79,6 +79,15 @@ header a p {
   padding-left: 40px;
 }
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main div {
+  flex-basis: calc(33.33% - 10px);
+  margin-bottom: 20px;
+}
 main img {
   width: 300px;
 }

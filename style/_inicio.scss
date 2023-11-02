@@ -18,6 +18,15 @@ header{
 }
 
 main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    div{
+        flex-basis: calc(33.33% - 10px);
+        margin-bottom: 20px;
+    }
+    
     img{
         width: 300px;
     }
