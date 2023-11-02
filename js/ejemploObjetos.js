@@ -3,7 +3,7 @@
 //Primero:25	Segundo:18	Tercero:15	Cuarto:12	Quinto:10	
 //Sexto:8	Septimo:6	Octavo:4	Noveno:2	Décimo:1	
 var grandesPremios = {
-	description : 'Grandes Premios de F1'
+	description : 'Grandes Premios de F1',
 	carreras [
 		{id:1, posiciones [ {piloto:4,puntos:25},{piloto:2,puntos:18},{piloto:1,puntos:15} ]},
 		{id:2, posiciones [ {piloto:2,puntos:25},{piloto:11,puntos:18},{piloto:15,puntos:15} ]}
