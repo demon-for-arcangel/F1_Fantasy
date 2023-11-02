@@ -1,2 +1,18 @@
 @import "index";
 @import "inicio";
+
+footer { 
+    background-color: #000; 
+    color: #fff;
+    padding: 27px;
+
+    img{
+        width: 10%;
+        padding-right: 400px;
+    }
+
+    p{
+        display: inline-block;
+        padding-left: 35px;
+    }
+}

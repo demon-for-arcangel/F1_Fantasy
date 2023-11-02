@@ -61,20 +61,6 @@ header {
   color: red;
 }
 
-footer {
-  background-color: #000;
-  color: #fff;
-  padding: 10px;
-}
-footer img {
-  width: 10%;
-  padding-right: 400px;
-}
-footer p {
-  display: inline-block;
-  padding-left: 40px;
-}
-
 header {
   background-color: #000;
   color: #fff;
@@ -95,4 +81,18 @@ header a p {
 
 main img {
   width: 300px;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 27px;
+}
+footer img {
+  width: 10%;
+  padding-right: 400px;
+}
+footer p {
+  display: inline-block;
+  padding-left: 35px;
 }/*# sourceMappingURL=estilo.css.map */

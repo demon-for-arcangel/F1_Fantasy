@@ -69,19 +69,3 @@ header { //lo utilizaremos en index.html y en registro.html
         }
     }
 }
-
-footer { //lo utilizaremos en la página de index.html y en la página de registro.html
-    background-color: #000; 
-    color: #fff;
-    padding: 10px;
-
-    img{
-        width: 10%;
-        padding-right: 400px;
-    }
-
-    p{
-        display: inline-block;
-        padding-left: 40px;
-    }
-}
