@@ -20,7 +20,7 @@ function cargarGrandesPremios() {
     // Código para cargar los grandes premios
 }
 
-function generarUsuariosBot() {
+function generarUsuariosBot() { //se deben generar los dos usuarios bot con pilotos suplentes y titulares.
     // Código para generar usuarios bot
 }
 

@@ -75,7 +75,6 @@ footer p {
   padding-left: 40px;
 }
 
-/* inicio */
 header {
   background-color: #000;
   color: #fff;
@@ -85,7 +84,15 @@ header img {
   width: 10%;
   padding-right: 400px;
 }
-header p {
+header a {
+  text-decoration: none;
+  color: white;
+}
+header a p {
   display: inline-block;
   padding-left: 40px;
+}
+
+main img {
+  width: 300px;
 }/*# sourceMappingURL=estilo.css.map */
