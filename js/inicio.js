@@ -1,6 +1,4 @@
-//carga inicial
-// Supongamos que tenemos un arreglo de grandes premios con puntuaciones
-const grandesPremios = [{
+const grandesPremios = [{ //terminar de rellenar
     description: '',
     carreras: [
         { id: 1, posiciones: [{ piloto: 4, puntos: 25 }, { piloto: 2, puntos: 18 }, { piloto: 1, puntos: 15 }] },
