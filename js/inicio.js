@@ -24,12 +24,10 @@ function generarUsuariosBot() { //se deben generar los dos usuarios bot con pilo
     // Código para generar usuarios bot
 }
 
-// Asignar piloto titular y suplente a tu usuario
 function asignarPilotos(usuario) {
     // Código para asignar pilotos titular y suplente a tu usuario
 }
 
-// Ordenar pilotos alfabéticamente
 function ordenarPilotosAlfabeticamente() {
     // Código para ordenar pilotos alfabéticamente
 }

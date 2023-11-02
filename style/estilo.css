@@ -19,7 +19,6 @@ header {
   border: none;
   color: white;
   font-size: 16px;
-  cursor: pointer;
   margin: 0 10px;
   padding: 0;
 }
@@ -90,6 +89,7 @@ main div {
 }
 main img {
   width: 300px;
+  color: #EE0000;
 }
 
 footer {
