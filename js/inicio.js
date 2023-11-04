@@ -70,38 +70,37 @@ function cargarGrandesPremios() {
 }
 
 function generarUsuariosBot() {
-    // Obtener un número aleatorio entre 0 y la longitud de la lista de usuariosBot
-    const indiceUsuarioBot1 = Math.floor(Match.random() * usuariosBot.length);
-    const indiceUsuarioBot2 = Math.floor(Math.random() * usuariosBot.length);
+    const pilotosDisponibles = [...pilotos]; //crear copia de la lista de pilotos disponibles
 
-    //obtener los usuarios bot aleatorios
-    const usuarioBot1 = usuariosBot[indiceUsuarioBot1];
-    const usuarioBot2 = usuariosBot[indiceUsuarioBot2];
+    usuariosBot.forEach(usuario => {
+        const indicePilotoTitular = Math.floor(Math.random() * pilotosDisponibles.length);
+        const pilotoTitular = pilotosDisponibles.splice(indicePIlotoTitular, 1[0]); //Sacaremos el piloto de la lista
+
+        const indicePilotoSuplente = Math.floor(Math.random() * pilotosDisponibles.length);
+        const pilotoSuplente = pilotosDisponibles.splice(indicePilotoSuplente, 1[0]);
+
+        usuario.pilotoTitular = pilotoTitular.id;
+        usuario.pilotoSuplente = pilotoSuplente.id;
+    });
 }
 
 function asignarPilotos(usuario) {
-    // Obtener el usuario actual y sus pilotos titulares y suplentes
     const usuarioActual = usuariosBot.find(u => u.nombre === usuario.nombre);
-    const pilotoTitularActual = usuarioActual.pilotoTitular;
-    const pilotoSuplenteActual = usuarioActual.pilotoSuplente;
 
-    // Mostrar lista de pilotos disponibles
-    const pilotosDisponibles = [1, 2, 3, 4, 5]; // Lista de IDs de pilotos disponibles
+    const pilotosDisponibles = pilotos.filter(p => p.id !== usuarioActual.pilotoTitular && p.id !== usuarioActual.pilotoSuplente).map(p => p.id);
+
     const pilotoTitularSeleccionado = prompt(`Pilotos disponibles: ${pilotosDisponibles.join(', ')}. Elige piloto titular:`);
     const pilotoSuplenteSeleccionado = prompt(`Pilotos disponibles: ${pilotosDisponibles.join(', ')}. Elige piloto suplente:`);
 
-    // Verificar que los pilotos seleccionados están en la lista de disponibles
-    if (!pilotosDisponibles.includes(parseInt(pilotoTitularSeleccionado)) || !pilotosDisponibles.includes(parseInt(pilotoSuplenteSeleccionado))) {
+    if (!pilotosDisponibles.includes(parseInt(pilotoTitularSeleccionado)) || !pilotosDisponibles.includes(parseInt(pilotoSuplenteSeleccionado))){
         alert("Los pilotos seleccionados no están disponibles.");
         return;
     }
 
-    // Actualizar pilotos del usuario
-    usuarioActual.pilotoTitular = parseInt(pilotoTitularSeleccionado);
+    usuarioActual.pilotoTitular = parseInt(pilotoSuplenteSeleccionado);
     usuarioActual.pilotoSuplente = parseInt(pilotoSuplenteSeleccionado);
 
-    // Mostrar mensaje de confirmación
-    alert(`Pilotos asignados con éxito. Piloto titular: ${pilotoTitularSeleccionado}, Piloto suplente: ${pilotoSuplenteSeleccionado}`);
+    alert(`Pilotos asignados con éxit. Piloto titular: ${pilotoTitularSeleccionado}, Piloto suplente: ${pilotoSuplenteSeleccionado}`);
 }
 
 function ordenarPilotosAlfabeticamente() {
