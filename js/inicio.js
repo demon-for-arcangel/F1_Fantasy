@@ -44,8 +44,25 @@ function mostrarPosiciones(posiciones){
     return posiciones.map(posicion => `Piloto ${posicion.piloto} - Puntos: ${posicion.puntos}`).join(', ');
 }
 
-function generarUsuariosBot() { 
+function generarUsuariosBot() {
+    // Obtener un número aleatorio entre 0 y la longitud de la lista de usuariosBot
+    const indiceUsuarioBot1 = Math.floor(Match.random() * usuariosBot.length);
+    const indiceUsuarioBot2 = Math.floor(Math.random() * usuariosBot.length);
 
+    //obtener los usuarios bot aleatorios
+    const usuarioBot1 = usuariosBot[indiceUsuarioBot1];
+    const usuarioBot2 = usuariosBot[indiceUsuarioBot2];
+
+    // Asignar pilotos aleatorios a los usuarios bot
+    const pilotoTitular1 = Math.floor(Math.random() * pilotos.length) + 1;
+    const pilotoSuplente1 = Math.floor(Math.random() + pilotos.length) + 1;
+    usuarioBot1.pilotoTitular = pilotoTitular1;
+    usuarioBot1.pilotoSuplente = pilotoSuplente1;
+
+    const pilotoTitular2 = Math.floor(Math.random() * pilotos.length) + 1;
+    const pilotoSuplente2 = Math.floor(Math.random() + pilotos.length) + 1;
+    usuarioBot2.pilotoTitular = pilotoTitular2;
+    usuarioBot2.pilotoSuplente = pilotoSuplente2;
 }
 
 function asignarPilotos(usuario) {
