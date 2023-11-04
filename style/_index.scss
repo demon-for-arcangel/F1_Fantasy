@@ -1,71 +1,69 @@
-body{ //lo utilizaremos para todas las páginas
-    background-color: #e0e1db;
-}
-
-header { //lo utilizaremos en index.html y en registro.html
-    background-color: #000; /* Color de fondo de la cabecera */
-    color: #fff; /* Color del texto */
-    padding: 10px; /* Espaciado interno */
-}
-
-.navbar {
-    background-color: #38383f;
-    display: flex;
-    padding-left: 44%;
-    align-items: center;
-
-    button {
-        background-color: transparent;
-        border: none;
-        color: white;
-        font-size: 16px;
-        cursor: pointer;
-        margin: 0 10px;
-        padding: 0;
+#index{
+    header { //lo utilizaremos en index.html y en registro.html
+        background-color: #000; /* Color de fondo de la cabecera */
+        color: #fff; /* Color del texto */
+        padding: 10px; /* Espaciado interno */
     }
-}
-
-.signIn{
-    padding-top: 20px;
-
-    .title{
-        padding-left: 390px;
+    
+    .navbar {
+        background-color: #38383f;
+        display: flex;
+        padding-left: 44%;
+        align-items: center;
+    
+        button {
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 0 10px;
+            padding: 0;
+        }
     }
-
-    hr{
-        border-color: #000;
-    }
-
-    form {
-        padding-left: 270px;
-        
-        label {
-            display: block;
-            margin-bottom: 5px;
+    
+    .signIn{
+        padding-top: 20px;
+    
+        .title{
+            padding-left: 390px;
         }
     
-        input {
-            width: 55%;
-            height: 50px;
-            border: 1px solid #090909;
+        hr{
+            border-color: #000;
         }
-    }
-
-    .form {
-        button{
-            margin-left: 270px;
-            color: #FFFFFF;
-            background-color: #EE0000;
+    
+        form {
+            padding-left: 270px;
+            
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+        
+            input {
+                width: 55%;
+                height: 50px;
+                border: 1px solid #090909;
+            }
         }
-
-        p{
-            margin-left: 270px;
-        }
-        padding-bottom: 65px;
-
-        a{
-            text-decoration: none;
-            color: red;
+    
+        .form {
+            button{
+                margin-left: 270px;
+                color: #FFFFFF;
+                background-color: #EE0000;
+            }
+    
+            p{
+                margin-left: 270px;
+            }
+            padding-bottom: 65px;
+    
+            a{
+                text-decoration: none;
+                color: red;
+            }
         }
     }
 }

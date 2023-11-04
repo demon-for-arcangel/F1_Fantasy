@@ -1,6 +1,10 @@
 @import "index";
 @import "inicio";
 
+body{ //lo utilizaremos para todas las páginas
+    background-color: #e0e1db;
+}
+
 footer { //lo utilizaremos en la página de index.html y en la página de registro.html
     background-color: #000; 
     color: #fff;

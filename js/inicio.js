@@ -1,4 +1,5 @@
 function cargarCabecera2() {
+
     document.getElementById("cabecera").innerHTML =
         `
     <header>
@@ -8,8 +9,7 @@ function cargarCabecera2() {
         <a href="pilotos.html"><p>Pilotos</p></a>
         <a href="perfil.html"><p>Perfil</p></a>
         <a href="administración.html"><p>Administración</p></a>
-    </header>
-    `;
+        `;
 }
 
 const grandesPremios = [{ //terminar de rellenar
