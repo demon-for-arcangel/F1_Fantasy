@@ -1,3 +1,17 @@
+function cargarCabecera2() {
+    document.getElementById("cabecera").innerHTML =
+        `
+    <header>
+        <img src="imagenes/f1_logo.svg">
+        <a href="clasificación.html"><p>Clasificación</p></a>
+        <a href="tuspilotos.html"><p>Tus pilotos</p></a>
+        <a href="pilotos.html"><p>Pilotos</p></a>
+        <a href="perfil.html"><p>Perfil</p></a>
+        <a href="administración.html"><p>Administración</p></a>
+    </header>
+    `;
+}
+
 const grandesPremios = [{ //terminar de rellenar
     description: '',
     carreras: [
@@ -7,11 +21,8 @@ const grandesPremios = [{ //terminar de rellenar
 }];
 
 const usuariosBot = [
-    {    
-        nombre: 'UsuarioBot1',
-        pilotoTitular: 1,
-        pilotoSuplente: 2
-    }, //hacer más
+    { nombre: null, pilotoTitular: null, pilotoSuplente: null },
+    { nombre: null, pilotoTitular: null, pilotoSuplente: null }
 ];
 
 const pilotos = [
@@ -38,10 +49,10 @@ const pilotos = [
 
 ];
 
-// Cargar grandes premios y usuarios bot
 function cargarInicial() {
     cargarGrandesPremios();
     generarUsuariosBot();
+    ordenarPilotosAlfabeticamente();
 }
 
 function cargarGrandesPremios() {
@@ -56,10 +67,6 @@ function cargarGrandesPremios() {
             </ul>
         `
     })
-}
-
-function mostrarPosiciones(posiciones){
-    return posiciones.map(posicion => `Piloto ${posicion.piloto} - Puntos: ${posicion.puntos}`).join(', ');
 }
 
 function generarUsuariosBot() {
