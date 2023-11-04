@@ -7,7 +7,11 @@ const grandesPremios = [{ //terminar de rellenar
 }];
 
 const usuariosBot = [
-    // (lista de usuarios bot con sus pilotos)
+    {    
+        nombre: 'UsuarioBot1',
+        pilotoTitutlar: 1,
+        pilotoSuplente: 2
+    }, //hacer más
 ];
 
 // Cargar grandes premios y usuarios bot
@@ -45,3 +49,6 @@ function asignarPilotos(usuario) {
 function ordenarPilotosAlfabeticamente() {
     // Código para ordenar pilotos alfabéticamente
 }
+
+//LLamada a la funcion de carga inicial al cargar la página
+windows.onload = cargarInicial
