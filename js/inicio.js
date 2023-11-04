@@ -15,9 +15,7 @@ const usuariosBot = [
 ];
 
 const pilotos = [
-    {
-        nombre: ""
-    }
+    { id: 1, nombre: '' }
 ];
 
 // Cargar grandes premios y usuarios bot
