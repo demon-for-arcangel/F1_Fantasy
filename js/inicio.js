@@ -1,3 +1,17 @@
+function cargarCabecera2() {
+    document.getElementById("cabecera").innerHTML = 
+    `
+    <header> <!-- Hacer la carga de la cabecera nueva en app.js-->
+        <img src="imagenes/f1_logo.svg">
+        <a href = "clasificación.html"><p>Clasificación</p></a>
+        <a href = "tuspilotos.html"><p>Tus pilotos</p></a>
+        <a href = "pilotos.html"><p>Pilotos</p></a>
+        <a href = "perfil.html"><p>Perfil</p></a>
+        <a href = "administración.html"><p>Administración</p></a>
+    </header>
+    `;
+}
+
 const grandesPremios = [{ //terminar de rellenar
     description: '',
     carreras: [
