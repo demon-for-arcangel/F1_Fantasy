@@ -9,9 +9,15 @@ const grandesPremios = [{ //terminar de rellenar
 const usuariosBot = [
     {    
         nombre: 'UsuarioBot1',
-        pilotoTitutlar: 1,
+        pilotoTitular: 1,
         pilotoSuplente: 2
     }, //hacer más
+];
+
+const pilotos = [
+    {
+        nombre: ""
+    }
 ];
 
 // Cargar grandes premios y usuarios bot
@@ -38,8 +44,8 @@ function mostrarPosiciones(posiciones){
     return posiciones.map(posicion => `Piloto ${posicion.piloto} - Puntos: ${posicion.puntos}`).join(', ');
 }
 
-function generarUsuariosBot() { //se deben generar los dos usuarios bot con pilotos suplentes y titulares.
-    // Código para generar usuarios bot
+function generarUsuariosBot() { 
+
 }
 
 function asignarPilotos(usuario) {
