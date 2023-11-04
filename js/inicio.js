@@ -78,7 +78,14 @@ function asignarPilotos(usuario) {
 }
 
 function ordenarPilotosAlfabeticamente() {
-    // Código para ordenar pilotos alfabéticamente
+    //Copia la lista de pilotos para no modificar la original
+    const pilotosOrdenados = [...pilotos];
+
+    // Ordenar los pilotos alfabéticamente
+    pilotosOrdenados.sort((a, b) => a.nombre.localeCompare(b.nombre));
+
+    //pilotosOrdenador ahora contiene la lista de pilotos ordenada alfabéticamente
+    return pilotosOrdenados;
 }
 
 //LLamada a la funcion de carga inicial al cargar la página
