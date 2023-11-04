@@ -30,6 +30,10 @@ function cargarGrandesPremios() {
     })
 }
 
+function mostrarPosiciones(posiciones){
+    return posiciones.map(posicion => `Piloto ${posicion.piloto} - Puntos: ${posicion.puntos}`).join(', ');
+}
+
 function generarUsuariosBot() { //se deben generar los dos usuarios bot con pilotos suplentes y titulares.
     // Código para generar usuarios bot
 }
