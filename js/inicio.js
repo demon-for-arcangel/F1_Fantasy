@@ -46,7 +46,6 @@ const pilotos = [
     { id: 18, nombre: 'Sergio', apellidos: 'Perez', nacionalidad: '', propiedadJugador: '', rol: '' },
     { id: 19, nombre: 'Valtteri', apellidos: 'Bottas', nacionalidad: '', propiedadJugador: '', rol: '' },
     { id: 20, nombre: 'Yuki', apellidos: 'Tsunoda', nacionalidad: '', propiedadJugador: '', rol: '' }
-
 ];
 
 function cargarInicial() {
@@ -115,4 +114,4 @@ function ordenarPilotosAlfabeticamente() {
 }
 
 //LLamada a la funcion de carga inicial al cargar la página
-windows.onload = cargarInicial
+windows.onload = cargarInicial();
