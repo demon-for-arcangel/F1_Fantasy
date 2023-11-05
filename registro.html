@@ -10,27 +10,30 @@
     <h1>Registro</h1>
     <form>
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required><br><br>
+        <input type="text" id="nombre" name="nombre" required>
+        <p id="errorNombre" class="error"></p><br><br>
 
         <label for="apellidos">Apellidos:</label>
-        <input type="text" id="apellidos" name="apellidos" required><br><br>
+        <input type="text" id="apellidos" name="apellidos" required>
+        <p id="errorApellidos" class="error"></p><br><br>
 
-        <label for="contraseña">Contraseña:</label>
-        <input type="password" id="contraseña" name="contraseña" required><br><br>
-        <label for="verificacionContraseña">Verificación de Contraseña:</label>
-        <input type="password" id="verificacionContraseña" name="verificacionContraseña" required><br><br>
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required>
+        <p id="errorContrasena" class="error"></p><br><br>
+
+        <label for="verificacionContrasena">Verificación de Contraseña:</label>
+        <input type="password" id="verificacionContrasena" name="verificacionContrasena" required>
+        <p id="errorVerificacionContrasena" class="error"></p><br><br>
 
         <label for="correo">Correo:</label>
-        <input type="text" id="correo" name="correo" required><br><br>
+        <input type="text" id="correo" name="correo" required>
+        <p id="errorCorreo" class="error"></p><br><br>
 
         <label for="nick">Nick:</label>
-        <input type="text" id="nick" name="nick" required><br><br>
+        <input type="text" id="nick" name="nick" required>
+        <p id ="errorNick" class="error"></p><br><br>
 
         <input type="button" value="Registrarse" onclick="validarRegistro()">
-        
     </form>
-
-
-
 </body>
 </html>
