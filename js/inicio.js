@@ -174,6 +174,7 @@ const grandesPremios = [
         descripcion: 'El GP de Abu Dabi se celebra el 26 de Noviembre en el circuito de Yas Marina en Abu Dabi (Emiratos Árabes). La longitud del circuito es de 5,281 kilómetros. Durante la carrera se darán 58 vueltas al circuito cubriendo una distancia final de 306,298 kilómetros.',
         imagen: '' 
     }
+];
 
 const usuariosBot = [
     { nombre: null, pilotoTitular: null, pilotoSuplente: null },
