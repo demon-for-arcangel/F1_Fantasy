@@ -12,13 +12,10 @@ function cargarCabecera2() {
         `;
 }
 
-const grandesPremios = [{ //terminar de rellenar
-    description: '',
-    carreras: [
-        { id: 1, posiciones: [{ piloto: 4, puntos: 25 }, { piloto: 2, puntos: 18 }, { piloto: 1, puntos: 15 }] },
-        { id: 2, posiciones: [{ piloto: 2, puntos: 25 }, { piloto: 11, puntos: 18 }, { piloto: 15, puntos: 15 }] }
-    ]
-}];
+const grandesPremios = [ //terminar de rellenar
+    { id: 1, nombre: 'SAKHIR', lugar: 'GP Baréin', descripcion: 'Este circuito tiene una longitud de 6299 metros. Cuenta con 15 curvas (6 izda | 9 dcha)'},
+    { id: 2, nombre: 'JEDDAH INTERNATIONAL STREET CIRCUIT', lugar: 'GP Arabia Saudí', descripcion: 'Este circuito tiene una longitud de 5154 metros.'}
+];
 
 const usuariosBot = [
     { nombre: null, pilotoTitular: null, pilotoSuplente: null },
@@ -53,6 +50,10 @@ function cargarInicial() {
     cargarGrandesPremios();
     generarUsuariosBot();
     ordenarPilotosAlfabeticamente();
+}
+
+function cargarCarrera(){
+    
 }
 
 function cargarGrandesPremios() {
