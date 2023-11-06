@@ -182,26 +182,165 @@ const usuariosBot = [
 ];
 
 const pilotos = [
-    { id: 1, nombre: 'Alexander', apellidos: 'Albon', nacionalidad: '', propiedadJugador: 2, rol: 'Suplete' },
-    { id: 2, nombre: 'Carlos', apellidos: 'Sainz', nacionalidad: '', propiedadJugador: '', rol: 'Libre' },
-    { id: 3, nombre: 'Charles', apellidos: 'Leclerc', nacionalidad: '', propiedadJugador: '', rol: 'Titular' },
-    { id: 4, nombre: 'Esteban', apellidos: 'Ocon', nacionalidad: '', propiedadJugador: '', rol: '' },
-    { id: 5, nombre: 'Fernando', apellidos: 'Alonso', nacionalidad: '', propiedadJugador: '', rol: '' },
-    { id: 6, nombre: 'George', apellidos: 'Rusell', nacionalidad: '', propiedadJugador: '', rol: '' },
-    { id: 7, nombre: 'Guanyu', apellidos: 'Zhou', nacionalidad: '', propiedadJugador: '', rol: '' },
-    { id: 8, nombre: 'Kevin', apellidos: 'Magnussen', nacionalidad: '', propiedadJugador: '', rol: '' },
-    { id: 9, nombre: 'Lance', apellidos: 'Stroll', nacionalidad: '', propiedadJugador: '', rol: '' },
-    { id: 10, nombre: 'Lando', apellidos: 'Norris', nacionalidad: '', propiedadJugador: '', rol: '' },
-    { id: 11, nombre: 'Lewis', apellidos: 'Hamilton', nacionalidad: '', propiedadJugador: '', rol: '' },
-    { id: 12, nombre: 'Logan', apellidos: 'Sargeant', nacionalidad: '', propiedadJugador: '', rol: '' },
-    { id: 13, nombre: 'Max', apellidos: 'Verstappen', nacionalidad: '', propiedadJugador: '', rol: '' },
-    { id: 14, nombre: 'Nico', apellidos: 'Hulkenberg', nacionalidad: '', propiedadJugador: '', rol: '' },
-    { id: 15, nombre: 'Nyck', apellidos: 'de Vries', nacionalidad: '', propiedadJugador: '', rol: '' },
-    { id: 16, nombre: 'Oscar', apellidos: 'Piastri', nacionalidad: '', propiedadJugador: '', rol: '' },
-    { id: 17, nombre: 'Pierre', apellidos: 'Gasly', nacionalidad: '', propiedadJugador: '', rol: '' },
-    { id: 18, nombre: 'Sergio', apellidos: 'Perez', nacionalidad: '', propiedadJugador: '', rol: '' },
-    { id: 19, nombre: 'Valtteri', apellidos: 'Bottas', nacionalidad: '', propiedadJugador: '', rol: '' },
-    { id: 20, nombre: 'Yuki', apellidos: 'Tsunoda', nacionalidad: '', propiedadJugador: '', rol: '' }
+    { 
+        id: 1, 
+        nombre: 'Alexander', 
+        apellidos: 'Albon', 
+        nacionalidad: '', 
+        propiedadJugador: 2, 
+        rol: 'Suplete' 
+    },
+    { 
+        id: 2, 
+        nombre: 'Carlos', 
+        apellidos: 'Sainz', 
+        nacionalidad: '', 
+        propiedadJugador: '', 
+        rol: 'Libre' 
+    },
+    { 
+        id: 3, 
+        nombre: 'Charles', 
+        apellidos: 'Leclerc', 
+        nacionalidad: '', 
+        propiedadJugador: '', 
+        rol: 'Titular' 
+    },
+    { 
+        id: 4, 
+        nombre: 'Esteban', 
+        apellidos: 'Ocon', 
+        nacionalidad: '', 
+        propiedadJugador: '', 
+        rol: '' 
+    },
+    { 
+        id: 5, 
+        nombre: 'Fernando', 
+        apellidos: 'Alonso', 
+        nacionalidad: '', 
+        propiedadJugador: '', 
+        rol: '' 
+    },
+    { 
+        id: 6, 
+        nombre: 'George', 
+        apellidos: 'Rusell', 
+        nacionalidad: '', 
+        propiedadJugador: '', 
+        rol: '' 
+    },
+    { 
+        id: 7, 
+        nombre: 'Guanyu', 
+        apellidos: 'Zhou', 
+        nacionalidad: '', 
+        propiedadJugador: '', 
+        rol: '' 
+    },
+    { 
+        id: 8, 
+        nombre: 'Kevin', 
+        apellidos: 'Magnussen', 
+        nacionalidad: '', 
+        propiedadJugador: '', 
+        rol: '' 
+    },
+    { 
+        id: 9, 
+        nombre: 'Lance', 
+        apellidos: 'Stroll', 
+        nacionalidad: '', 
+        propiedadJugador: '', 
+        rol: '' 
+    },
+    { 
+        id: 10, 
+        nombre: 'Lando', 
+        apellidos: 'Norris', 
+        nacionalidad: '', 
+        propiedadJugador: '', 
+        rol: '' 
+    },
+    { 
+        id: 11, 
+        nombre: 'Lewis', 
+        apellidos: 'Hamilton', 
+        nacionalidad: '', 
+        propiedadJugador: '', 
+        rol: '' 
+    },
+    { 
+        id: 12, 
+        nombre: 'Logan', 
+        apellidos: 'Sargeant', 
+        nacionalidad: '', 
+        propiedadJugador: '', 
+        rol: '' 
+    },
+    { 
+        id: 13, 
+        nombre: 'Max', 
+        apellidos: 'Verstappen', 
+        nacionalidad: '', 
+        propiedadJugador: '', 
+        rol: '' },
+    { 
+        id: 14, 
+        nombre: 'Nico', 
+        apellidos: 'Hulkenberg', 
+        nacionalidad: '', 
+        propiedadJugador: '', 
+        rol: '' 
+    },
+    { 
+        id: 15, 
+        nombre: 'Nyck', 
+        apellidos: 'de Vries', 
+        nacionalidad: '', 
+        propiedadJugador: '', 
+        rol: '' 
+    },
+    { 
+        id: 16, 
+        nombre: 'Oscar', 
+        apellidos: 'Piastri', 
+        nacionalidad: '', 
+        propiedadJugador: '', 
+        rol: '' 
+    },
+    { 
+        id: 17, 
+        nombre: 'Pierre', 
+        apellidos: 'Gasly', 
+        nacionalidad: '', 
+        propiedadJugador: '', 
+        rol: '' 
+    },
+    { 
+        id: 18, 
+        nombre: 'Sergio', 
+        apellidos: 'Perez', 
+        nacionalidad: '', 
+        propiedadJugador: '', 
+        rol: '' 
+    },
+    { 
+        id: 19, 
+        nombre: 'Valtteri', 
+        apellidos: 'Bottas', 
+        nacionalidad: '', 
+        propiedadJugador: '', 
+        rol: '' 
+    },
+    { 
+        id: 20, 
+        nombre: 'Yuki', 
+        apellidos: 'Tsunoda', 
+        nacionalidad: '', 
+        propiedadJugador: '', 
+        rol: '' 
+    }
 ];
 
 function cargarInicial() {
