@@ -2,6 +2,13 @@ import { grandesPremios } from "./objetos";
 import { pilotos } from "./objetos";
 import { usuariosBot } from "./objetos";
 
+//LLamada a la funcion de carga inicial al cargar la página
+windows.onload = cargarInicial();
+
+/*
+-----------------------FUNCIONES-------------------------
+*/
+
 function cargarCabecera2() {
     document.getElementById("cabecera").innerHTML =
         `
@@ -82,6 +89,3 @@ function ordenarPilotosAlfabeticamente() {
     //pilotosOrdenador ahora contiene la lista de pilotos ordenada alfabéticamente
     return pilotosOrdenados;
 }
-
-//LLamada a la funcion de carga inicial al cargar la página
-windows.onload = cargarInicial();
