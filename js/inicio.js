@@ -15,7 +15,7 @@ function cargarCabecera2() {
     document.getElementById("cabecera").innerHTML =
         `
         <header>
-            <img src="imagenes/f1_logo.svg">
+            <img src="../imagenes/f1_logo.svg">
             <a href="clasificación.html"><p>Clasificación</p></a>
             <a href="tuspilotos.html"><p>Tus pilotos</p></a>
             <a href="pilotos.html"><p>Pilotos</p></a>
