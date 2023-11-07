@@ -11,14 +11,14 @@ export const grandesPremios = [
         lugar: 'Jeddah', 
         nombre: 'GP Arabia Saudí', 
         descripcion: 'El GP de Arabia Saudí se celebra el 19 de Marzo en el circuito de Jeddah en Arabia Saudí. La longitud del circuito es de 6,174 kilómetros. Durante la carrera se darán 50 vueltas al circuito cubriendo una distancia final de 308,700 kilómetros.',
-        imagen: '../imagenes/circuitos/arabia-saudi.jpg'
+        imagen: '../imagenes/circuitos/arabia-saudi.png'
     },
     { 
         id: 3, 
         lugar: 'Melbourne', 
         nombre: 'GP Australia', 
         descripcion: 'El GP de Australia se celebra el 2 de Abril en el circuito de Melbourne en Australia. La longitud del circuito es de 5,303 kilómetros. Durante la carrera se darán 58 vueltas al circuito cubriendo una distancia final de 307,574 kilómetros.',
-        imagen: '../imagenes/circuitos/australia.jpg'
+        imagen: '../imagenes/circuitos/australia.png'
     },
     { 
         id: 4, 
@@ -67,7 +67,7 @@ export const grandesPremios = [
         lugar: 'Spielberg', 
         nombre: 'GP Austria', 
         descripcion: 'El GP de Austria se celebra el 2 de Julio en el circuito de Red Bull Ring en Spielberg (Austria). La longitud del circuito es de 4,318 kilómetros. Durante la carrera se darán 71 vueltas al circuito cubriendo una distancia final de 306,578 kilómetros.',
-        imagen: '../imagenes/circuitos/austria.jpg'
+        imagen: '../imagenes/circuitos/austria.png'
     },
     { 
         id: 11, 
@@ -109,7 +109,7 @@ export const grandesPremios = [
         lugar: 'Singapur', 
         nombre: 'GP Singapur', 
         descripcion: 'El GP de Singapur se celebra el 17 de Septiembre en el circuito de Marina Bay en Singapur (Singapur). La longitud del circuito es de 5,063 kilómetros. Durante la carrera se darán 61 vueltas al circuito cubriendo una distancia final de 308,843 kilómetros.',
-        imagen: '../imagenes/circuitos/singaput.jpg'
+        imagen: '../imagenes/circuitos/singapur.jpg'
     },
     { 
         id: 17, 
@@ -158,7 +158,7 @@ export const grandesPremios = [
         lugar: 'Abu Dabi', 
         nombre: 'GP Abu Dabi', 
         descripcion: 'El GP de Abu Dabi se celebra el 26 de Noviembre en el circuito de Yas Marina en Abu Dabi (Emiratos Árabes). La longitud del circuito es de 5,281 kilómetros. Durante la carrera se darán 58 vueltas al circuito cubriendo una distancia final de 306,298 kilómetros.',
-        imagen: '../imagenes/circuitos/abu-dhabi.jpg' 
+        imagen: '../imagenes/circuitos/abu-dhabi.png' 
     }
 ];
 
