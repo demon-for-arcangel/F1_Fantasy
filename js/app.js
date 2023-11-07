@@ -1,3 +1,6 @@
+cargarCabecera();
+cargarPiePagina();
+
 function cargarCabecera() {
     document.getElementById("cabecera").innerHTML = 
     `
