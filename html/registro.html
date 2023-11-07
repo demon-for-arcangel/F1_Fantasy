@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/style/sass/style.css">
+</head>
+<script src="./js/registro.js"></script>
+<body>
+    <h1>Registro</h1>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <p id="errorNombre" class="error"></p><br><br>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+        <p id="errorApellidos" class="error"></p><br><br>
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required>
+        <p id="errorContrasena" class="error"></p><br><br>
+
+        <label for="verificacionContrasena">Verificación de Contraseña:</label>
+        <input type="password" id="verificacionContrasena" name="verificacionContrasena" required>
+        <p id="errorVerificacionContrasena" class="error"></p><br><br>
+
+        <label for="correo">Correo:</label>
+        <input type="text" id="correo" name="correo" required>
+        <p id="errorCorreo" class="error"></p><br><br>
+
+        <label for="nick">Nick:</label>
+        <input type="text" id="nick" name="nick" required>
+        <p id ="errorNick" class="error"></p><br><br>
+
+        <input type="button" value="Registrarse" onclick="validarRegistro()">
+    </form>
+</body>
+</html>
