@@ -74,7 +74,6 @@ function validarRegistro() {
 
         localStorage.setItem('usuario', JSON.stringify(usuario));
 
-        // Redirigir a la página de tu elección
         window.location.href = "inicio.html";
     }
 }
