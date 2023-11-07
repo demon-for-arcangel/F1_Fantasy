@@ -1,15 +1,15 @@
-#index header {
+.index header {
   background-color: #000; /* Color de fondo de la cabecera */
   color: #fff; /* Color del texto */
   padding: 10px; /* Espaciado interno */
 }
-#index .navbar {
+.index .navbar {
   background-color: #38383f;
   display: flex;
   padding-left: 44%;
   align-items: center;
 }
-#index .navbar button {
+.index .navbar button {
   background-color: transparent;
   border: none;
   color: white;
@@ -18,70 +18,70 @@
   margin: 0 10px;
   padding: 0;
 }
-#index .signIn {
+.index .signIn {
   padding-top: 20px;
 }
-#index .signIn .title {
+.index .signIn .title {
   padding-left: 390px;
 }
-#index .signIn hr {
+.index .signIn hr {
   border-color: #000;
 }
-#index .signIn form {
+.index .signIn form {
   padding-left: 270px;
 }
-#index .signIn form label {
+.index .signIn form label {
   display: block;
   margin-bottom: 5px;
 }
-#index .signIn form input {
+.index .signIn form input {
   width: 55%;
   height: 50px;
   border: 1px solid #090909;
 }
-#index .signIn .form {
+.index .signIn .form {
   padding-bottom: 65px;
 }
-#index .signIn .form button {
+.index .signIn .form button {
   margin-left: 270px;
   color: #FFFFFF;
   background-color: #EE0000;
 }
-#index .signIn .form p {
+.index .signIn .form p {
   margin-left: 270px;
 }
-#index .signIn .form a {
+.index .signIn .form a {
   text-decoration: none;
   color: red;
 }
 
-#inicio header {
+.inicio header {
   background-color: #000;
   color: #fff;
   padding-top: 20px;
 }
-#inicio header img {
+.inicio header img {
   width: 10%;
   padding-right: 400px;
 }
-#inicio header a {
+.inicio header a {
   text-decoration: none;
   color: white;
 }
-#inicio header a p {
+.inicio header a p {
   display: inline-block;
   padding-left: 40px;
 }
-#inicio main {
+.inicio main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-#inicio main div {
+.inicio main div {
   flex-basis: calc(33.33% - 10px);
   margin-bottom: 20px;
 }
-#inicio main img {
+.inicio main img {
   width: 300px;
 }
 
