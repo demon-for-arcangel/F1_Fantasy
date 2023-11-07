@@ -1,9 +1,11 @@
-import { grandesPremios } from "./objetos";
-import { pilotos } from "./objetos";
-import { usuariosBot } from "./objetos";
+import { grandesPremios } from "./objetos.js";
+import { pilotos } from "./objetos.js";
+import { usuariosBot } from "./objetos.js";
 
 //LLamada a la funcion de carga inicial al cargar la página
-windows.onload = cargarInicial();
+cargarInicial();
+
+cargarCabecera2();
 
 /*
 -----------------------FUNCIONES-------------------------
@@ -24,25 +26,24 @@ function cargarCabecera2() {
 }
 
 function cargarInicial() {
-    cargarGrandesPremios();
+    cargarProximaCarrera();
     generarUsuariosBot();
     ordenarPilotosAlfabeticamente();
 }
 
 function cargarProximaCarrera(){
-    
-}
+    const idAleatorio = Math.floor(Math.random() * grandesPremios.length);
+    const proximaCarrera = grandesPremios[idAleatorio];
 
-function cargarGrandesPremios() {
-    grandesPremios.forEach(granPremio => {
-        const granPremioElemento = document.createElement("div");
-        granPremioElemento.innerHTML = `
-            <h2>${granPremio.description}</h2>
-            <ul>
-                ${granPremio.carreras.map(carrera => `<li>Carrera %¿${carrera.id}: ${mostrarPosiciones(carrera.posiciones)}</li>).join('')`)}
-            </ul>
-        `
-    })
+    const nombreCarrera = document.getElementById("nombreCarrera");
+    const imagenCarrera = document.getElementById("imagenCarrera");
+    const lugarCarrera = document.getElementById("lugarCarrera");
+    const descripcionCarrera = document.getElementById("descripcionCarrera");
+
+    nombreCarrera.textContent = proximaCarrera.nombre;
+    imagenCarrera.src = proximaCarrera.imagen;
+    lugarCarrera.textContent = proximaCarrera.lugar;
+    descripcionCarrera.textContent = proximaCarrera.descripcion;
 }
 
 function generarUsuariosBot() {
@@ -50,7 +51,7 @@ function generarUsuariosBot() {
 
     usuariosBot.forEach(usuario => {
         const indicePilotoTitular = Math.floor(Math.random() * pilotosDisponibles.length);
-        const pilotoTitular = pilotosDisponibles.splice(indicePIlotoTitular, 1[0]); //Sacaremos el piloto de la lista
+        const pilotoTitular = pilotosDisponibles.splice(indicePilotoTitular, 1[0]); //Sacaremos el piloto de la lista
 
         const indicePilotoSuplente = Math.floor(Math.random() * pilotosDisponibles.length);
         const pilotoSuplente = pilotosDisponibles.splice(indicePilotoSuplente, 1[0]);
