@@ -1,22 +1,22 @@
+//archivo utilizado para index.html y registro.html
 .index{
     .navbar {
         background-color: #38383f;
         display: flex;
         padding-left: 40%;
         align-items: center;
-    
+
         button {
             background-color: transparent;
             border: none;
             color: white;
             font-size: 16px;
-            cursor: pointer;
             margin: 0 10px;
             padding: 0;
         }
     }
     
-    .signIn{
+    .inicioSesion{
         padding-top: 20px;
     
         .title{

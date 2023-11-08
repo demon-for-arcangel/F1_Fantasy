@@ -9,43 +9,42 @@
   border: none;
   color: white;
   font-size: 16px;
-  cursor: pointer;
   margin: 0 10px;
   padding: 0;
 }
-.index .signIn {
+.index .inicioSesion {
   padding-top: 20px;
 }
-.index .signIn .title {
+.index .inicioSesion .title {
   padding-left: 350px;
 }
-.index .signIn hr {
+.index .inicioSesion hr {
   border-color: #000;
 }
-.index .signIn form {
+.index .inicioSesion form {
   padding-left: 350px;
 }
-.index .signIn form label {
+.index .inicioSesion form label {
   display: block;
   margin-bottom: 5px;
 }
-.index .signIn form input {
+.index .inicioSesion form input {
   width: 55%;
   height: 50px;
   border: 1px solid #090909;
 }
-.index .signIn .form {
+.index .inicioSesion .form {
   padding-bottom: 65px;
 }
-.index .signIn .form button {
+.index .inicioSesion .form button {
   margin-left: 350px;
   color: #FFFFFF;
   background-color: #EE0000;
 }
-.index .signIn .form p {
+.index .inicioSesion .form p {
   margin-left: 350px;
 }
-.index .signIn .form a {
+.index .inicioSesion .form a {
   text-decoration: none;
   color: red;
 }
