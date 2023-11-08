@@ -1,0 +1,63 @@
+.index{
+    .navbar {
+        background-color: #38383f;
+        display: flex;
+        padding-left: 40%;
+        align-items: center;
+    
+        button {
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 0 10px;
+            padding: 0;
+        }
+    }
+    
+    .signIn{
+        padding-top: 20px;
+    
+        .title{
+            padding-left: 350px;
+        }
+    
+        hr{
+            border-color: #000;
+        }
+    
+        form {
+            padding-left: 350px;
+            
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+        
+            input {
+                width: 55%;
+                height: 50px;
+                border: 1px solid #090909;
+            }
+        }
+    
+        .form {
+            button{
+                margin-left: 350px;
+                color: #FFFFFF;
+                background-color: #EE0000;
+            }
+    
+            p{
+                margin-left: 350px;
+            }
+            padding-bottom: 65px;
+    
+            a{
+                text-decoration: none;
+                color: red;
+            }
+        }
+    }
+}
