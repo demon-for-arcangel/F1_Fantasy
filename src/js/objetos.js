@@ -1,3 +1,13 @@
+export const usuario = {
+    nombre: "Marina",
+    apellido1: "Laguna",
+    apellido2: "Valdepeñas",
+    correo: "marinalaguna2004@gmail.com",
+    contrasena: "admin123",
+    pilotoTitular: null,
+    pilotoSuplente: null
+}
+
 export const grandesPremios = [
     { 
         id: 1, 
@@ -169,163 +179,158 @@ export const pilotos = [
         nombre: 'Alexander', 
         apellidos: 'Albon', 
         nacionalidad: '', 
-        propiedadJugador: 2, 
-        rol: 'Suplete' 
+        disponible: true, 
+        rol: null 
     },
     { 
         id: 2, 
         nombre: 'Carlos', 
         apellidos: 'Sainz', 
         nacionalidad: '', 
-        propiedadJugador: '', 
-        rol: 'Libre' 
+        disponible: true, 
+        rol: null
     },
     { 
         id: 3, 
         nombre: 'Charles', 
         apellidos: 'Leclerc', 
         nacionalidad: '', 
-        propiedadJugador: '', 
-        rol: 'Titular' 
+        disponible: true, 
+        rol: null 
     },
     { 
         id: 4, 
         nombre: 'Esteban', 
         apellidos: 'Ocon', 
         nacionalidad: '', 
-        propiedadJugador: '', 
-        rol: '' 
+        disponible: true, 
+        rol: null
     },
     { 
         id: 5, 
         nombre: 'Fernando', 
         apellidos: 'Alonso', 
         nacionalidad: '', 
-        propiedadJugador: '', 
-        rol: '' 
+        disponible: true, 
+        rol: null 
     },
     { 
         id: 6, 
         nombre: 'George', 
         apellidos: 'Rusell', 
         nacionalidad: '', 
-        propiedadJugador: '', 
-        rol: '' 
+        disponible: true, 
+        rol: null 
     },
     { 
         id: 7, 
         nombre: 'Guanyu', 
         apellidos: 'Zhou', 
         nacionalidad: '', 
-        propiedadJugador: '', 
-        rol: '' 
+        disponible: true, 
+        rol: null 
     },
     { 
         id: 8, 
         nombre: 'Kevin', 
         apellidos: 'Magnussen', 
         nacionalidad: '', 
-        propiedadJugador: '', 
-        rol: '' 
+        disponible: true, 
+        rol: null 
     },
     { 
         id: 9, 
         nombre: 'Lance', 
         apellidos: 'Stroll', 
         nacionalidad: '', 
-        propiedadJugador: '', 
-        rol: '' 
+        disponible: true, 
+        rol: null 
     },
     { 
         id: 10, 
         nombre: 'Lando', 
         apellidos: 'Norris', 
         nacionalidad: '', 
-        propiedadJugador: '', 
-        rol: '' 
+        disponible: true, 
+        rol: null 
     },
     { 
         id: 11, 
         nombre: 'Lewis', 
         apellidos: 'Hamilton', 
         nacionalidad: '', 
-        propiedadJugador: '', 
-        rol: '' 
+        disponible: true, 
+        rol: null 
     },
     { 
         id: 12, 
         nombre: 'Logan', 
         apellidos: 'Sargeant', 
         nacionalidad: '', 
-        propiedadJugador: '', 
-        rol: '' 
+        disponible: true, 
+        rol: null 
     },
     { 
         id: 13, 
         nombre: 'Max', 
         apellidos: 'Verstappen', 
         nacionalidad: '', 
-        propiedadJugador: '', 
-        rol: '' },
+        disponible: true, 
+        rol: null },
     { 
         id: 14, 
         nombre: 'Nico', 
         apellidos: 'Hulkenberg', 
         nacionalidad: '', 
-        propiedadJugador: '', 
-        rol: '' 
+        disponible: true, 
+        rol: null 
     },
     { 
         id: 15, 
         nombre: 'Nyck', 
         apellidos: 'de Vries', 
         nacionalidad: '', 
-        propiedadJugador: '', 
-        rol: '' 
+        disponible: true, 
+        rol: null 
     },
     { 
         id: 16, 
         nombre: 'Oscar', 
         apellidos: 'Piastri', 
         nacionalidad: '', 
-        propiedadJugador: '', 
-        rol: '' 
+        disponible: true, 
+        rol: null 
     },
     { 
         id: 17, 
         nombre: 'Pierre', 
         apellidos: 'Gasly', 
         nacionalidad: '', 
-        propiedadJugador: '', 
-        rol: '' 
+        disponible: true, 
+        rol: null 
     },
     { 
         id: 18, 
         nombre: 'Sergio', 
         apellidos: 'Perez', 
         nacionalidad: '', 
-        propiedadJugador: '', 
-        rol: '' 
+        disponible: true, 
+        rol: null 
     },
     { 
         id: 19, 
         nombre: 'Valtteri', 
         apellidos: 'Bottas', 
         nacionalidad: '', 
-        propiedadJugador: '', 
-        rol: '' 
+        disponible: true, 
+        rol: null 
     },
     { 
         id: 20, 
         nombre: 'Yuki', 
         apellidos: 'Tsunoda', 
         nacionalidad: '', 
-        propiedadJugador: '', 
-        rol: '' 
+        disponible: true, 
+        rol: null 
     }
-];
-
-export const usuariosBot = [
-    { nombre: null, pilotoTitular: null, pilotoSuplente: null },
-    { nombre: null, pilotoTitular: null, pilotoSuplente: null }
 ];

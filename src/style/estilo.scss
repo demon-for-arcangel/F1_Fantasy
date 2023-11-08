@@ -5,6 +5,35 @@ body{ //lo utilizaremos para todas las páginas
     background-color: #e0e1db;
 }
 
+.cabecera{
+ //lo utilizaremos en index.html y en registro.html
+    background-color: #000; /* Color de fondo de la cabecera */
+    color: #fff; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+
+}
+
+.cabecera2{
+    background-color: #000; 
+    color: #fff;
+    padding-top: 20px;
+
+    img{
+        width: 10%;
+        padding-right: 400px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        
+        p{
+            display: inline-block;
+            padding-left: 40px;
+        }
+    }
+
+}
+
 footer { //lo utilizaremos en todas las páginas
     background-color: #000; 
     color: #fff;
