@@ -17,7 +17,7 @@ function cargarCabecera2() {
             <a href="tuspilotos.html"><p>Tus pilotos</p></a>
             <a href="pilotos.html"><p>Pilotos</p></a>
             <a href="administración.html"><p>Administración</p></a>
-            <a href="perfil.html" class = "iconoPerfil"><img src = "../imagenes/icono_perfil.png"></a>
+            <a href="perfil.html" class = "iconoPerfil"><img src = "../imagenes/iconos/icono_perfil.png"></a>
         </header>
     `;
 }
