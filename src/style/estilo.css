@@ -1,0 +1,149 @@
+.index .navbar {
+  background-color: #38383f;
+  display: flex;
+  padding-left: 40%;
+  align-items: center;
+}
+.index .navbar button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 10px;
+  padding: 0;
+}
+.index .signIn {
+  padding-top: 20px;
+}
+.index .signIn .title {
+  padding-left: 350px;
+}
+.index .signIn hr {
+  border-color: #000;
+}
+.index .signIn form {
+  padding-left: 350px;
+}
+.index .signIn form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.index .signIn form input {
+  width: 55%;
+  height: 50px;
+  border: 1px solid #090909;
+}
+.index .signIn .form {
+  padding-bottom: 65px;
+}
+.index .signIn .form button {
+  margin-left: 350px;
+  color: #FFFFFF;
+  background-color: #EE0000;
+}
+.index .signIn .form p {
+  margin-left: 350px;
+}
+.index .signIn .form a {
+  text-decoration: none;
+  color: red;
+}
+
+.inicio main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.inicio main div {
+  flex-basis: calc(33.33% - 10px);
+  margin-bottom: 20px;
+}
+.inicio main img {
+  width: 300px;
+}
+
+.perfil .title {
+  padding-top: 20px;
+  padding-left: 680px;
+}
+.perfil hr {
+  border-color: #000;
+  width: 63%;
+}
+.perfil .formulario {
+  padding-top: 20px;
+}
+.perfil .formulario form {
+  padding-left: 100px;
+}
+.perfil .formulario form .izqd {
+  float: left;
+  width: 50%;
+  margin-bottom: 30px;
+}
+.perfil .formulario form .drch {
+  float: right;
+  width: 50%;
+  margin-top: 25px;
+}
+.perfil .formulario form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.perfil .formulario form input {
+  width: 80%;
+  height: 50px;
+  border: 1px solid #090909;
+}
+.perfil .formulario form input[type=button] {
+  margin-left: 350px;
+  color: #FFFFFF;
+  background-color: #EE0000;
+}
+
+body {
+  background-color: #e0e1db;
+}
+
+.cabecera {
+  background-color: #000; /* Color de fondo de la cabecera */
+  color: #fff; /* Color del texto */
+  padding: 10px; /* Espaciado interno */
+}
+
+.cabecera2 {
+  background-color: #000;
+  color: #fff;
+  padding-top: 25px;
+}
+.cabecera2 .logo {
+  width: 10%;
+  padding-right: 220px;
+}
+.cabecera2 a {
+  text-decoration: none;
+  color: white;
+  padding-right: 60px;
+}
+.cabecera2 a p {
+  display: inline-block;
+  padding-left: 40px;
+}
+.cabecera2 .iconoPerfil {
+  padding-left: 125px;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+}
+footer img {
+  width: 10%;
+  padding-right: 400px;
+}
+footer p {
+  display: inline-block;
+  padding-left: 35px;
+}/*# sourceMappingURL=estilo.css.map */
