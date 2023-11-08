@@ -1,4 +1,4 @@
-import { usuario } from "./objetos.js"
+import { usuario, pilotos } from "./inicio.js"
 
 cargarClasificacion();
 

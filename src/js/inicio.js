@@ -102,3 +102,5 @@ function ordenarPilotosAlfabeticamente() {
     //pilotosOrdenador ahora contiene la lista de pilotos ordenada alfabéticamente
     return pilotos;
 }
+
+export { usuario, pilotos };
