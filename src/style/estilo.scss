@@ -1,5 +1,6 @@
 @import "index";
 @import "inicio";
+@import "perfil";
 
 body{ //lo utilizaremos para todas las páginas
     background-color: #e0e1db;
@@ -10,21 +11,22 @@ body{ //lo utilizaremos para todas las páginas
     background-color: #000; /* Color de fondo de la cabecera */
     color: #fff; /* Color del texto */
     padding: 10px; /* Espaciado interno */
-
 }
 
 .cabecera2{
     background-color: #000; 
     color: #fff;
-    padding-top: 20px;
+    padding-top: 25px;
 
-    img{
+    .logo{
         width: 10%;
-        padding-right: 400px;
+        padding-right: 220px;
     }
+
     a{
         text-decoration: none;
         color: white;
+        padding-right: 60px;
         
         p{
             display: inline-block;
@@ -32,12 +34,16 @@ body{ //lo utilizaremos para todas las páginas
         }
     }
 
+    .iconoPerfil{
+        padding-left: 125px;
+    }
+
 }
 
 footer { //lo utilizaremos en todas las páginas
     background-color: #000; 
     color: #fff;
-    padding: 27px;
+    padding: 10px;
 
     img{
         width: 10%;
