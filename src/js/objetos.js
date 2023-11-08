@@ -1,9 +1,9 @@
 export const usuario = {
     nombre: "Marina",
-    apellido1: "Laguna",
-    apellido2: "Valdepeñas",
+    apellido: "Laguna",
     correo: "marinalaguna2004@gmail.com",
     contrasena: "admin123",
+    nick: "marina",
     pilotoTitular: null,
     pilotoSuplente: null
 }

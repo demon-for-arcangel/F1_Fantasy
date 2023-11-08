@@ -1,15 +1,17 @@
+import { usuario } from "./objetos.js";
 
-//js para registro.html
+validarRegistro();
+
 function validarRegistro() {
     var nombre = document.getElementById("nombre").value;
-    var apellidos = document.getElementById("apellidos").value;
+    var apellido = document.getElementById("apellido").value;
     var contrasena = document.getElementById("contrasena").value;
     var verificacionContrasena = document.getElementById("verificacionContrasena").value;
     var correo = document.getElementById("correo").value;
     var nick = document.getElementById("nick").value;
 
     var nombreRegExp = /^[A-Za-z]{2,20}$/;
-    var apellidosRegExp = /^[A-Za-z]{2,30}$/;
+    var apellidoRegExp = /^[A-Za-z]{2,30}$/;
     var contrasenaRegExp = /^[A-Za-z0-9*#$]{6,12}$/;
     var correoRegExp = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
     var nickRegExp = /^[A-Za-z_]{4,10}$/;
@@ -24,12 +26,12 @@ function validarRegistro() {
         errorNombre.textContent = "";
     }
 
-    var errorApellidos = document.getElementById("errorApellidos");
-    if (!apellidosRegExp.test(apellidos)) {
-        errores.push("El campo Apellidos tiene que tener entre 2 y 30 caracteres.");
-        errorApellidos.textContent = "El campo Apellidos tiene que tener entre 2 y 30 letras.";
+    var errorApellido = document.getElementById("errorApellido");
+    if (!apellidoRegExp.test(apellido)) {
+        errores.push("El campo Apellido tiene que tener entre 2 y 30 caracteres.");
+        errorApellido.textContent = "El campo Apellido tiene que tener entre 2 y 30 letras.";
     } else {
-        errorApellidos.textContent = "";
+        errorApellido.textContent = "";
     }
 
     var errorContrasena = document.getElementById("errorContrasena");
@@ -65,17 +67,13 @@ function validarRegistro() {
     }
 
     if (errores.length === 0) {
-        var usuario = {
-            nombre: nombre,
-            apellidos: apellidos,
-            contrasena: contrasena,
-            correo: correo,
-            nick: nick
-        };
-
+        usuario.nombre = nombre;
+        usuario.apellido = apellido;
+        usuario.contrasena = contrasena;
+        usuario.correo = correo;
+        usuario.nick = nick;
 
         localStorage.setItem('usuario', JSON.stringify(usuario));
-
-        window.location.href = "inicio.html";
+        window.location.href = "index.html";
     }
 }
