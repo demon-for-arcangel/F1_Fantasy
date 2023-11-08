@@ -1,9 +1,9 @@
-import { usuariosBot } from "./objetos.js"
+import { usuario } from "./objetos.js"
 
-cargarClasificación();
+cargarClasificacion();
 
-function cargarClasificación(){
-    const usuariosOrdenados = usuariosBot.sort((a, b) => b.puntuacionTotal - a.puntuacionTotal);
+function cargarClasificacion(){
+    const usuariosOrdenados = usuario.sort((a, b) => b.puntuacionTotal - a.puntuacionTotal);
 
     const tbody = document.querySelector("#tablaClasificacion tbody");
 
