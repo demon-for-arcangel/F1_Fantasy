@@ -3,7 +3,7 @@ function cargarCabecera() {
     document.getElementById("cabecera").innerHTML = 
     `
         <header>
-            <img src="imagenes/f1_logo.svg">
+            <img src="../imagenes/f1_logo.svg">
         </header>
         <div class="row">
             <div class="twelve columns">
@@ -20,7 +20,7 @@ function cargarPiePagina(){
     document.getElementById("piePagina").innerHTML = 
     `
     <footer>
-        <img src = "imagenes/f1_logo.svg">
+        <img src = "../imagenes/f1_logo.svg">
         <p>Privacy Policy</p>
         <p>Subscription</p>
         <p>Terms of Use</p>
