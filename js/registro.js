@@ -17,7 +17,7 @@ function validarRegistro() {
     var errorNombre = document.getElementById("errorNombre");
     if (!nombreRegExp.test(nombre)) {
         errores.push("El campo Nombre tiene que tener entre 2 y 20 caracteres.");
-        errorNombre.textContent = "El campo Nombre tiene que tener entre 2 y 20 caracteres.";
+        errorNombre.textContent = "El campo Nombre tiene que tener entre 2 y 20 letras.";
     } else {
         errorNombre.textContent = "";
     }
@@ -25,7 +25,7 @@ function validarRegistro() {
     var errorApellidos = document.getElementById("errorApellidos");
     if (!apellidosRegExp.test(apellidos)) {
         errores.push("El campo Apellidos tiene que tener entre 2 y 30 caracteres.");
-        errorApellidos.textContent = "El campo Apellidos tiene que tener entre 2 y 30 caracteres.";
+        errorApellidos.textContent = "El campo Apellidos tiene que tener entre 2 y 30 letras.";
     } else {
         errorApellidos.textContent = "";
     }
