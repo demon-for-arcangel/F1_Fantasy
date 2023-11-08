@@ -1,85 +1,77 @@
 //js para pilotos.html
 const pilotos = [
-    "Alexander Albon",
-    "Carlos Sainz",
-    "Charles Leclerc",
-    "Sergio Perez",
-    "Valtteri Bottas",
-    "Yuki Tsunoda",
-    "Esteban Ocon",
-    "Fernando Alonso",
-    "George Russell",
-    "Guanyu Zhou",
-    "Kevin Magnussen",
-    "Lance Stroll",
-    "Lando Norris",
-    "Lewis Hamilton",
-    "Logan Sargeant",
-    "Max Verstappen",
-    "Nico Hulkenberg",
-    "Nyck de Vries",
-    "Oscar Piastri",
-    "Pierre Gasly"
-  ];
-  
-  const pilotosContainer = document.getElementById("tus-pilotos");
-  const pilotoTitularSelect = document.getElementById("piloto-titular");
-  
-  // Función para mostrar tus dos pilotos con fotos.
-  function mostrarTusPilotos() {
-    const piloto1 = pilotos[0];
-    const piloto2 = pilotos[1];
-  
-    // Crear elementos de imagen para tus pilotos
-    const img1 = document.createElement("img");
-    img1.src = `img/${piloto1}.jpg`; // Suponiendo que las imágenes se llaman igual que los pilotos
-    const img2 = document.createElement("img");
-    img2.src = `img/${piloto2}.jpg`;
-  
-    pilotosContainer.innerHTML = `
-      <div>
-        <img src="${img1.src}" alt="${piloto1}">
-        <div>${piloto1} - Titular</div>
-      </div>
-      <div>
-        <img src="${img2.src}" alt="${piloto2}">
-        <div>${piloto2} - Suplente</div>
-      </div>
-    `;
+  "Alexander Albon",
+  "Carlos Sainz",
+  "Charles Leclerc",
+  "Sergio Perez",
+  "Valtteri Bottas",
+  "Yuki Tsunoda",
+  "Esteban Ocon",
+  "Fernando Alonso",
+  "George Russell",
+  "Guanyu Zhou",
+  "Kevin Magnussen",
+  "Lance Stroll",
+  "Lando Norris",
+  "Lewis Hamilton",
+  "Logan Sargeant",
+  "Max Verstappen",
+  "Nico Hulkenberg",
+  "Nyck de Vries",
+  "Oscar Piastri",
+  "Pierre Gasly"
+];
+
+const pilotosContainer = document.getElementById("tus-pilotos");
+const rolSelect = document.getElementById("piloto-rol");
+const mensajeElement = document.getElementById("mensaje");
+
+// Función para seleccionar aleatoriamente 2 pilotos.
+function seleccionarPilotosAleatorios() {
+  const piloto1Index = Math.floor(Math.random() * pilotos.length);
+  let piloto2Index = Math.floor(Math.random() * pilotos.length);
+
+
+  while (piloto2Index === piloto1Index) {
+    piloto2Index = Math.floor(Math.random() * pilotos.length);
   }
-  
-  // Función para llenar el desplegable con los nombres de los pilotos
-  function llenarDesplegable() {
-    pilotoTitularSelect.innerHTML = '<option value="-1">Elije un piloto</option>';
-    pilotos.forEach((piloto, index) => {
-      const option = document.createElement("option");
-      option.value = index;
-      option.text = piloto;
-      pilotoTitularSelect.appendChild(option);
-    });
-  }
-  
-  function asignarTitular() {
-    const selectedPilotoIndex = pilotoTitularSelect.value;
-    if (selectedPilotoIndex !== "-1") {
-      // Actualizar el estado de los pilotos en tu aplicación
-      // Aquí debes implementar la lógica para asignar el piloto titular en tu aplicación.
-      // Esto puede requerir una llamada a una función o una actualización en la base de datos, según tu configuración.
-      // Por ahora, solo actualizaremos el mensaje en la interfaz de usuario.
-      const selectedPiloto = pilotos[selectedPilotoIndex];
-      pilotosContainer.innerHTML = `
-        <div>
-          <img src="img/${selectedPiloto}.jpg" alt="${selectedPiloto}">
-          <div>${selectedPiloto} - Titular</div>
-        </div>
-        <div>
-          <img src="img/${pilotos[1]}.jpg" alt="${pilotos[1]}">
-          <div>${pilotos[1]} - Suplente</div>
-        </div>
-      `;
+
+  return [pilotos[piloto1Index], pilotos[piloto2Index]];
+}
+
+
+function mostrarPilotosAleatorios() {
+  const [piloto1, piloto2] = seleccionarPilotosAleatorios();
+
+  pilotosContainer.innerHTML = `
+    <div>${piloto1} - Sin Rol</div>
+    <div>${piloto2} - Sin Rol</div>
+  `;
+}
+
+
+function asignarRol() {
+  const rol = rolSelect.value;
+  const mensaje = document.getElementById("mensaje");
+
+  const divPiloto1 = pilotosContainer.querySelector("div:first-child");
+  const divPiloto2 = pilotosContainer.querySelector("div:last-child");
+
+  if (rol === "titular") {
+    if (divPiloto1.textContent.includes("Titular")) {
+      mensaje.textContent = `El piloto ${divPiloto1.textContent.split(" - ")[0]} es ahora el titular para las carreras.`;
+    } else {
+      divPiloto1.textContent = divPiloto1.textContent.replace("Sin Rol", "Titular");
+      divPiloto2.textContent = divPiloto2.textContent.replace("Titular", "Sin Rol");
+    }
+  } else if (rol === "suplente") {
+    if (divPiloto2.textContent.includes("Titular")) {
+      mensaje.textContent = `El piloto ${divPiloto2.textContent.split(" - ")[0]} es ahora el titular para las carreras.`;
+    } else {
+      divPiloto2.textContent = divPiloto2.textContent.replace("Sin Rol", "Titular");
+      divPiloto1.textContent = divPiloto1.textContent.replace("Titular", "Sin Rol");
     }
   }
-  
-  // Llama a las funciones iniciales para mostrar tus pilotos y llenar el desplegable.
-  mostrarTusPilotos();
-  llenarDesplegable();
+}
+
+mostrarPilotosAleatorios();
