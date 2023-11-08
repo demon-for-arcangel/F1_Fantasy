@@ -4,14 +4,7 @@ function cargarCabecera() {
         <header>
             <img src="../imagenes/f1_logo.svg">
         </header>
-        <div class="row">
-            <div class="twelve columns">
-                <nav class="navbar">
-                    <button id="btnIniciarSesion" onclick="btnInicioSesion()">Sign In</button>
-                    <button id="btnRegistrar" onclick="btnRegistrar()">Register</button>
-                </nav>
-            </div>
-        </div>
+
     `;
 }
 
@@ -19,12 +12,12 @@ function cargarCabecera2() {
     document.getElementById("cabecera2").innerHTML =
         `
         <header>
-            <img src="../imagenes/f1_logo.svg">
+            <a href="inicio.html" class = "logo"><img src="../imagenes/f1_logo.svg"></a>
             <a href="clasificación.html"><p>Clasificación</p></a>
             <a href="tuspilotos.html"><p>Tus pilotos</p></a>
             <a href="pilotos.html"><p>Pilotos</p></a>
-            <a href="perfil.html"><p>Perfil</p></a>
             <a href="administración.html"><p>Administración</p></a>
+            <a href="perfil.html" class = "iconoPerfil"><img src = "../imagenes/iconos/icono_perfil.png"></a>
         </header>
     `;
 }
