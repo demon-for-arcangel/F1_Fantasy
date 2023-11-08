@@ -1,48 +1,56 @@
 <!DOCTYPE html>
 <html class="index">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
-   <link rel="stylesheet" href="../style/estilo.css">
-</head>
-<body>
-<div id = "cabecera"></div>
-    <h1>Registro</h1>
-    <form>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <p id="errorNombre" class="error"></p><br><br>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro</title>
+    <link rel="stylesheet" href="../style/estilo.css">
+    </head>
+    <body>
+        <div id = "cabecera" class = "cabecera"></div>
+        <div class="row">
+            <div class="twelve columns">
+                <nav class="navbar">
+                    <button id="btnIniciarSesion" onclick="btnInicioSesion()">Inicio de Sesión</button>
+                    <button id="btnRegistrar" onclick="btnRegistrar()">Registrar</button>
+                </nav>
+            </div>
+        </div>
 
-        <label for="apellidos">Apellidos:</label>
-        <input type="text" id="apellidos" name="apellidos" required>
-        <p id="errorApellidos" class="error"></p><br><br>
+        <h1>Registro</h1>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <p id="errorNombre" class="error"></p><br><br>
 
-        <label for="contrasena">Contraseña:</label>
-        <input type="password" id="contrasena" name="contrasena" required>
-        <p id="errorContrasena" class="error"></p><br><br>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+            <p id="errorApellidos" class="error"></p><br><br>
 
-        <label for="verificacionContrasena">Verificación de Contraseña:</label>
-        <input type="password" id="verificacionContrasena" name="verificacionContrasena" required>
-        <p id="errorVerificacionContrasena" class="error"></p><br><br>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+            <p id="errorContrasena" class="error"></p><br><br>
 
-        <label for="correo">Correo:</label>
-        <input type="text" id="correo" name="correo" required>
-        <p id="errorCorreo" class="error"></p><br><br>
+            <label for="verificacionContrasena">Verificación de Contraseña:</label>
+            <input type="password" id="verificacionContrasena" name="verificacionContrasena" required>
+            <p id="errorVerificacionContrasena" class="error"></p><br><br>
 
-        <label for="nick">Nick:</label>
-        <input type="text" id="nick" name="nick" required>
-        <p id ="errorNick" class="error"></p><br><br>
+            <label for="correo">Correo:</label>
+            <input type="text" id="correo" name="correo" required>
+            <p id="errorCorreo" class="error"></p><br><br>
 
-        <input type="button" value="Registrarse" onclick="validarRegistro()">
-    </form>
-    <div id = "piePagina"></div>
-    <script src="../js/app.js"></script>
-    <script src="../js/registro.js"></script>
-    <script>
-        cargarCabecera();
-        cargarPiePagina();
+            <label for="nick">Nick:</label>
+            <input type="text" id="nick" name="nick" required>
+            <p id ="errorNick" class="error"></p><br><br>
 
-    </script>
+            <input type="button" value="Registrarse" onclick="validarRegistro()">
+        </form>
+        <div id = "piePagina"></div>
+        <script src="../js/app.js"></script>
+        <script src="../js/registro.js"></script>
+        <script>
+            cargarCabecera();
+            cargarPiePagina();
+        </script>
     </body>
 </html>
