@@ -59,7 +59,6 @@ const pilotos = [
     });
   }
   
-  // Función para asignar un piloto como titular
   function asignarTitular() {
     const selectedPilotoIndex = pilotoTitularSelect.value;
     if (selectedPilotoIndex !== "-1") {
