@@ -4,7 +4,7 @@
   padding-left: 40%;
   align-items: center;
 }
-.index .navbar button {
+.index .navbar input [type=button] {
   background-color: transparent;
   border: none;
   color: white;
@@ -58,7 +58,7 @@
   padding-left: 40%;
   align-items: center;
 }
-.registro .navbar button {
+.registro .navbar input[type=button] {
   background-color: transparent;
   border: none;
   color: white;

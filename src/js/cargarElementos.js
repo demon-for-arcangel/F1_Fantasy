@@ -26,11 +26,10 @@ function cargarPiePagina(){
     `
     <footer>
         <img src = "../imagenes/f1_logo.svg">
-        <p>Privacy Policy</p>
-        <p>Subscription</p>
-        <p>Terms of Use</p>
-        <p>FAQs</p>
-        <p>Cookie Preferences</p>
+        <p>Política de Privadidad</p>
+        <p>Subcripción</p>
+        <p>Terminos de Usuario</p>
+        <p>Cookies</p>
         <p>© 2023 - 2024 Marina and Ismael</p>
     </footer>
     `;

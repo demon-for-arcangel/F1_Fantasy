@@ -1,10 +1,6 @@
 import { usuario } from "./objetos.js";
 
-function btnInicioSesion(){
-    window.location.href = "../html/index.html";
-}
-
-function btnRegistrar(){
+function btnRegistrarNav(){
     window.location.href = "../html/registro.html";
 }
 
@@ -16,12 +12,11 @@ function validarInicio(){
     const correo = document.querySelector('input[type = "email"]').value;
     const contrasena = document.querySelector('input[type = "password"]').value;
 
-    console.log(usuario);
-
-    const validarUsuario = usuario.correo === correo && usuario.contrasena === contrasena
+    const usuarioGuardado = JSON.parse(localStorage.getItem('usuario'));
     var error = document.getElementById("error")
 
-    if (validarUsuario){
+    if (usuarioGuardado){
+        Object.assign(usuario, usuarioGuardado);
         btnIniciarSesion();
     }else{
         error.textContent = "Correo electronico o contraseña incorrecta. Vuelva a intentarlo."
@@ -36,3 +31,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const botonIniciarSesion = document.querySelector('input[value="iniciarSesion"]');
     botonIniciarSesion.addEventListener('click', validarInicio);
 });
+
+const btnRegistrarNav = document.getElementById('btnRegistrar');
+btnRegistrarNav.addEventListener('click', btnRegistrarNav);
