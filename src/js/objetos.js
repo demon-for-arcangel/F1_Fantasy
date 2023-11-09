@@ -226,7 +226,7 @@ export const pilotos = [
         nacionalidad: '', 
         disponible: true, 
         rol: null,
-        foto: '../imagenes/pilotos/george-russell.jpg' 
+        foto: '../imagenes/pilotos/george-russell.jpg'
     },
     { 
         id: 7, 
@@ -235,7 +235,7 @@ export const pilotos = [
         nacionalidad: '', 
         disponible: true, 
         rol: null,
-        foto: '../imagenes/pilotos/guanyu-zhou.jpg' 
+        foto: '../imagenes/pilotos/guanyu-zhou.jpg'
     },
     { 
         id: 8, 
@@ -244,7 +244,7 @@ export const pilotos = [
         nacionalidad: '', 
         disponible: true, 
         rol: null,
-        foto: '../imagenes/pilotos/kevin-magnussen.jpg' 
+        foto: '../imagenes/pilotos/kevin-magnussen.jpg'
     },
     { 
         id: 9, 

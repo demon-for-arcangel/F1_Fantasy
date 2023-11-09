@@ -28,9 +28,9 @@ window.validarInicio = validarInicio;
 
 // Asegúrate de que el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', (event) => {
-    const botonIniciarSesion = document.querySelector('input[value="iniciarSesion"]');
+    const botonIniciarSesion = document.getElementById('iniciarSesion');
     botonIniciarSesion.addEventListener('click', validarInicio);
+    
+    const btnRegistrarNav = document.getElementById('btnRegistrar');
+    btnRegistrarNav.addEventListener('click', btnRegistrarNav);
 });
-
-const btnRegistrarNav = document.getElementById('btnRegistrar');
-btnRegistrarNav.addEventListener('click', btnRegistrarNav);

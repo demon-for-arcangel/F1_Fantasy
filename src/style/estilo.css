@@ -127,7 +127,7 @@
   margin-bottom: 20px;
 }
 .inicio main img {
-  width: 300px;
+  width: 600px;
 }
 
 .perfil .title {
@@ -204,11 +204,11 @@ body {
 footer {
   background-color: #000;
   color: #fff;
-  padding: 10px;
 }
 footer img {
   width: 10%;
   padding-right: 400px;
+  padding-top: 6px;
 }
 footer p {
   display: inline-block;
