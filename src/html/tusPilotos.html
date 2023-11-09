@@ -9,19 +9,19 @@
   </head>
   <body>
     <div id="tus-pilotos">
-      <!-- Aquí se mostrarán los pilotos aleatorios con sus imágenes -->
+      <!-- Aquí se mostrarán los pilotos cargados desde localStorage -->
     </div>
-    <div>
-      <label for="piloto-rol">Selecciona el rol:</label>
-      <select id="piloto-rol">
-        <option value="titular">Titular</option>
-        <option value="suplente">Suplente</option>
-      </select>
-      <button onclick="asignarRol()">Asignar Rol</button>
-      <div id="mensaje"></div>
-    </div>
+  
+    <label for="piloto-seleccion">Selecciona el piloto:</label>
+    <select id="piloto-seleccion">
+      <!-- Aquí se mostrarán las opciones de pilotos -->
+    </select>
+  
+    <button onclick="asignarTitular()">Asignar Titular</button>
+  
+    <div id="mensaje"></div>
 
     <script src="../js/app.js"></script>
-    <script src="../js/pilotos.js"></script>
+    <script src="../js/tusPilotos.js"></script>
   </body>
 </html>
