@@ -1,0 +1,79 @@
+.registro{
+    .navbar {
+        background-color: #38383f;
+        display: flex;
+        padding-left: 40%;
+        align-items: center;
+
+        button {
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 16px;
+            margin: 0 10px;
+            padding: 0;
+        }
+    }
+    
+    .contenidoregistro{
+        padding-top: 20px;
+    
+        .title{
+            padding-left: 350px;
+        }
+    
+        hr{
+            border-color: #000;
+            width: 63%;
+        }
+    
+        .formulario {
+            form {
+                .izqd{
+                    float: left;
+                    width: 50%;
+                    margin-bottom: 30px;
+                }
+
+                .drch{
+                    float: right;
+                    width: 50%;
+                    margin-top: 25px;
+                }
+
+                padding-left: 350px;
+                
+                label {
+                    display: block;
+                    margin-bottom: 5px;
+                }
+            
+                input {
+                    width: 55%;
+                    height: 50px;
+                    border: 1px solid #090909;
+                }  
+            }
+
+            input[type = "button"]{
+                margin-left: 350px;
+                color: #FFFFFF;
+                background-color: #EE0000;
+            }
+
+            .error{
+                margin-left: 20px;
+            }
+    
+            p{
+                margin-left: 350px;
+            }
+            padding-bottom: 65px;
+    
+            a{
+                text-decoration: none;
+                color: red;
+            }
+        }
+    }
+}
