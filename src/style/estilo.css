@@ -19,7 +19,9 @@
   padding-left: 350px;
 }
 .index .inicioSesion hr {
-  border-color: #000;
+  border-color: #EE0000;
+  width: 63%;
+  border-width: 3px;
 }
 .index .inicioSesion form {
   padding-left: 350px;
@@ -73,8 +75,9 @@
   padding-left: 350px;
 }
 .registro .contenidoregistro hr {
-  border-color: #000;
+  border-color: #EE0000;
   width: 63%;
+  border-width: 3px;
 }
 .registro .contenidoregistro .formulario {
   padding-bottom: 65px;
@@ -135,8 +138,9 @@
   padding-left: 680px;
 }
 .perfil hr {
-  border-color: #000;
+  border-color: #EE0000;
   width: 63%;
+  border-width: 3px;
 }
 .perfil .formulario {
   padding-top: 20px;
