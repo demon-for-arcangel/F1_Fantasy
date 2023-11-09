@@ -36,10 +36,13 @@
 .index .inicioSesion .form {
   padding-bottom: 65px;
 }
-.index .inicioSesion .form button {
+.index .inicioSesion .form input[type=button] {
   margin-left: 350px;
   color: #FFFFFF;
   background-color: #EE0000;
+}
+.index .inicioSesion .form .error {
+  margin-left: 20px;
 }
 .index .inicioSesion .form p {
   margin-left: 350px;

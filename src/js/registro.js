@@ -1,8 +1,7 @@
 import { usuario } from "./objetos.js";
 
-validarRegistro();
-
 function validarRegistro() {
+
     var nombre = document.getElementById("nombre").value;
     var apellido = document.getElementById("apellido").value;
     var contrasena = document.getElementById("contrasena").value;
@@ -75,5 +74,11 @@ function validarRegistro() {
 
         localStorage.setItem('usuario', JSON.stringify(usuario));
         window.location.href = "index.html";
+
+        return false;
     }
+
 }
+window.validarRegistro = validarRegistro;
+const botonRegistrar = document.querySelector('input[value="Registrarse"]');
+botonRegistrar.addEventListener('click', validarRegistro);
