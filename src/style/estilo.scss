@@ -3,6 +3,18 @@
 @import "inicio";
 @import "perfil";
 
+@font-face {
+    font-family: 'Titillium';
+
+    src: url('../fonts/titillium-web/TitilliumWeb-Regular.ttf'),
+        url('../fonts/titillium-web/TitilliumWeb-BoldItalic.ttf'),
+        url('../fonts/titillium-web/TitilliumWeb-Black.ttf')
+}
+
+html{
+    font-family: 'Titillium', sans-serif;
+}
+
 body{ //lo utilizaremos para todas las páginas
     background-color: #e0e1db;
 }
