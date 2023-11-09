@@ -29,7 +29,7 @@
                             <input type="text" id="nombre" name="nombre" disabled>
                 
                             <label for="apellidos">Apellidos</label>
-                            <input type="text" id="apellido" name="apellido" disabled>
+                            <input type="text" id="apellido" name="apellidos" disabled>
 
                             <label for="correo">Correo</label>
                             <input type="text" id="correo" name="correo" disabled>
@@ -42,17 +42,18 @@
                         <div class = "drch">
                             <label for="contrasenaAntigua">Contraseña Antigua</label>
                             <input type="password" id="contrasenaAntigua" name="contrasenaAntigua" required>
-                            <p id="errorContrasena" class="error"></p>
+                            <p id="mensajeErrorAntigua" class="error"></p>
 
                             <label for="contrasenaNueva">Contraseña Nueva</label>
                             <input type = "password" id = "contrasenaNueva" name = "contrasenaNueva" required>
-                            <p id="errorContrasena" class="error"></p>
+                            <p id="mensajeErrorNueva" class="error"></p>
 
-                            <label for="confirmacion">Confirmación de contraseña</label>
-                            <input type = "password" id = "confirmacion" name = "confirmacion" required>
-                            <p id="errorContrasena" class="error"></p>
+                            <label for="confirmacionContrasena">Confirmación de contraseña</label>
+                            <input type = "password" id = "confirmacionContrasena" name = "confirmacionContrasena" required>
+                            <p id="mensajeErrorConfirmacion" class="error"></p>
 
-                            <input type="button" value="Modificar" onclick="validarRegistro()">
+                            <p id = "mensajeGeneral"></p>
+                            <input type="button" value="Modificar" id = "btnModificar">
                         </div>         
                     </form>                
                 </div>
