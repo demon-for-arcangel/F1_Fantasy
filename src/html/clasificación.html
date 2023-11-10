@@ -13,26 +13,18 @@
     <body>
         <div id = "cabecera2" class = "cabecera2"></div>
         <main>
-            <section>
-                <div class = "row">
-                    <h3>CLASIFICACIÓN</h3>
-                </div>
-            </section>
-            <section>
-                <div class = "row">
-                    <table id = "tablaClasificacion">
-                        <thead>
-                            <tr>
-                                <th>Nick</th>
-                                <th>Puntuación Total</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!--Aquí se rellenara la tabla desde JavaScript-->
-                        </tbody>
-                    </table>
-                </div>
-            </section>
+    <p>Grandes Premios Disputados: <span id="grandes-premios-disputados">0</span></p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Puntos</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-clasificacion-body">
+        </tbody>
+    </table>
         </main>
         <div id = "piePagina"></div>
         <script src="../js/app.js"></script>
