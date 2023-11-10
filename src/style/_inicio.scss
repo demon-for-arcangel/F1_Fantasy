@@ -4,7 +4,10 @@
         flex-wrap: wrap;
         justify-content: space-between;
 
-
+        background-image: url('../imagenes/fotos/bandera.png');
+        background-size: cover;
+        background-position: center ;
+        background-repeat: no-repeat;
 
         .marco{
             background-color: antiquewhite;

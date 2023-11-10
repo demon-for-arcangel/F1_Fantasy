@@ -1,4 +1,4 @@
-import { pilotos, grandesPremios, noticias } from './objetos.js'; // Importa los objetos necesarios
+import { pilotos, grandesPremios } from './objetos.js'; // Importa los objetos necesarios
 
 document.getElementById('lanzarCarrera').addEventListener('click', lanzarCarrera);
 

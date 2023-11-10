@@ -2,6 +2,7 @@
 @import "_registro";
 @import "inicio";
 @import "perfil";
+@import "_clasificacion";
 @import "_tusPilotos";
 @import "pilotos";
 
@@ -59,24 +60,19 @@ body{ //lo utilizaremos para todas las páginas
     }
 
     .cabeceraOrientacion {
-        position: relative; /* Asegúrate de que la posición sea relativa para usar posición absoluta en los hijos */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-
-    .imagen-vertical{
-        display: none;
-    }
-
-    .imagen-vertical.mostrar{
-        position: absolute;
-        top: 0;
-        right: 0;
-        max-height: 100%;
+    
+    .cabeceraOrientacion.orientacion-vertical {
+        flex-direction: column;
+        align-items: center; 
     }
 
     .color-alternativo {
         background-color: #cbccc4;
-        /* Otros estilos que desees aplicar al cambiar la orientación */
-      }
+    }
 }
 
 .cabeceraOrientacion{

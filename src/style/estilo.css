@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .index body {
   background-image: url("../imagenes/fotos/inicio_de_sesion.png");
   background-size: cover;
@@ -144,6 +143,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  background-image: url("../imagenes/fotos/bandera.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .inicio main .marco {
   background-color: antiquewhite;
@@ -193,7 +196,7 @@
 }
 .perfil body .marco .perfil .title {
   padding-top: 20px;
-  padding-left: 680px;
+  padding-left: 400px;
 }
 .perfil body .marco .perfil hr {
   border-color: #EE0000;
@@ -229,6 +232,33 @@
   margin-left: 350px;
   color: #FFFFFF;
   background-color: #EE0000;
+}
+
+.clasificacion body {
+  background-image: url("../imagenes/fotos/bandera.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.clasificacion body .marco {
+  background-color: antiquewhite;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 55px;
+  border-color: #090909;
+  opacity: 0.92;
+}
+.clasificacion body .marco .clasificacionTitulo .title {
+  padding-top: 20px;
+  padding-left: 400px;
+}
+.clasificacion body .marco .clasificacionTitulo hr {
+  border-color: #EE0000;
+  width: 63%;
+  border-width: 3px;
+}
+.clasificacion body .marco .clasificacionTitulo .tabla {
+  padding-top: 20px;
 }
 
 .pilotos .pilotos-grid {
@@ -290,20 +320,16 @@ body {
   padding-left: 100px;
 }
 .cabecera2 .cabeceraOrientacion {
-  position: relative; /* Asegúrate de que la posición sea relativa para usar posición absoluta en los hijos */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.cabecera2 .imagen-vertical {
-  display: none;
-}
-.cabecera2 .imagen-vertical.mostrar {
-  position: absolute;
-  top: 0;
-  right: 0;
-  max-height: 100%;
+.cabecera2 .cabeceraOrientacion.orientacion-vertical {
+  flex-direction: column;
+  align-items: center;
 }
 .cabecera2 .color-alternativo {
   background-color: #cbccc4;
-  /* Otros estilos que desees aplicar al cambiar la orientación */
 }
 
 .cabeceraOrientacion {

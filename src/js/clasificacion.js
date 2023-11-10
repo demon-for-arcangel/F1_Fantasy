@@ -1,10 +1,4 @@
-// clasificacion.js
-// clasificacion.js
-
-// Obtiene el usuario y pilotos del archivo objetos.js
-import { usuario, } from "./objetos.js";
-import  { grandesPremios, } from "./objetos.js";
-// clasificacion.js
+import { usuario } from "./objetos.js";
 
 function cargarClasificacion() {
     const tablaClasificacion = document.getElementById("tablaClasificacion");
@@ -37,7 +31,8 @@ function cargarClasificacion() {
         return `
             <tr>
                 <td>${index + 1}</td>
-                <td>${piloto.nombre}</td>
+                <td>${piloto.nombre} </td>
+                <td>${piloto.apellidos}</td>
                 <td>${piloto.puntos}</td>
             </tr>
         `;
@@ -49,6 +44,7 @@ function cargarClasificacion() {
             <tr>
                 <th>Posición</th>
                 <th>Nombre</th>
+                <th>Apellido</th>
                 <th>Puntos</th>
             </tr>
         </thead>
