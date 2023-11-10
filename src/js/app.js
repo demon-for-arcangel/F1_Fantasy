@@ -26,11 +26,8 @@ function validarInicio(){
 
 window.validarInicio = validarInicio;
 
-// Asegúrate de que el DOM esté completamente cargado
-document.addEventListener('DOMContentLoaded', (event) => {
-    const botonIniciarSesion = document.getElementById('iniciarSesion');
-    botonIniciarSesion.addEventListener('click', validarInicio);
-    
-    const btnRegistrarNav = document.getElementById('btnRegistrar');
-    btnRegistrarNav.addEventListener('click', btnRegistrarNav);
-});
+const botonIniciarSesion = document.getElementById('iniciarSesion');
+botonIniciarSesion.addEventListener('click', validarInicio);
+
+const botonRegistrarNav = document.getElementById('btnRegistrar');
+botonRegistrarNav.addEventListener('click', btnRegistrarNav);
