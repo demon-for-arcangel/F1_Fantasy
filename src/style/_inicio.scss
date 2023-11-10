@@ -4,10 +4,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
 
-        background-image: url('../imagenes/fotos/bandera.png');
-        background-size: cover;
-        background-position: center ;
-        background-repeat: no-repeat;
+
 
         .marco{
             background-color: antiquewhite;
@@ -19,7 +16,8 @@
 
             .proximaCarrera{
                 padding-top: 20px;
-                margin: 20px;
+                margin: 30px;
+                margin-right: 90px;
 
                 .title{
                     padding-left: 320px;
@@ -29,6 +27,10 @@
                     border-color: #EE0000;
                     width: 63%;
                     border-width: 3px;                
+                }
+
+                .carreraDatos{
+                    padding-left: 100px;
                 }
                 
                 div{

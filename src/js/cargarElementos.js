@@ -18,9 +18,9 @@ function cargarCabecera2() {
             <a href="administración.html"><p>Administración</p></a>
             <a href="perfil.html" class = "iconoPerfil"><img src = "../imagenes/iconos/icono_perfil.png"></a>
             <button id = "btnOrientacion" onclick = "cambiarOrientacion()">Cambiar Orientación</button>
+            <img src="../imagenes/fotos/cabecera1.png" alt="Imagen Vertical" id="imagenVertical" class="imagen-vertical">
         </header>
     `;
-    //<img src="../imagenes/fotos/cabecera.jpg" alt="Imagen Vertical" id="imagenVertical" class="imagen-vertical">
 
 }
 
@@ -29,7 +29,7 @@ function cargarPiePagina(){
     `
     <footer>
         <img src = "../imagenes/f1_logo.svg">
-        <p>Política de Privadidad</p>
+        <p>Política de Privacidad</p>
         <p>Subcripción</p>
         <p>Terminos de Usuario</p>
         <p>Cookies</p>
@@ -38,10 +38,23 @@ function cargarPiePagina(){
     `;
 }
 
-function cambiarOrientacion(){
+function cambiarOrientacion() {
     const cabecera = document.querySelector('.cabeceraOrientacion');
     cabecera.classList.toggle('orientacion-vertical');
+    cabecera.classList.toggle('color-alternativo'); // Agrega o quita la clase para cambiar el color
 
-    const boton = document.getElementById('botonOrientacion');
+    const imagenVertical = document.getElementById('imagenVertical');
+    const imagenDerecha = document.getElementById('imagenDerecha');
+
+    // Verificar la orientación actual y mostrar/ocultar las imágenes apropiadas
+    if (cabecera.classList.contains('orientacion-vertical')) {
+        imagenVertical.style.display = 'block'; // Mostrar la imagen vertical
+        imagenDerecha.style.display = 'none';  // Ocultar la imagen a la derecha
+    } else {
+        imagenVertical.style.display = 'none';  // Ocultar la imagen vertical
+        imagenDerecha.style.display = 'block';  // Mostrar la imagen a la derecha
+    }
+
+    const boton = document.getElementById('btnOrientacion');
     boton.style.width = 'auto'; // Restaura el ancho automático
 }

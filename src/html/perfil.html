@@ -12,52 +12,59 @@
     </head>
     <body>
         <div id = "cabecera2" class = "cabecera2"></div>
-        <div class = "row">
-            <div class = "twelve columns">
-                <div class = "title">
-                    <h2><b>PERFIL</b></h2>
-                </div>
-                <hr>
-            </div>
-        </div>
+
         <div class = "container">
-            <div class = "formulario">
-                <div>
-                    <form>
-                        <div class = "izqd">
-                            <label for="nombre">Nombre</label>
-                            <input type="text" id="nombre" name="nombre" disabled>
+            <div class = "marco">
+                <div class = "row">
+                    <div class = "perfil">
+                        <div class = "twelve columns">
+                            <div class = "title">
+                                <h2><b>PERFIL</b></h2>
+                            </div>
+                            <hr>
+                        </div>                    
+                    </div>
+                </div>   
                 
-                            <label for="apellidos">Apellidos</label>
-                            <input type="text" id="apellido" name="apellidos" disabled>
-
-                            <label for="correo">Correo</label>
-                            <input type="text" id="correo" name="correo" disabled>
-                
-                            <label for="nick">Nick</label>
-                            <input type="text" id="nick" name="nick" disabled>
+                <div class = "formulario">
+                    <div>
+                        <form>
+                            <div class = "izqd">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" disabled>
+                    
+                                <label for="apellidos">Apellidos</label>
+                                <input type="text" id="apellido" name="apellidos" disabled>
     
+                                <label for="correo">Correo</label>
+                                <input type="text" id="correo" name="correo" disabled>
+                    
+                                <label for="nick">Nick</label>
+                                <input type="text" id="nick" name="nick" disabled>
+        
+        
+                            </div>
+                            <div class = "drch">
+                                <label for="contrasenaAntigua">Contraseña Antigua</label>
+                                <input type="password" id="contrasenaAntigua" name="contrasenaAntigua" required>
+                                <p id="mensajeErrorAntigua" class="error"></p>
     
-                        </div>
-                        <div class = "drch">
-                            <label for="contrasenaAntigua">Contraseña Antigua</label>
-                            <input type="password" id="contrasenaAntigua" name="contrasenaAntigua" required>
-                            <p id="mensajeErrorAntigua" class="error"></p>
-
-                            <label for="contrasenaNueva">Contraseña Nueva</label>
-                            <input type = "password" id = "contrasenaNueva" name = "contrasenaNueva" required>
-                            <p id="mensajeErrorNueva" class="error"></p>
-
-                            <label for="confirmacionContrasena">Confirmación de contraseña</label>
-                            <input type = "password" id = "confirmacionContrasena" name = "confirmacionContrasena" required>
-                            <p id="mensajeErrorConfirmacion" class="error"></p>
-
-                            <p id = "mensajeGeneral"></p>
-                            <input type="button" value="Modificar" id = "btnModificar">
-                        </div>         
-                    </form>                
+                                <label for="contrasenaNueva">Contraseña Nueva</label>
+                                <input type = "password" id = "contrasenaNueva" name = "contrasenaNueva" required>
+                                <p id="mensajeErrorNueva" class="error"></p>
+    
+                                <label for="confirmacionContrasena">Confirmación de contraseña</label>
+                                <input type = "password" id = "confirmacionContrasena" name = "confirmacionContrasena" required>
+                                <p id="mensajeErrorConfirmacion" class="error"></p>
+    
+                                <p id = "mensajeGeneral"></p>
+                                <input type="button" value="Modificar" id = "btnModificar">
+                            </div>         
+                        </form>                
+                    </div>
                 </div>
             </div>
+   
         </div>
         <div id = "piePagina"></div>
         <script src="../js/cargarElementos.js"></script>
