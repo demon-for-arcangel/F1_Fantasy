@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fantasy</title>
+    <link rel="stylesheet" href="../style/estilo.css">
+    <link rel = "stylesheet" href = "../Skeleton/css/normalize.css">
+    <link rel = "stylesheet" href = "../Skeleton/css/skeleton.css">
 
     <link rel = "icon" href = "../imagenes/f1_logo.svg">
   </head>
   <body>
+    <div class = "cabecera2"></div>
     <div id="tus-pilotos">
       <!-- Aquí se mostrarán los pilotos y sus fotos -->
     </div>
@@ -15,12 +19,16 @@
     <div>
         <label for="piloto-desplegable">Selecciona un piloto:</label>
         <select id="piloto-desplegable"></select>
-        <button onclick="asignarRol()">Asignar Rol de Titular</button>
+        <button onclick="asignarRol()" id = "asignarRol">Asignar Rol de Titular</button>
         <div id="mensaje"></div>
     </div>
 
-
-    <script src="../js/app.js"></script>
-    <script src="../js/tusPilotos.js"></script>
+    <div class = "piePagina"></div>
+    <script src = "../js/cargarElementos.js"></script>
+    <script type = "module" src="../js/tusPilotos.js"></script>
+    <script>
+      cargarCabecera2();
+      cargarPiePagina();
+    </script>
   </body>
 </html>
