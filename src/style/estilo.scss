@@ -2,7 +2,9 @@
 @import "_registro";
 @import "inicio";
 @import "perfil";
+@import "_tusPilotos";
 @import "pilotos";
+
 
 @font-face {
     font-family: 'Titillium';
@@ -56,8 +58,8 @@ body{ //lo utilizaremos para todas las páginas
         padding-left: 100px;
     }
 
-    .cabeceraOrientacion.orientacion-vertical{
-        flex-direction: column;
+    .cabeceraOrientacion {
+        position: relative; /* Asegúrate de que la posición sea relativa para usar posición absoluta en los hijos */
     }
 
     .imagen-vertical{
@@ -65,8 +67,16 @@ body{ //lo utilizaremos para todas las páginas
     }
 
     .imagen-vertical.mostrar{
-        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-height: 100%;
     }
+
+    .color-alternativo {
+        background-color: #cbccc4;
+        /* Otros estilos que desees aplicar al cambiar la orientación */
+      }
 }
 
 .cabeceraOrientacion{
