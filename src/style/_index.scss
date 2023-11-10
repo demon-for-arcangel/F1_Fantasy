@@ -3,7 +3,7 @@
     body{
         background-image: url('../imagenes/fotos/inicio_de_sesion.png');
         background-size: cover;
-        background-position: center center;
+        background-position: center ;
         background-repeat: no-repeat;
         .navbar {
             background-color: #38383f;
@@ -20,13 +20,14 @@
                 padding: 0;
             }
         }
+
         .marco{
             background-color: antiquewhite;
             margin: 15px;
             padding: 10px;
             border-radius: 55px;
             border-color: #090909;
-            opacity: 0.95;
+            opacity: 0.92;
 
             .inicioSesion{
                 padding-top: 20px;
