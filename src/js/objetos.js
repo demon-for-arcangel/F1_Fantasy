@@ -3,9 +3,7 @@ export const usuario = {
     apellido: "Laguna",
     correo: "marinalaguna2004@gmail.com",
     contrasena: "admin123",
-    nick: "marina",
-    pilotoTitular: null,
-    pilotoSuplente: null
+    nick: "marina"
 }
 
 export const grandesPremios = [
