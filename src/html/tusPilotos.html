@@ -12,15 +12,30 @@
   </head>
   <body>
     <div class = "cabecera2"></div>
-    <div id="tus-pilotos">
-      <!-- Aquí se mostrarán los pilotos y sus fotos -->
-    </div>
 
-    <div>
-        <label for="piloto-desplegable">Selecciona un piloto:</label>
-        <select id="piloto-desplegable"></select>
-        <button onclick="asignarRol()" id = "asignarRol">Asignar Rol de Titular</button>
-        <div id="mensaje"></div>
+    <div class = "container">
+      <div class = "marco">
+        <div class = "tusPilotosTitulo">
+          <div class = "Twelve columns">
+            <div class = "title">
+              <h2><b>Tus Pilotos</b></h2>
+            </div>
+          </div>
+        </div>
+
+        <div class = "row pilotos">
+          <div id="tus-pilotos">
+            <!-- Aquí se mostrarán los pilotos y sus fotos -->
+          </div>
+          
+          <div>
+            <label for="piloto-desplegable">Selecciona un piloto:</label>
+            <select id="piloto-desplegable"></select>
+            <button onclick="asignarRol()" id = "asignarRol">Asignar Rol de Titular</button>
+            <div id="mensaje"></div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class = "piePagina"></div>
