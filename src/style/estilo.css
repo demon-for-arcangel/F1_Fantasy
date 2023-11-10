@@ -90,45 +90,51 @@
 }
 .registro body .marco {
   background-color: antiquewhite;
-  margin: 15px;
-  padding: 10px;
+  margin: 15px auto;
+  padding-bottom: 120px;
   border-radius: 55px;
   border-color: #090909;
   opacity: 0.92;
 }
 .registro body .marco .contenidoregistro {
   padding-top: 20px;
-  padding-bottom: 65px;
 }
 .registro body .marco .contenidoregistro .title {
-  padding-left: 350px;
+  padding-left: 380px;
 }
 .registro body .marco .contenidoregistro hr {
   border-color: #EE0000;
-  width: 63%;
+  width: 85%;
   border-width: 3px;
 }
-.registro body .marco .contenidoregistro form label {
+.registro body .marco .contenidoregistro .formulario {
+  padding-left: 30px;
+  padding-bottom: 65px;
+}
+.registro body .marco .contenidoregistro .formulario form {
+  padding-left: 300px;
+}
+.registro body .marco .contenidoregistro .formulario form label {
   display: block;
   margin-bottom: 5px;
 }
-.registro body .marco .contenidoregistro form input {
+.registro body .marco .contenidoregistro .formulario form input {
   width: 55%;
   height: 50px;
   border: 1px solid #090909;
 }
-.registro body .marco .contenidoregistro input[type=button] {
+.registro body .marco .contenidoregistro .formulario input[type=button] {
   margin-left: 350px;
   color: #FFFFFF;
   background-color: #EE0000;
 }
-.registro body .marco .contenidoregistro .error {
+.registro body .marco .contenidoregistro .formulario .error {
   margin-left: 20px;
 }
-.registro body .marco .contenidoregistro p {
+.registro body .marco .contenidoregistro .formulario p {
   margin-left: 350px;
 }
-.registro body .marco .contenidoregistro a {
+.registro body .marco .contenidoregistro .formulario a {
   text-decoration: none;
   color: red;
 }
