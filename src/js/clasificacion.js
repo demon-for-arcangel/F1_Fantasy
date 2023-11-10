@@ -1,46 +1,85 @@
-import { usuario } from "./objetos.js";
-import { pilotos } from "./objetos.js";
+// clasificacion.js
+// clasificacion.js
 
-function rellenarTabla() {
-    var tablaClasi = document.getElementById('tablaClasificacion');
+// Obtiene el usuario y pilotos del archivo objetos.js
+import { usuario, } from "./objetos.js";
+import  { grandesPremios, } from "./objetos.js";
+// clasificacion.js
 
-    var pilotoTitular = localStorage.getItem('pilotoTitular');
-    var pilotoSuplente = localStorage.getItem('pilotoSuplente');
-    var jugador = localStorage.getItem('usuario');
+function cargarClasificacion() {
+    const tablaClasificacion = document.getElementById("tablaClasificacion");
 
-    var pilotoTitularObjeto = JSON.parse(pilotoTitular);
-    var pilotoSuplenteObjeto = JSON.parse(pilotoSuplente);
-    var jugadorObjeto = JSON.parse(jugador);
+    const usuarioLocalStorage = JSON.parse(localStorage.getItem('usuario')) || {};
+    const bot1LocalStorage = JSON.parse(localStorage.getItem('jugador1')) || {};
+    const bot2LocalStorage = JSON.parse(localStorage.getItem('jugador2')) || {};
 
-    var pilotosJugador = [pilotoTitularObjeto, pilotoSuplenteObjeto];
-    var pilotosBots = pilotos.filter(piloto => piloto.id !== jugadorObjeto.pilotoTitular && piloto.id !== jugadorObjeto.pilotoSuplente);
+    asignarPilotos(usuario);
+    asignarPilotos(bot1LocalStorage);
+    asignarPilotos(bot2LocalStorage);
 
-    var pilotoJugadorTitular = elegirTitular(pilotosJugador);
-    var pilotoBotTitular = elegirTitular(pilotosBots);
+    const pilotosCombinadosUsuario = [usuario.pilotoTitular, usuario.pilotoSuplente];
+    const pilotosCombinadosBot1 = [bot1LocalStorage.pilotoTitular, bot1LocalStorage.pilotoSuplente];
+    const pilotosCombinadosBot2 = [bot2LocalStorage.pilotoTitular, bot2LocalStorage.pilotoSuplente];
 
-    var plantel = [jugadorObjeto, pilotoBotTitular];
+    const pilotosCombinados = [...pilotos, ...pilotosCombinadosUsuario, ...pilotosCombinadosBot1, ...pilotosCombinadosBot2];
 
-    var granPre = localStorage.getItem('contador');
-    var cont = JSON.parse(granPre);
-    var contador = document.getElementById('contador');
+    const puntosUsuario = calcularPuntos(pilotosCombinadosUsuario);
+    const puntosBot1 = calcularPuntos(pilotosCombinadosBot1);
+    const puntosBot2 = calcularPuntos(pilotosCombinadosBot2);
 
-    var rellenar = "<tr>";
-    rellenar += "<thead class=container-fluid><th>Nombre</th><th>Puntos</th></thead>";
-    for (let i = 0; i < plantel.length; i++) {
-        rellenar += "<tr class=container-fluid>";
-        for (let j = 0; j < 2; j++) { // Ajusta el 2 según la cantidad de pilotos que desees mostrar
-            rellenar += "<td class=container-fluid>";
-            rellenar += (j === 0) ? plantel[i].nombre : pilotoJugadorTitular.puntos;
-            rellenar += "</td>";
+    const puntosOrdenados = [
+        { nombre: usuarioLocalStorage.nombre, puntos: puntosUsuario },
+        { nombre: bot1LocalStorage.nombre, puntos: puntosBot1 },
+        { nombre: bot2LocalStorage.nombre, puntos: puntosBot2 }
+    ].sort((a, b) => b.puntos - a.puntos);
+
+    const filas = puntosOrdenados.map((piloto, index) => {
+        return `
+            <tr>
+                <td>${index + 1}</td>
+                <td>${piloto.nombre}</td>
+                <td>${piloto.puntos}</td>
+            </tr>
+        `;
+    });
+
+    // Actualiza el contenido de la tabla
+    tablaClasificacion.innerHTML = `
+        <thead>
+            <tr>
+                <th>Posición</th>
+                <th>Nombre</th>
+                <th>Puntos</th>
+            </tr>
+        </thead>
+        <tbody>
+            ${filas.join('')}
+        </tbody>
+    `;
+}
+
+
+function calcularPuntos(pilotos) {
+    let totalPuntos = 0;
+
+    pilotos.forEach(piloto => {
+        const resultadosPorGrandesPremios = piloto.resultadosPorGrandesPremios || {};
+
+        for (const granPremio in resultadosPorGrandesPremios) {
+            if (resultadosPorGrandesPremios.hasOwnProperty(granPremio)) {
+                const posicion = resultadosPorGrandesPremios[granPremio];
+
+                const sistemaPuntos = [25, 18, 15, 12, 10, 8, 6, 4, 2, 1];
+
+                if (posicion <= sistemaPuntos.length) {
+                    totalPuntos += sistemaPuntos[posicion - 1];
+                }
+            }
         }
-        rellenar += "</tr>";
-    }
-    tablaClasi.innerHTML = rellenar;
-    contador.innerHTML = "Se han disputado: " + cont;
+    });
+
+    return totalPuntos;
 }
 
-rellenarTabla();
 
-function elegirTitular(pilotos) {
-    return pilotos.find(piloto => piloto && piloto.rol === "Titular") || {};
-}
+window.addEventListener('load', cargarClasificacion);
