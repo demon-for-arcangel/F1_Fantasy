@@ -3,14 +3,44 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-    
-        div{
-            flex-basis: calc(33.33% - 10px);
-            margin-bottom: 20px;
+
+        background-image: url('../imagenes/fotos/bandera.png');
+        background-size: cover;
+        background-position: center ;
+        background-repeat: no-repeat;
+
+        .marco{
+            background-color: antiquewhite;
+            margin: 15px;
+            padding: 10px;
+            border-radius: 55px;
+            border-color: #090909;
+            opacity: 0.92;
+
+            .proximaCarrera{
+                padding-top: 20px;
+                margin: 20px;
+
+                .title{
+                    padding-left: 320px;
+                }
+
+                hr{
+                    border-color: #EE0000;
+                    width: 63%;
+                    border-width: 3px;                
+                }
+                
+                div{
+                    flex-basis: calc(33.33% - 10px);
+                    margin-bottom: 20px;
+                }
+                
+                img{
+                    width: 600px;
+                }            
+            }
         }
-        
-        img{
-            width: 300px;
-        }
+
     }
 }

@@ -36,7 +36,7 @@ function cargarProximaCarrera(){
     descripcionCarrera.textContent = proximaCarrera.descripcion;
 }
 
-function asignarPilotos(usuario) {
+function asignarPilotos() {
     const pilotosDisponibles = pilotos.filter(p => p.disponible);
 
     const indicePilotoTitular = Math.floor(Math.random() * pilotosDisponibles.length);
@@ -47,14 +47,9 @@ function asignarPilotos(usuario) {
     const indicePilotoSuplente = Math.floor(Math.random() * pilotosDisponibles.length);
     const pilotoSuplenteSeleccionado = pilotosDisponibles[indicePilotoSuplente];
 
-    // Asignar roles aleatorios
-    usuario.pilotoTitular = pilotoTitularSeleccionado.id;
-    usuario.pilotoSuplente = pilotoSuplenteSeleccionado.id;
-
-    //Guardar la información en localStorage
-    localStorage.setItem('pilotoTitular', pilotoTitularSeleccionado.nombre);
-    localStorage.setItem('pilotoSuplente', pilotoSuplenteSeleccionado.nombre);
-
+    // Guardar la información completa de los pilotos en el localStorage
+    localStorage.setItem('pilotoTitular', JSON.stringify(pilotoTitularSeleccionado));
+    localStorage.setItem('pilotoSuplente', JSON.stringify(pilotoSuplenteSeleccionado));
 
     // Actualizar disponibilidad de pilotos
     pilotoTitularSeleccionado.disponible = false;

@@ -1,0 +1,309 @@
+.index body {
+  background-image: url("../imagenes/fotos/inicio_de_sesion.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.index body .navbar {
+  background-color: #38383f;
+  display: flex;
+  padding-left: 40%;
+  align-items: center;
+}
+.index body .navbar input[type=button] {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin: 0 10px;
+  padding: 0;
+}
+.index body .marco {
+  background-color: antiquewhite;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 55px;
+  border-color: #090909;
+  opacity: 0.92;
+}
+.index body .marco .inicioSesion {
+  padding-top: 20px;
+}
+.index body .marco .inicioSesion .title {
+  padding-left: 350px;
+}
+.index body .marco .inicioSesion hr {
+  border-color: #EE0000;
+  width: 63%;
+  border-width: 3px;
+}
+.index body .marco .inicioSesion form {
+  padding-left: 350px;
+}
+.index body .marco .inicioSesion form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.index body .marco .inicioSesion form input {
+  width: 55%;
+  height: 50px;
+  border: 1px solid #090909;
+}
+.index body .marco .form {
+  padding-bottom: 65px;
+}
+.index body .marco .form input[type=button] {
+  margin-left: 350px;
+  color: #FFFFFF;
+  background-color: #EE0000;
+}
+.index body .marco .form .error {
+  margin-left: 20px;
+}
+.index body .marco .form p {
+  margin-left: 350px;
+}
+.index body .marco .form a {
+  text-decoration: none;
+  color: red;
+}
+
+.registro body {
+  background-image: url("../imagenes/fotos/registro1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.registro body .navbar {
+  background-color: #38383f;
+  display: flex;
+  padding-left: 40%;
+  align-items: center;
+}
+.registro body .navbar input[type=button] {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin: 0 10px;
+  padding: 0;
+}
+.registro body .marco {
+  background-color: antiquewhite;
+  margin: 15px auto;
+  padding-bottom: 120px;
+  border-radius: 55px;
+  border-color: #090909;
+  opacity: 0.92;
+}
+.registro body .marco .contenidoregistro {
+  padding-top: 20px;
+}
+.registro body .marco .contenidoregistro .title {
+  padding-left: 380px;
+}
+.registro body .marco .contenidoregistro hr {
+  border-color: #EE0000;
+  width: 85%;
+  border-width: 3px;
+}
+.registro body .marco .contenidoregistro .formulario {
+  padding-left: 30px;
+  padding-bottom: 65px;
+}
+.registro body .marco .contenidoregistro .formulario form {
+  padding-left: 300px;
+}
+.registro body .marco .contenidoregistro .formulario form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.registro body .marco .contenidoregistro .formulario form input {
+  width: 85%;
+  height: 50px;
+  border: 1px solid #090909;
+}
+.registro body .marco .contenidoregistro .formulario input[type=button] {
+  margin-left: 350px;
+  color: #FFFFFF;
+  background-color: #EE0000;
+}
+.registro body .marco .contenidoregistro .formulario .error {
+  margin-left: 20px;
+}
+.registro body .marco .contenidoregistro .formulario p {
+  margin-left: 350px;
+}
+.registro body .marco .contenidoregistro .formulario a {
+  text-decoration: none;
+  color: red;
+}
+
+.inicio main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-image: url("../imagenes/fotos/bandera.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.inicio main .marco {
+  background-color: antiquewhite;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 55px;
+  border-color: #090909;
+  opacity: 0.92;
+}
+.inicio main .marco .proximaCarrera {
+  padding-top: 20px;
+  margin: 20px;
+}
+.inicio main .marco .proximaCarrera .title {
+  padding-left: 320px;
+}
+.inicio main .marco .proximaCarrera hr {
+  border-color: #EE0000;
+  width: 63%;
+  border-width: 3px;
+}
+.inicio main .marco .proximaCarrera div {
+  flex-basis: calc(33.33% - 10px);
+  margin-bottom: 20px;
+}
+.inicio main .marco .proximaCarrera img {
+  width: 600px;
+}
+
+.perfil .title {
+  padding-top: 20px;
+  padding-left: 680px;
+}
+.perfil hr {
+  border-color: #EE0000;
+  width: 63%;
+  border-width: 3px;
+}
+.perfil .formulario {
+  padding-top: 20px;
+}
+.perfil .formulario form {
+  padding-left: 100px;
+}
+.perfil .formulario form .izqd {
+  float: left;
+  width: 50%;
+  margin-bottom: 30px;
+}
+.perfil .formulario form .drch {
+  float: right;
+  width: 50%;
+  margin-top: 25px;
+}
+.perfil .formulario form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.perfil .formulario form input {
+  width: 80%;
+  height: 50px;
+  border: 1px solid #090909;
+}
+.perfil .formulario form input[type=button] {
+  margin-left: 350px;
+  color: #FFFFFF;
+  background-color: #EE0000;
+}
+
+.pilotos .pilotos-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  justify-content: center;
+  align-items: start;
+}
+.pilotos .piloto {
+  padding: 10px;
+  text-align: center;
+}
+.pilotos .piloto img {
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: "Titillium";
+  src: url("../fonts/titillium-web/TitilliumWeb-Regular.ttf"), url("../fonts/titillium-web/TitilliumWeb-BoldItalic.ttf"), url("../fonts/titillium-web/TitilliumWeb-Black.ttf");
+}
+html {
+  font-family: "Titillium", sans-serif;
+}
+
+body {
+  background-color: #e0e1db;
+}
+
+.cabecera {
+  background-color: #000; /* Color de fondo de la cabecera */
+  color: #fff; /* Color del texto */
+  padding: 10px; /* Espaciado interno */
+}
+
+.cabecera2 {
+  background-color: #000;
+  color: #fff;
+  padding-top: 25px;
+}
+.cabecera2 .logo {
+  width: 10%;
+  padding-right: 220px;
+}
+.cabecera2 a {
+  text-decoration: none;
+  color: white;
+  padding-right: 40px;
+}
+.cabecera2 a:hover {
+  color: red; /* Cambiar a rojo cuando se pasa el mouse sobre el enlace */
+}
+.cabecera2 a p {
+  display: inline-block;
+  padding-left: 80px;
+}
+.cabecera2 .iconoPerfil {
+  padding-left: 100px;
+}
+.cabecera2 .cabeceraOrientacion.orientacion-vertical {
+  flex-direction: column;
+}
+.cabecera2 .imagen-vertical {
+  display: none;
+}
+.cabecera2 .imagen-vertical.mostrar {
+  display: block;
+}
+
+.cabeceraOrientacion {
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+}
+
+.cabeceraOrientacion.orientacion-vertical {
+  flex-direction: column;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+}
+footer img {
+  width: 10%;
+  padding-right: 400px;
+  padding-top: 6px;
+}
+footer p {
+  display: inline-block;
+  padding-left: 35px;
+}/*# sourceMappingURL=estilo.css.map */

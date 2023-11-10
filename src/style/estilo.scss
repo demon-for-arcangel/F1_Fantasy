@@ -1,6 +1,20 @@
 @import "index";
+@import "_registro";
 @import "inicio";
 @import "perfil";
+@import "pilotos";
+
+@font-face {
+    font-family: 'Titillium';
+
+    src: url('../fonts/titillium-web/TitilliumWeb-Regular.ttf'),
+        url('../fonts/titillium-web/TitilliumWeb-BoldItalic.ttf'),
+        url('../fonts/titillium-web/TitilliumWeb-Black.ttf')
+}
+
+html{
+    font-family: 'Titillium', sans-serif;
+}
 
 body{ //lo utilizaremos para todas las páginas
     background-color: #e0e1db;
@@ -26,28 +40,53 @@ body{ //lo utilizaremos para todas las páginas
     a{
         text-decoration: none;
         color: white;
-        padding-right: 60px;
-        
+        padding-right: 40px;
+
+        &:hover {
+            color: red; /* Cambiar a rojo cuando se pasa el mouse sobre el enlace */
+        }
+
         p{
             display: inline-block;
-            padding-left: 40px;
+            padding-left: 80px;
         }
     }
 
     .iconoPerfil{
-        padding-left: 125px;
+        padding-left: 100px;
     }
 
+    .cabeceraOrientacion.orientacion-vertical{
+        flex-direction: column;
+    }
+
+    .imagen-vertical{
+        display: none;
+    }
+
+    .imagen-vertical.mostrar{
+        display: block;
+    }
+}
+
+.cabeceraOrientacion{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+}
+
+.cabeceraOrientacion.orientacion-vertical{
+    flex-direction: column;
 }
 
 footer { //lo utilizaremos en todas las páginas
     background-color: #000; 
     color: #fff;
-    padding: 10px;
 
     img{
         width: 10%;
         padding-right: 400px;
+        padding-top: 6px;
     }
 
     p{

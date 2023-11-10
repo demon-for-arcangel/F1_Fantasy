@@ -1,0 +1,18 @@
+.pilotos{
+    .pilotos-grid{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        justify-content: center;
+        align-items: start;
+    }
+    .piloto {
+        padding: 10px;
+        text-align: center;
+    }
+      
+    .piloto img {
+        max-width: 100%;
+        height: auto;
+    }
+}

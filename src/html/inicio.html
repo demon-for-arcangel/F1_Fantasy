@@ -13,28 +13,32 @@
     <body>
         <div id = "cabecera2" class = "cabecera2"></div>
         <main>
-            <seccion>
-                <div class = "row">
-                    <h3>PROXIMA CARRERA</h3>
-                </div>
-            </seccion>
-            <seccion>
-                <div class="row">
-                    <div id = "proximaCarrera">
-                        <p id = "nombreCarrera"></p>
-                        <img id = "imagenCarrera" src = "" alt = "Imagen de la carrera">
-                        <p id = "lugarCarrera"></p>
-                        <p id = "descripcionCarrera"></p>
+            <div class = "container">
+                <div class = "marco">
+                    <div class = "proximaCarrera">
+                        <div class = "title">
+                            <h3>Próxima Carrera</h3>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div id = "proximaCarrera">
+                                <p id = "nombreCarrera"></p>
+                                <img id = "imagenCarrera" src = "" alt = "Imagen de la carrera">
+                                <p id = "lugarCarrera"></p>
+                                <p id = "descripcionCarrera"></p>
+                            </div>            
+                        </div>
                     </div>
-                </div>    
-            </seccion>
+                </div>
+            </div>
         </main>
         <div id = "piePagina"></div>
-        <script src="../js/app.js"></script>
+        <script src="../js/cargarElementos.js"></script>
         <script type = "module" src = "../js/objetos.js"></script>
         <script type = "module" src="../js/inicio.js"></script>
         <script>
             cargarCabecera2();
             cargarPiePagina();
         </script>
+    </body>
 </html>

@@ -1,52 +1,33 @@
 import { usuario } from "./objetos.js";
 
-
-function cargarCabecera() {
-    document.getElementById("cabecera").innerHTML = 
-    `
-        <header>
-            <img src="../imagenes/f1_logo.svg">
-        </header>
-    `;
+function btnRegistrarNav(){
+    window.location.href = "../html/registro.html";
 }
 
-function cargarCabecera2() {
-    document.getElementById("cabecera2").innerHTML =
-        `
-        <header>
-            <a href="inicio.html" class = "logo"><img src="../imagenes/f1_logo.svg"></a>
-            <a href="clasificación.html"><p>Clasificación</p></a>
-            <a href="tuspilotos.html"><p>Tus pilotos</p></a>
-            <a href="pilotos.html"><p>Pilotos</p></a>
-            <a href="administración.html"><p>Administración</p></a>
-            <a href="perfil.html" class = "iconoPerfil"><img src = "../imagenes/iconos/icono_perfil.png"></a>
-        </header>
-    `;
+function btnIniciarSesion(){
+    window.location.href = "../html/inicio.html";
 }
 
-function cargarPiePagina(){
-    document.getElementById("piePagina").innerHTML = 
-    `
-    <footer>
-        <img src = "../imagenes/f1_logo.svg">
-        <p>Privacy Policy</p>
-        <p>Subscription</p>
-        <p>Terms of Use</p>
-        <p>FAQs</p>
-        <p>Cookie Preferences</p>
-        <p>© 2023 - 2024 Marina and Ismael</p>
-    </footer>
-    `;
+function validarInicio(){
+    const correo = document.querySelector('input[type = "email"]').value;
+    const contrasena = document.querySelector('input[type = "password"]').value;
+
+    const usuarioGuardado = JSON.parse(localStorage.getItem('usuario'));
+    var error = document.getElementById("error")
+
+    if (usuarioGuardado){
+        Object.assign(usuario, usuarioGuardado);
+        btnIniciarSesion();
+    }else{
+        error.textContent = "Correo electronico o contraseña incorrecta. Vuelva a intentarlo."
+    }
+    return false;
 }
 
-function btnInicioSesion(){
-    window.location.href = "../html/index.html"
-}
+window.validarInicio = validarInicio;
 
-function btnRegistrar(){
-    window.location.href = "../html/registro.html"
-}
+const botonIniciarSesion = document.getElementById('iniciarSesion');
+botonIniciarSesion.addEventListener('click', validarInicio);
 
-function btnSignIn(){
-    window.location.href = "../html/inicio.html"
-}
+const botonRegistrarNav = document.getElementById('btnRegistrar');
+botonRegistrarNav.addEventListener('click', btnRegistrarNav);

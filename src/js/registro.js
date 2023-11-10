@@ -1,7 +1,5 @@
 import { usuario } from "./objetos.js";
 
-validarRegistro();
-
 function validarRegistro() {
     var nombre = document.getElementById("nombre").value;
     var apellido = document.getElementById("apellido").value;
@@ -75,5 +73,18 @@ function validarRegistro() {
 
         localStorage.setItem('usuario', JSON.stringify(usuario));
         window.location.href = "index.html";
+
+        return false;
     }
+
 }
+
+function btnInicioSesionNav(){
+    window.location.href = "../html/index.html";
+}
+
+const btnRegistrar = document.querySelector('input[value="Registrarse"]');
+btnRegistrar.addEventListener('click', validarRegistro);
+
+const InicioSesionNav = document.getElementById('btnIniciarSesion');
+InicioSesionNav.addEventListener('click', btnInicioSesionNav);

@@ -6,8 +6,6 @@ import { usuario, } from "./objetos.js";
 import  { grandesPremios, } from "./objetos.js";
 // clasificacion.js
 
-
-
 function cargarClasificacion() {
     const tablaClasificacion = document.getElementById("tablaClasificacion");
 
