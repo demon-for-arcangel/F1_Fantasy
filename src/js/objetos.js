@@ -976,9 +976,5 @@ export const pilotos = [
                 
             ]
         },
-        
-
-       
     ]
 };
->>>>>>> dev
