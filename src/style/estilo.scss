@@ -42,6 +42,10 @@ body{ //lo utilizaremos para todas las páginas
         color: white;
         padding-right: 40px;
 
+        &:hover {
+            color: red; /* Cambiar a rojo cuando se pasa el mouse sobre el enlace */
+        }
+
         p{
             display: inline-block;
             padding-left: 80px;
