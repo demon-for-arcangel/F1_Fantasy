@@ -14,7 +14,8 @@ export const grandesPremios = [
         lugar: 'Sakhir', 
         nombre: 'GP Bahréin', 
         descripcion: 'El GP de Bahréin se celebra el 5 de Marzo en el circuito de Sakhir en Bahréin. La longitud del circuito es de 5,412 kilómetros. Durante la carrera se darán 57 vueltas al circuito cubriendo una distancia final de 308,484 kilómetros.',
-        imagen: '../imagenes/circuitos/bahrein.png'
+        imagen: '../imagenes/circuitos/bahrein.png',
+        disputado: false
     },
     { 
         id: 2, 
