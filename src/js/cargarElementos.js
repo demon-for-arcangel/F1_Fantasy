@@ -18,6 +18,7 @@ function cargarCabecera2() {
             <a href="administración.html"><p>Administración</p></a>
             <a href="perfil.html" class = "iconoPerfil"><img src = "../imagenes/iconos/icono_perfil.png"></a>
             <button id = "btnOrientacion" onclick = "cambiarOrientacion()">Cambiar Orientación</button>
+            <img src="../imagenes/fotos/cabecera.jpg" alt="Imagen Vertical" id="imagenVertical" class="imagen-vertical">
         </header>
     `;
 }
@@ -43,3 +44,11 @@ function cambiarOrientacion(){
     const boton = document.getElementById('botonOrientacion');
     boton.style.width = 'auto'; // Restaura el ancho automático
 }
+
+document.getElementById('btnOrientacion').addEventListener('click', function() {
+    const cabecera = document.getElementById('cabecera');
+    const imagenVertical = document.getElementById('imagenVertical');
+    
+    cabecera.classList.toggle('disposicion-vertical');
+    imagenVertical.classList.toggle('mostrar');
+});
