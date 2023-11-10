@@ -1,10 +1,16 @@
-.index .navbar {
+.index body {
+  background-image: url("../imagenes/fotos/1.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.index body .navbar {
   background-color: #38383f;
   display: flex;
   padding-left: 40%;
   align-items: center;
 }
-.index .navbar input [type=button] {
+.index body .navbar input [type=button] {
   background-color: transparent;
   border: none;
   color: white;
@@ -12,44 +18,51 @@
   margin: 0 10px;
   padding: 0;
 }
-.index .inicioSesion {
+.index body .marco {
+  background-color: antiquewhite;
+  margin: 15px;
+  padding: 10px;
+  border-color: #090909;
+  opacity: 0.9;
+}
+.index body .marco .inicioSesion {
   padding-top: 20px;
 }
-.index .inicioSesion .title {
+.index body .marco .inicioSesion .title {
   padding-left: 350px;
 }
-.index .inicioSesion hr {
+.index body .marco .inicioSesion hr {
   border-color: #EE0000;
   width: 63%;
   border-width: 3px;
 }
-.index .inicioSesion form {
+.index body .marco .inicioSesion form {
   padding-left: 350px;
 }
-.index .inicioSesion form label {
+.index body .marco .inicioSesion form label {
   display: block;
   margin-bottom: 5px;
 }
-.index .inicioSesion form input {
+.index body .marco .inicioSesion form input {
   width: 55%;
   height: 50px;
   border: 1px solid #090909;
 }
-.index .inicioSesion .form {
+.index body .marco .form {
   padding-bottom: 65px;
 }
-.index .inicioSesion .form input[type=button] {
+.index body .marco .form input[type=button] {
   margin-left: 350px;
   color: #FFFFFF;
   background-color: #EE0000;
 }
-.index .inicioSesion .form .error {
+.index body .marco .form .error {
   margin-left: 20px;
 }
-.index .inicioSesion .form p {
+.index body .marco .form p {
   margin-left: 350px;
 }
-.index .inicioSesion .form a {
+.index body .marco .form a {
   text-decoration: none;
   color: red;
 }

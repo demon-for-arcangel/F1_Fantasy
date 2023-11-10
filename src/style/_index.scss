@@ -1,68 +1,81 @@
 //archivo utilizado para index.html y registro.html
 .index{
-    .navbar {
-        background-color: #38383f;
-        display: flex;
-        padding-left: 40%;
-        align-items: center;
+    body{
+        background-image: url('../imagenes/fotos/1.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        .navbar {
+            background-color: #38383f;
+            display: flex;
+            padding-left: 40%;
+            align-items: center;
+    
+            input [type = "button"] {
+                background-color: transparent;
+                border: none;
+                color: white;
+                font-size: 16px;
+                margin: 0 10px;
+                padding: 0;
+            }
+        }
+        .marco{
+            background-color: antiquewhite;
+            margin: 15px;
+            padding: 10px;
+            border-color: #090909;
+            opacity: 0.9;
 
-        input [type = "button"] {
-            background-color: transparent;
-            border: none;
-            color: white;
-            font-size: 16px;
-            margin: 0 10px;
-            padding: 0;
-        }
-    }
-    
-    .inicioSesion{
-        padding-top: 20px;
-    
-        .title{
-            padding-left: 350px;
-        }
-    
-        hr{
-            border-color: #EE0000;
-            width: 63%;
-            border-width: 3px;
-        }
-    
-        form {
-            padding-left: 350px;
+            .inicioSesion{
+                padding-top: 20px;
             
-            label {
-                display: block;
-                margin-bottom: 5px;
+                .title{
+                    padding-left: 350px;
+                }
+            
+                hr{
+                    border-color: #EE0000;
+                    width: 63%;
+                    border-width: 3px;
+                }
+            
+                form {
+                    padding-left: 350px;
+                    
+                    label {
+                        display: block;
+                        margin-bottom: 5px;
+                    }
+                
+                    input {
+                        width: 55%;
+                        height: 50px;
+                        border: 1px solid #090909;
+                    }  
+                }
             }
         
-            input {
-                width: 55%;
-                height: 50px;
-                border: 1px solid #090909;
-            }  
-        }
+            .form {
+                input[type = "button"]{
+                    margin-left: 350px;
+                    color: #FFFFFF;
+                    background-color: #EE0000;
+                }
     
-        .form {
-            input[type = "button"]{
-                margin-left: 350px;
-                color: #FFFFFF;
-                background-color: #EE0000;
-            }
-
-            .error{
-                margin-left: 20px;
-            }
-    
-            p{
-                margin-left: 350px;
-            }
-            padding-bottom: 65px;
-    
-            a{
-                text-decoration: none;
-                color: red;
+                .error{
+                    margin-left: 20px;
+                }
+        
+                p{
+                    margin-left: 350px;
+                }
+                padding-bottom: 65px;
+        
+                a{
+                    text-decoration: none;
+                    color: red;
+                }
             }
         }
     }
