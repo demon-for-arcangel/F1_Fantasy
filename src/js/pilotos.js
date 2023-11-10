@@ -9,7 +9,10 @@ function mostrarPilotos(){
         pilotoDiv.innerHTML = `
             <img src = "${piloto.foto}" alt = "${piloto.nombre} ${piloto.apellidos}">
             <p>${piloto.nombre} ${piloto.apellidos}</p>
+            <p>${piloto.nacionalidad}</p>
+            <p>${piloto.disponible}</p>
             <p>${piloto.rol}</p>
+            <p>${piloto.puntuacion}</p>
         `;
         pilotosContenedor.appendChild(pilotoDiv);
     });
