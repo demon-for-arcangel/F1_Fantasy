@@ -1,6 +1,5 @@
-import { usuario, pilotos } from "./inicio.js"
+import { usuario } from "./objetos.js"
 
-cargarClasificacion();
 
 function cargarClasificacion(){
     const usuariosOrdenados = usuario.sort((a, b) => b.puntuacionTotal - a.puntuacionTotal);
@@ -16,3 +15,5 @@ function cargarClasificacion(){
         tbody.appendChild(fila);
     });
 }
+
+cargarClasificacion();

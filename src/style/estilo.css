@@ -192,6 +192,22 @@
   background-color: #EE0000;
 }
 
+.pilotos .pilotos-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  justify-content: center;
+  align-items: start;
+}
+.pilotos .piloto {
+  padding: 10px;
+  text-align: center;
+}
+.pilotos .piloto img {
+  max-width: 100%;
+  height: auto;
+}
+
 @font-face {
   font-family: "Titillium";
   src: url("../fonts/titillium-web/TitilliumWeb-Regular.ttf"), url("../fonts/titillium-web/TitilliumWeb-BoldItalic.ttf"), url("../fonts/titillium-web/TitilliumWeb-Black.ttf");

@@ -307,7 +307,7 @@ export const pilotos = [
         nacionalidad: '', 
         disponible: true, 
         rol: null,
-        foto: '../imagenes/pilotos/nyck-de-vries,jpg'
+        foto: '../imagenes/pilotos/nyck-de-vries.jpg'
     },
     { 
         id: 16, 
