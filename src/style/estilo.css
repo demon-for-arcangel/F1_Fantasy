@@ -123,6 +123,7 @@
   color: #FFFFFF;
   background-color: #EE0000;
   width: 150px;
+  margin-left: 100px;
 }
 .registro body .marco .contenidoregistro form .error {
   margin-left: 20px;
