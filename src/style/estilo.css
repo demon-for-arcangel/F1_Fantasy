@@ -122,6 +122,7 @@
 .registro body .marco .contenidoregistro form input[type=button] {
   color: #FFFFFF;
   background-color: #EE0000;
+  width: 150px;
 }
 .registro body .marco .contenidoregistro form .error {
   margin-left: 20px;
