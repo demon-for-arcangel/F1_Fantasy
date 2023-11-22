@@ -11,7 +11,7 @@
     <link rel = "icon" href = "../imagenes/f1_logo.svg">
   </head>
   <body>
-    <div class = "cabecera2"></div>
+    <div id = "cabecera2" class = "cabecera2"></div>
 
     <div class = "container">
       <div class = "marco">
@@ -24,22 +24,23 @@
         </div>
 
         <div class = "row pilotos">
-          <div id="tus-pilotos">
+          <div id="tusPilotos">
             <!-- Aquí se mostrarán los pilotos y sus fotos -->
           </div>
           
           <div>
-            <label for="piloto-desplegable">Selecciona un piloto:</label>
-            <select id="piloto-desplegable"></select>
-            <button onclick="asignarRol()" id = "asignarRol">Asignar Rol de Titular</button>
+            <label for="pilotoDesplegable">Selecciona un piloto:</label>
+            <select id="pilotoDesplegable"></select>
+            <button id = "asignarRol">Asignar Rol de Titular</button>
             <div id="mensaje"></div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class = "piePagina"></div>
+    <div id = "piePagina"></div>
     <script src = "../js/cargarElementos.js"></script>
+    <script type = "module" src = "../js/objetos.js"></script>
     <script type = "module" src="../js/tusPilotos.js"></script>
     <script>
       cargarCabecera2();

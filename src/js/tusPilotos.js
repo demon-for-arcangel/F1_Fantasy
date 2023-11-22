@@ -2,9 +2,9 @@
 import { pilotos } from "./objetos.js";
 
 document.addEventListener('DOMContentLoaded', function(){
-  const pilotosContainer = document.getElementById("tus-pilotos");
+  const pilotosContainer = document.getElementById("tusPilotos");
   const mensajeElement = document.getElementById("mensaje");
-  const desplegable = document.getElementById("piloto-desplegable");
+  const desplegable = document.getElementById("pilotoDesplegable");
   
   function mostrarPilotosSeleccionados() {
     pilotosContainer.innerHTML = "";
@@ -49,8 +49,9 @@ document.addEventListener('DOMContentLoaded', function(){
     if (pilotoSuplente) {
       agregarOpcionDesplegable(pilotoSuplente);
     }
-  }
-  
+  }  
+
+
   function agregarOpcionDesplegable(piloto) {
     const opcion = document.createElement("option");
     opcion.value = piloto.id;
@@ -58,37 +59,51 @@ document.addEventListener('DOMContentLoaded', function(){
     desplegable.appendChild(opcion);
   }
   
+  mostrarPilotosSeleccionados();
+  cargarDesplegable();
+  asignarEventoClick();
+
+  function asignarEventoClick(){
+    let botonAsignarRol = document.getElementById('asignarRol');
+    botonAsignarRol.addEventListener('click', asignarRol);
+  }
+  
+    
   function asignarRol() {
-    const pilotoId = parseInt(rolSelect.value); // Obtén el ID del piloto seleccionado en el desplegable
-    const pilotoSeleccionado = pilotos.find((piloto) => piloto.id === pilotoId);
-
+    let pilotoId = parseInt(document.getElementById("pilotoDesplegable").value);   
+    let pilotoSeleccionado = pilotos.find((piloto) => piloto.id === pilotoId);
+  
     if (pilotoSeleccionado) {
-
       if (pilotoSeleccionado.rol === "Titular") {
         mensajeElement.textContent = `El piloto ${pilotoSeleccionado.nombre} ya es el titular.`;
+        setTimeout(function(){
+          mensajeElement.textContent = "";
+        }, 3500);
       } else {
-
-        const otroPiloto = pilotos.find((piloto) => piloto.id !== pilotoId);
-
+        let otroPiloto = pilotos.find((piloto) => piloto.id == pilotoId);
+  
         if (otroPiloto) {
-
+  
           pilotoSeleccionado.rol = "Titular";
           otroPiloto.rol = "Suplente";
-
+  
           mostrarPiloto(pilotoSeleccionado, "Titular");
           mensajeElement.textContent = `Se ha asignado el rol de titular a ${pilotoSeleccionado.nombre}.`;
+          setTimeout(function(){
+            mensajeElement.textContent = "";
+          }, 3500);
         } else {
           mensajeElement.textContent = "Error al asignar roles. No se encontró al otro piloto.";
+          setTimeout(function(){
+            mensajeElement.textContent = "";
+          }, 3500);
         }
       }
     } else {
       mensajeElement.textContent = "Error al asignar roles. No se encontró el piloto seleccionado.";
+      setTimeout(function(){
+        mensajeElement.textContent = "";
+      }, 3500);
     }
   }
-  
-  mostrarPilotosSeleccionados();
-  cargarDesplegable();
-
-  const botonAsignarRol = document.getElementById('asignarRol');
-  botonAsignarRol.onclick = asignarRol;
 })
