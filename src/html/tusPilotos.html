@@ -25,13 +25,11 @@
         </div>
 
         <div class = "row pilotos">
-          <div id="tus-pilotos">
-          </div>
-          
+          <div id="tus-pilotos"></div>   
           <div>
-            <label for="piloto-desplegable">Selecciona un piloto:</label>
-            <select id="piloto-desplegable"></select>
-            <button onclick="asignarRol()" id = "asignarRol">Asignar Rol de Titular</button>
+            <label for="pilotoDesplegable">Selecciona un piloto:</label>
+            <select id="pilotoDesplegable"></select>
+            <button id = "asignarRol">Asignar Rol de Titular</button>
             <div id="mensaje"></div>
           </div>
         </div>
@@ -40,6 +38,7 @@
 
     <div id = "piePagina"></div>
     <script src = "../js/cargarElementos.js"></script>
+    <script type = "module" src = "../js/objetos.js"></script>
     <script type = "module" src="../js/tusPilotos.js"></script>
     <script>
       cargarCabecera2();

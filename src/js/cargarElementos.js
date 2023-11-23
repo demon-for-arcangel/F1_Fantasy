@@ -37,6 +37,7 @@ function cargarPiePagina(){
     `;
 }
 
+
 function cambiarOrientacion() {
     const cabecera = document.querySelector('.cabeceraOrientacion');
     cabecera.classList.toggle('orientacion-vertical');
