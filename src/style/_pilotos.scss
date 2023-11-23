@@ -1,10 +1,10 @@
 .pilotos{
-    body {
-        background-image: url('../imagenes/fotos/pilotos fondo.png');
+    /*body {
+        background-image: url('../imagenes/fotos/registro.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-    }
+    }*/
     
     .marco {
         background-color: antiquewhite;
@@ -20,26 +20,27 @@
                 padding-top: 20px;
                 padding-left: 400px;
             }
+        }
 
-            hr{
-                border-color: #EE0000;
-                width: 63%;
-                border-width: 3px;
-            }
+        hr{
+            border-color: #EE0000;
+            width: 63%;
+            border-width: 3px;
         }
 
         .pilotos{
-
             .pilotosContenedor {
-                display: grid;
-                grid-template-columns: repeat(5, 1fr);
+                display: flex;
+                justify-content: center;
                 gap: 10px;
                 margin: 0 auto;
                 align-items: start;
+                flex-wrap: wrap;
             }    
     
             .piloto {
                 padding: 10px;
+                flex: 0 0 calc(20% - 20px);
                 text-align: center;
             }
             

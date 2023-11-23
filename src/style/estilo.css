@@ -281,18 +281,46 @@
   padding-top: 20px;
 }
 
-.pilotos .pilotos-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
-  justify-content: center;
-  align-items: start;
+.pilotos {
+  /*body {
+      background-image: url('../imagenes/fotos/registro.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }*/
 }
-.pilotos .piloto {
+.pilotos .marco {
+  background-color: antiquewhite;
+  margin: 15px;
   padding: 10px;
+  border-radius: 55px;
+  border-color: #090909;
+  opacity: 0.92;
   text-align: center;
 }
-.pilotos .piloto img {
+.pilotos .marco .pilotosTitulo .title {
+  padding-top: 20px;
+  padding-left: 400px;
+}
+.pilotos .marco hr {
+  border-color: #EE0000;
+  width: 63%;
+  border-width: 3px;
+}
+.pilotos .marco .pilotos .pilotosContenedor {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 auto;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.pilotos .marco .pilotos .piloto {
+  padding: 10px;
+  flex: 0 0 calc(20% - 20px);
+  text-align: center;
+}
+.pilotos .marco .pilotos .piloto img {
   max-width: 100%;
   height: auto;
 }
