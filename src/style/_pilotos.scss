@@ -1,18 +1,53 @@
 .pilotos{
-    .pilotos-grid{
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 10px;
-        justify-content: center;
-        align-items: start;
+    body {
+        background-image: url('../imagenes/fotos/pilotos fondo.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
-    .piloto {
+    
+    .marco {
+        background-color: antiquewhite;
+        margin: 15px;
         padding: 10px;
-        text-align: center;
-    }
-      
-    .piloto img {
-        max-width: 100%;
-        height: auto;
+        border-radius: 55px;
+        border-color: #090909;
+        opacity: 0.92;
+        text-align: center;  
+
+        .pilotosTitulo{
+            .title{
+                padding-top: 20px;
+                padding-left: 400px;
+            }
+
+            hr{
+                border-color: #EE0000;
+                width: 63%;
+                border-width: 3px;
+            }
+        }
+
+        .pilotos{
+
+            .pilotosContenedor {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 10px;
+                margin: 0 auto;
+                align-items: start;
+            }    
+    
+            .piloto {
+                padding: 10px;
+                text-align: center;
+            }
+            
+            .piloto img {
+                max-width: 100%;
+                height: auto;
+            } 
+        }
+
     }
 }
