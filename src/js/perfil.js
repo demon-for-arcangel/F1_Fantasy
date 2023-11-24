@@ -1,3 +1,4 @@
+import '../style/estilo.css';
 document.addEventListener('DOMContentLoaded', function() {
     const usuarioGuardado = JSON.parse(localStorage.getItem('usuario'));
 
@@ -7,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('correo').value = usuarioGuardado.correo;
         document.getElementById('nick').value = usuarioGuardado.nick;
     }
-    
+
     const btnModificar = document.getElementById('btnModificar');
     btnModificar.addEventListener('click', function(){
         const contrasenaAntigua = document.getElementById('contrasenaAntigua').value;
@@ -17,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const mensajeErrorNueva = document.getElementById('mensajeErrorNueva');
         const mensajeErrorConfirmacion = document.getElementById('mensajeErrorConfirmacion');
         const mensajeGeneral = document.getElementById('mensajeGeneral');
-    
+
         var contrasenaRegExp = /^[A-Za-z0-9*#$]{6,12}$/;
 
         if (contrasenaAntigua === "" || contrasenaNueva === "" || confirmacionContrasena === ""){
@@ -47,19 +48,19 @@ document.addEventListener('DOMContentLoaded', function() {
                         setTimeout(function(){
                             mensajeErrorConfirmacion.textContent = "";
                         }, 3500);
-                    }            
+                    }
                 }else{
                     mensajeErrorNueva.textContent = 'La contraseña nueva no puede ser igual a la contraseña antigua.';
-                    setTimeout(function(){ 
-                        mensajeErrorNueva.textContent = ""; 
+                    setTimeout(function(){
+                        mensajeErrorNueva.textContent = "";
                     }, 3500);
-                } 
+                }
             }else{
                 mensajeErrorAntigua.textContent = 'La contraseña es incorrecta.';
                 setTimeout(function(){
                     mensajeErrorAntigua.textContent = "";
                 }, 3500);
-            }        
+            }
         }
     });
 });

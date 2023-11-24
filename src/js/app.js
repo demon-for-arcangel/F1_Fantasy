@@ -1,4 +1,5 @@
 import { usuario } from "./objetos.js";
+import '../style/estilo.css';
 
 function btnRegistrarNav(){
     window.location.href = "../html/registro.html";

@@ -1,4 +1,5 @@
 import { usuario } from "./objetos.js";
+import '../style/estilo.css';
 
 function validarRegistro() {
     var nombre = document.getElementById("nombre").value;

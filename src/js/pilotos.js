@@ -1,4 +1,5 @@
 import { pilotos } from "./objetos.js";
+import '../style/estilo.css';
 
 function mostrarPilotos(){
     const pilotosContenedor = document.getElementById("pilotosContenedor");

@@ -4,7 +4,7 @@
 import { grandesPremios } from "./objetos.js";
 import { pilotos } from "./objetos.js";
 import { usuario } from "./objetos.js";
-
+import '../style/estilo.css';
 /*
 ----------LLamada a la funcion de carga inicial al cargar la página-------
 */
@@ -82,7 +82,7 @@ function seleccionarJugadores() {
         pilotoTitular: pilotoTitularSeleccionado.id,
         pilotoSuplente: pilotoSuplenteSeleccionado.id
     }
-    
+
     localStorage.setItem('pilotoTitular', JSON.stringify(jugador1.pilotoTitular));
     localStorage.setItem('pilotoSuplente', JSON.stringify(jugador1.pilotoSuplente));
 

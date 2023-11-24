@@ -1,4 +1,5 @@
 import { pilotos, grandesPremios } from './objetos.js'; // Importa los objetos necesarios
+import '../style/estilo.css';
 
 document.getElementById('lanzarCarrera').addEventListener('click', lanzarCarrera);
 

@@ -1,5 +1,7 @@
+import '../style/estilo.css';
+
 function cargarCabecera() {
-    document.getElementById("cabecera").innerHTML = 
+    document.getElementById("cabecera").innerHTML =
     `
         <header>
             <img src="../imagenes/f1_logo.svg">
@@ -24,7 +26,7 @@ function cargarCabecera2() {
 }
 
 function cargarPiePagina(){
-    document.getElementById("piePagina").innerHTML = 
+    document.getElementById("piePagina").innerHTML =
     `
     <footer>
         <img src = "../imagenes/f1_logo.svg">
