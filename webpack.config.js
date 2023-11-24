@@ -18,10 +18,6 @@ module.exports = {
         filename: '[name].main.js',
         path: path.resolve(__dirname, 'dist'),
     },
-    rules:{
-      test: /\.css$/,
-      use: ['style-loader', 'css-loader'],
-    },
 
     plugins:[
       new HtmlWebpackPlugin({
