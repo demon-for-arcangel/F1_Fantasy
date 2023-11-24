@@ -1,2 +1,54 @@
-<!doctype html><html class="index"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fantasy</title><link rel="stylesheet" href="../style/estilo.css"><link rel="stylesheet" href="../Skeleton/css/normalize.css"><link rel="stylesheet" href="../Skeleton/css/skeleton.css"><link rel="icon" href="../imagenes/f1_logo.svg"><script defer="defer" src="main.main.js"></script><script defer="defer" src="registro.main.js"></script><script defer="defer" src="tusPilotos.main.js"></script><script defer="defer" src="pilotos.main.js"></script><script defer="defer" src="perfil.main.js"></script><script defer="defer" src="objetos.main.js"></script><script defer="defer" src="inicio.main.js"></script><script defer="defer" src="clasificacion.main.js"></script><script defer="defer" src="administracion.main.js"></script><script defer="defer" src="cargarElementos.main.js"></script></head><body><div id="cabecera" class="cabecera"></div><div class="row"><div class="twelve columns"><nav class="navbar"><input type="button" id="btnIniciarSesion" value="Inicio de Sesión"> <input type="button" id="btnRegistrar" value="Registrar"></nav></div></div><div class="container"><div class="marco"><div class="inicioSesion"><div class="title"><h2>Inicio de Sesión</h2></div><hr><div class="form"><form onsubmit="return validarInicio()"><label for="email">Correo electrónico</label> <input id="emial" type="email" placeholder="correo@ejemplo.com" required> <label for="contrasena">Contraseña</label> <input id="contrasena" type="password" placeholder="Introduzca la contraseña." required><p id="error" class="error"></p></form><input type="button" id="iniciarSesion" value="iniciar Sesion"><p>¿No tiene una cuenta? <a href="registro.html">Registrese ahora mismo en F1</a></p></div></div></div></div><div id="piePagina"></div><script src="../js/dist/app.main.js"></script><script src="../js/dist/cargarElementos.main.js"></script><script>cargarCabecera();
-            cargarPiePagina();</script></body></html>
+<!DOCTYPE html>
+<html class = "index">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fantasy</title>
+        <link rel = "stylesheet" href = "../style/estilo.css">
+        <link rel = "stylesheet" href = "../Skeleton/css/normalize.css">
+        <link rel = "stylesheet" href = "../Skeleton/css/skeleton.css">
+
+        <link rel = "icon" href = "../imagenes/f1_logo.svg">
+    </head>
+    <body>
+        <div id = "cabecera" class = "cabecera"></div>
+        <div class="row">
+            <div class="twelve columns">
+                <nav class="navbar">
+                    <input type = "button" id="btnIniciarSesion" value = "Inicio de Sesión">
+                    <input type = "button" id="btnRegistrar" value = "Registrar">
+                </nav>
+            </div>
+        </div>
+        <div class = "container">
+            <div class = "marco">
+                <div class = "inicioSesion">
+                    <div class = "title">
+                        <h2>Inicio de Sesión</h2>
+                    </div>
+                    <hr>
+                    <div class = "form">
+                        <form onsubmit= "return validarInicio()">
+                            <label for = "email">Correo electrónico</label>
+                            <input id = "emial" type = "email" placeholder = "correo@ejemplo.com" required>
+                            <label for = "contrasena">Contraseña</label>
+                            <input id = "contrasena" type = "password" placeholder = "Introduzca la contraseña." required>
+                            <p id = "error" class = "error"></p>
+                        </form>
+                        <input type = "button" id = "iniciarSesion" value = "iniciar Sesion">
+                        <p>¿No tiene una cuenta? <a href = "registro.html">Registrese ahora mismo en F1</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id = "piePagina"></div>
+        <script src = "../js/dist/app.main.js"></script>
+        <script src = "../js/dist/cargarElementos.main.js"></script>
+        <!--<script src = "../js/cargarElementos.js"></script>-->
+        <!--<script type = "module" src = "../js/app.js"></script>--> 
+        <script>
+            cargarCabecera();
+            cargarPiePagina();
+        </script>
+    </body>
+</html>

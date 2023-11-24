@@ -1,2 +1,48 @@
-<!doctype html><html class="inicio"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fantasy</title><link rel="stylesheet" href="../Skeleton/css/normalize.css"><link rel="stylesheet" href="../Skeleton/css/skeleton.css"><link rel="stylesheet" href="../style/estilo.css"><link rel="icon" href="../imagenes/f1_logo.svg"><script defer="defer" src="main.main.js"></script><script defer="defer" src="registro.main.js"></script><script defer="defer" src="tusPilotos.main.js"></script><script defer="defer" src="pilotos.main.js"></script><script defer="defer" src="perfil.main.js"></script><script defer="defer" src="objetos.main.js"></script><script defer="defer" src="inicio.main.js"></script><script defer="defer" src="clasificacion.main.js"></script><script defer="defer" src="administracion.main.js"></script><script defer="defer" src="cargarElementos.main.js"></script></head><body><div class="cabeceraOrientacion"><div id="cabecera2" class="cabecera2"><img src="../imagenes/fotos/cabecera1.png" alt="Descripción de la imagen" id="imagenDerecha" style="display: none;"></div></div><main><div class="container"><div class="marco"><div class="proximaCarrera"><div class="title"><h3>Próxima Carrera</h3></div><hr><div class="row"><div id="proximaCarrera" class="carreraDatos"><p id="nombreCarrera"></p><img id="imagenCarrera" src="" alt="Imagen de la carrera"><p id="lugarCarrera"></p><p id="descripcionCarrera"></p></div></div></div></div></div></main><div id="piePagina"></div><script src="../js/cargarElementos.js"></script><script type="module" src="../js/objetos.js"></script><script type="module" src="../js/inicio.js"></script><script>cargarCabecera2();
-            cargarPiePagina();</script></body></html>
+<!DOCTYPE html>
+<html class = "inicio">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fantasy</title>
+        <link rel="stylesheet" href="../Skeleton/css/normalize.css">
+        <link rel="stylesheet" href="../Skeleton/css/skeleton.css">
+        <link rel = "stylesheet" href = "../style/estilo.css">
+
+        <link rel="icon" href="../imagenes/f1_logo.svg">
+    </head>
+    <body>
+        <div class = "cabeceraOrientacion">
+            <div id = "cabecera2" class = "cabecera2">
+                <img src="../imagenes/fotos/cabecera1.png" alt="Descripción de la imagen" id="imagenDerecha" style="display: none;">
+            </div>        
+        </div>
+        <main>
+            <div class = "container">
+                <div class = "marco">
+                    <div class = "proximaCarrera">
+                        <div class = "title">
+                            <h3>Próxima Carrera</h3>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div id = "proximaCarrera" class = "carreraDatos">
+                                <p id = "nombreCarrera"></p>
+                                <img id = "imagenCarrera" src = "" alt = "Imagen de la carrera">
+                                <p id = "lugarCarrera"></p>
+                                <p id = "descripcionCarrera"></p>
+                            </div>            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div id = "piePagina"></div>
+        <script src="../js/cargarElementos.js"></script>
+        <script type = "module" src = "../js/objetos.js"></script>
+        <script type = "module" src="../js/inicio.js"></script>
+        <script>
+            cargarCabecera2();
+            cargarPiePagina();
+        </script>
+    </body>
+</html>

@@ -1,2 +1,74 @@
-<!doctype html><html class="registro"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fantasy</title><link rel="stylesheet" href="../style/estilo.css"><link rel="stylesheet" href="../Skeleton/css/normalize.css"><link rel="stylesheet" href="../Skeleton/css/skeleton.css"><link rel="icon" href="../imagenes/f1_logo.svg"><script defer="defer" src="main.main.js"></script><script defer="defer" src="registro.main.js"></script><script defer="defer" src="tusPilotos.main.js"></script><script defer="defer" src="pilotos.main.js"></script><script defer="defer" src="perfil.main.js"></script><script defer="defer" src="objetos.main.js"></script><script defer="defer" src="inicio.main.js"></script><script defer="defer" src="clasificacion.main.js"></script><script defer="defer" src="administracion.main.js"></script><script defer="defer" src="cargarElementos.main.js"></script></head><body><div id="cabecera" class="cabecera"></div><div class="row"><div class="twelve columns"><nav class="navbar"><input type="button" id="btnIniciarSesion" value="Inicio de Sesión"> <input type="button" id="btnRegistrar" value="Registrar"></nav></div></div><div class="container"><div class="marco"><div class="contenidoregistro"><div class="title"><h2>Registro</h2></div><hr><div class="row formulario"><form><div class="six columns"><label for="nombre">Nombre:</label> <input id="nombre" name="nombre" required><p id="errorNombre" class="error"></p><label for="apellido">Apellido:</label> <input id="apellido" name="apellido" required><p id="errorApellido" class="error"></p><label for="nick">Nick:</label> <input id="nick" name="nick" required><p id="errorNick" class="error"></p><label for="correo">Correo:</label> <input id="correo" name="correo" required><p id="errorCorreo" class="error"></p></div><div class="six columns"><label for="contrasena">Contraseña:</label> <input type="password" id="contrasena" name="contrasena" required><p id="errorContrasena" class="error"></p><label for="verificacionContrasena">Verificación de Contraseña:</label> <input type="password" id="verificacionContrasena" name="verificacionContrasena" required><p id="errorVerificacionContrasena" class="error"></p><input type="button" value="Registrarse"></div></form></div></div></div></div><div id="piePagina"></div><script type="module" src="../js/registro.js"></script><script src="../js/cargarElementos.js"></script><script>cargarCabecera();
-            cargarPiePagina();</script></body></html>
+<!DOCTYPE html>
+<html class="registro">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fantasy</title>
+        <link rel="stylesheet" href="../style/estilo.css">
+        <link rel = "stylesheet" href = "../Skeleton/css/normalize.css">
+        <link rel = "stylesheet" href = "../Skeleton/css/skeleton.css">
+
+        <link rel = "icon" href = "../imagenes/f1_logo.svg">
+    </head>
+    <body>
+        <div id = "cabecera" class = "cabecera"></div>
+        <div class="row">
+            <div class="twelve columns">
+                <nav class="navbar">
+                    <input type = "button" id="btnIniciarSesion" value= "Inicio de Sesión">
+                    <input type = "button" id="btnRegistrar" value = "Registrar">
+                </nav>
+            </div>
+        </div>
+
+        <div class = "container">
+            <div class = "marco">
+                <div class = "contenidoregistro">
+                    <div class = "title">
+                        <h2>Registro</h2>
+                    </div>
+                    <hr>
+                    <div class = "row formulario">
+                        <form>
+                            <div class = "six columns">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                                <p id="errorNombre" class="error"></p>
+        
+                                <label for="apellido">Apellido:</label>
+                                <input type="text" id="apellido" name="apellido" required>
+                                <p id="errorApellido" class="error"></p>
+        
+                                <label for="nick">Nick:</label>
+                                <input type="text" id="nick" name="nick" required>
+                                <p id ="errorNick" class="error"></p>
+        
+                                <label for="correo">Correo:</label>
+                                <input type="text" id="correo" name="correo" required>
+                                <p id="errorCorreo" class="error"></p>
+                    
+                            </div>
+                            <div class = "six columns">
+                                <label for="contrasena">Contraseña:</label>
+                                <input type="password" id="contrasena" name="contrasena" required>
+                                <p id="errorContrasena" class="error"></p>
+                    
+                                <label for="verificacionContrasena">Verificación de Contraseña:</label>
+                                <input type="password" id="verificacionContrasena" name="verificacionContrasena" required>
+                                <p id="errorVerificacionContrasena" class="error"></p>
+                                <input type="button" value="Registrarse">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id = "piePagina"></div>
+        <script type = "module" src="../js/registro.js"></script>
+        <script src = "../js/cargarElementos.js"></script>
+        <script>
+            cargarCabecera();
+            cargarPiePagina();
+        </script>
+    </body>
+</html>

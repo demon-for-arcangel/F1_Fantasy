@@ -1,2 +1,75 @@
-<!doctype html><html class="perfil"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fantasy</title><link rel="stylesheet" href="../style/estilo.css"><link rel="stylesheet" href="../Skeleton/css/normalize.css"><link rel="stylesheet" href="../Skeleton/css/skeleton.css"><link rel="icon" href="../imagenes/f1_logo.svg"><script defer="defer" src="main.main.js"></script><script defer="defer" src="registro.main.js"></script><script defer="defer" src="tusPilotos.main.js"></script><script defer="defer" src="pilotos.main.js"></script><script defer="defer" src="perfil.main.js"></script><script defer="defer" src="objetos.main.js"></script><script defer="defer" src="inicio.main.js"></script><script defer="defer" src="clasificacion.main.js"></script><script defer="defer" src="administracion.main.js"></script><script defer="defer" src="cargarElementos.main.js"></script></head><body><div id="cabecera2" class="cabecera2"></div><div class="container"><div class="marco"><div class="perfil"><div class="twelve columns"><div class="title"><h2><b>PERFIL</b></h2></div><hr></div></div><div class="row formulario"><div><form><div class="izqd"><label for="nombre">Nombre</label> <input id="nombre" name="nombre" disabled="disabled"> <label for="apellidos">Apellidos</label> <input id="apellido" name="apellidos" disabled="disabled"> <label for="correo">Correo</label> <input id="correo" name="correo" disabled="disabled"> <label for="nick">Nick</label> <input id="nick" name="nick" disabled="disabled"></div><div class="drch"><label for="contrasenaAntigua">Contraseña Antigua</label> <input type="password" id="contrasenaAntigua" name="contrasenaAntigua" required><p id="mensajeErrorAntigua" class="error"></p><label for="contrasenaNueva">Contraseña Nueva</label> <input type="password" id="contrasenaNueva" name="contrasenaNueva" required><p id="mensajeErrorNueva" class="error"></p><label for="confirmacionContrasena">Confirmación de contraseña</label> <input type="password" id="confirmacionContrasena" name="confirmacionContrasena" required><p id="mensajeErrorConfirmacion" class="error"></p><p id="mensajeGeneral"></p><input type="button" value="Modificar" id="btnModificar"></div></form></div></div></div></div><div id="piePagina"></div><script src="../js/cargarElementos.js"></script><script src="../js/perfil.js"></script><script>cargarCabecera2();
-            cargarPiePagina();</script></body></html>
+<!DOCTYPE html>
+<html class = "perfil">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fantasy</title>
+        <link rel = "stylesheet" href = "../style/estilo.css">
+        <link rel = "stylesheet" href = "../Skeleton/css/normalize.css">
+        <link rel = "stylesheet" href = "../Skeleton/css/skeleton.css">
+
+        <link rel = "icon" href = "../imagenes/f1_logo.svg">
+    </head>
+    <body>
+        <div id = "cabecera2" class = "cabecera2"></div>
+
+        <div class = "container">
+            <div class = "marco">
+                <div class = "perfil">
+                    <div class = "twelve columns">
+                        <div class = "title">
+                            <h2><b>PERFIL</b></h2>
+                        </div>
+                        <hr>
+                    </div>                    
+                </div>   
+                
+                <div class = "row formulario">
+                    <div>
+                        <form>
+                            <div class = "izqd">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" disabled>
+                    
+                                <label for="apellidos">Apellidos</label>
+                                <input type="text" id="apellido" name="apellidos" disabled>
+    
+                                <label for="correo">Correo</label>
+                                <input type="text" id="correo" name="correo" disabled>
+                    
+                                <label for="nick">Nick</label>
+                                <input type="text" id="nick" name="nick" disabled>
+        
+        
+                            </div>
+                            <div class = "drch">
+                                <label for="contrasenaAntigua">Contraseña Antigua</label>
+                                <input type="password" id="contrasenaAntigua" name="contrasenaAntigua" required>
+                                <p id="mensajeErrorAntigua" class="error"></p>
+    
+                                <label for="contrasenaNueva">Contraseña Nueva</label>
+                                <input type = "password" id = "contrasenaNueva" name = "contrasenaNueva" required>
+                                <p id="mensajeErrorNueva" class="error"></p>
+    
+                                <label for="confirmacionContrasena">Confirmación de contraseña</label>
+                                <input type = "password" id = "confirmacionContrasena" name = "confirmacionContrasena" required>
+                                <p id="mensajeErrorConfirmacion" class="error"></p>
+    
+                                <p id = "mensajeGeneral"></p>
+                                <input type="button" value="Modificar" id = "btnModificar">
+                            </div>         
+                        </form>                
+                    </div>
+                </div>
+            </div>
+   
+        </div>
+        <div id = "piePagina"></div>
+        <script src="../js/cargarElementos.js"></script>
+        <script src="../js/perfil.js"></script>
+        <script>
+            cargarCabecera2();
+            cargarPiePagina();
+        </script>
+    </body>
+</html>
