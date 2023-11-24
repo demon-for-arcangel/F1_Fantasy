@@ -15,7 +15,7 @@ module.exports = {
       cargarElementos: './src/cargarElementos.js'
     },
     output: {
-        filename: 'bundle,js',
+        filename: '[name].main.js',
         path: path.resolve(__dirname, 'dist'),
     },
 
