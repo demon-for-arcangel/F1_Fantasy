@@ -30,15 +30,6 @@ module.exports = {
         ],
     },
 
-    devServer: {
-      contentBase: path.join(__dirname, 'dist'), // Directorio base de contenido estático
-      publicPath: '/', // Ruta pública donde se sirven los archivos desde el servidor
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-        'Content-Type': 'application/javascript',
-      },
-    },
-
     plugins:[
       new MiniCssExtractPlugin({
         filename: './src/style/estilo.css',
@@ -54,7 +45,7 @@ module.exports = {
         filename: './src/Skeleton/css/skeleton.css',
         chunkFilename: '[id].css',
       }),
-
+      
       new HtmlWebpackPlugin({
         template: './src/html/index.html',
         filename: 'index.html',
