@@ -1,4 +1,5 @@
 import { usuario } from "./objetos.js";
+import { asignarPilotos } from "./inicio.js";
 import '../style/estilo.css';
 
 function cargarClasificacion() {

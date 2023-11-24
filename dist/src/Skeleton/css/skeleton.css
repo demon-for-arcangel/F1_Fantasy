@@ -1,0 +1,408 @@
+/*!************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style/estilo.css ***!
+  \************************************************************************/
+.index body {
+  background-image: url(../../2ba0c4b3f0ce6421c648.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.index body .navbar {
+  background-color: #38383f;
+  display: flex;
+  padding-left: 40%;
+  align-items: center;
+}
+.index body .navbar input[type=button] {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin: 0 10px;
+  padding: 0;
+}
+.index body .marco {
+  background-color: antiquewhite;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 55px;
+  border-color: #090909;
+  opacity: 0.92;
+}
+.index body .marco .inicioSesion {
+  padding-top: 20px;
+}
+.index body .marco .inicioSesion .title {
+  padding-left: 350px;
+}
+.index body .marco .inicioSesion hr {
+  border-color: #EE0000;
+  width: 63%;
+  border-width: 3px;
+}
+.index body .marco .inicioSesion form {
+  padding-left: 350px;
+}
+.index body .marco .inicioSesion form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.index body .marco .inicioSesion form input {
+  width: 55%;
+  height: 50px;
+  border: 1px solid #090909;
+}
+.index body .marco .form {
+  padding-bottom: 65px;
+}
+.index body .marco .form input[type=button] {
+  margin-left: 350px;
+  color: #FFFFFF;
+  background-color: #EE0000;
+}
+.index body .marco .form .error {
+  margin-left: 20px;
+}
+.index body .marco .form p {
+  margin-left: 350px;
+}
+.index body .marco .form a {
+  text-decoration: none;
+  color: red;
+}
+
+.registro body {
+  background-image: url(../../698aa822d8f59400e6fc.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.registro body .navbar {
+  background-color: #38383f;
+  display: flex;
+  padding-left: 40%;
+  align-items: center;
+}
+.registro body .navbar input[type=button] {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin: 0 10px;
+  padding: 0;
+}
+.registro body .marco {
+  background-color: antiquewhite;
+  margin: 15px auto;
+  padding-bottom: 120px;
+  border-radius: 55px;
+  border-color: #090909;
+  opacity: 0.87;
+}
+.registro body .marco .contenidoregistro {
+  padding-top: 20px;
+}
+.registro body .marco .contenidoregistro .title {
+  padding-left: 380px;
+}
+.registro body .marco .contenidoregistro hr {
+  border-color: #EE0000;
+  width: 85%;
+  border-width: 3px;
+}
+.registro body .marco .contenidoregistro form {
+  padding-left: 60px;
+}
+.registro body .marco .contenidoregistro form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.registro body .marco .contenidoregistro form input {
+  width: 85%;
+  height: 50px;
+  border: 1px solid #090909;
+}
+.registro body .marco .contenidoregistro form input[type=button] {
+  color: #FFFFFF;
+  background-color: #EE0000;
+  width: 150px;
+  margin-left: 100px;
+}
+.registro body .marco .contenidoregistro form .error {
+  margin-left: 20px;
+}
+.registro body .marco .contenidoregistro form p {
+  margin-left: 350px;
+}
+
+.inicio main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-image: url(../../15432d884b11cb96b69d.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.inicio main .marco {
+  background-color: antiquewhite;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 55px;
+  border-color: #090909;
+  opacity: 0.92;
+}
+.inicio main .marco .proximaCarrera {
+  padding-top: 20px;
+  margin: 30px;
+  margin-right: 90px;
+}
+.inicio main .marco .proximaCarrera .title {
+  padding-left: 320px;
+}
+.inicio main .marco .proximaCarrera hr {
+  border-color: #EE0000;
+  width: 63%;
+  border-width: 3px;
+}
+.inicio main .marco .proximaCarrera .carreraDatos {
+  padding-left: 100px;
+}
+.inicio main .marco .proximaCarrera div {
+  flex-basis: calc(33.33% - 10px);
+  margin-bottom: 20px;
+}
+.inicio main .marco .proximaCarrera img {
+  width: 600px;
+}
+
+.perfil body {
+  background-image: url(../../698aa822d8f59400e6fc.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.perfil body .marco {
+  background-color: antiquewhite;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 55px;
+  border-color: #090909;
+  opacity: 0.92;
+}
+.perfil body .marco .perfil .title {
+  padding-top: 20px;
+  padding-left: 400px;
+}
+.perfil body .marco .perfil hr {
+  border-color: #EE0000;
+  width: 63%;
+  border-width: 3px;
+}
+.perfil body .marco .formulario {
+  padding-top: 20px;
+}
+.perfil body .marco .formulario form {
+  padding-left: 100px;
+}
+.perfil body .marco .formulario form .izqd {
+  float: left;
+  width: 50%;
+  margin-bottom: 30px;
+}
+.perfil body .marco .formulario form .drch {
+  float: right;
+  width: 50%;
+  margin-top: 25px;
+}
+.perfil body .marco .formulario form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.perfil body .marco .formulario form input {
+  width: 80%;
+  height: 50px;
+  border: 1px solid #090909;
+}
+.perfil body .marco .formulario form input[type=button] {
+  margin-left: 350px;
+  color: #FFFFFF;
+  background-color: #EE0000;
+}
+
+.clasificacion body {
+  background-image: url(../../15432d884b11cb96b69d.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.clasificacion body .marco {
+  background-color: antiquewhite;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 55px;
+  border-color: #090909;
+  opacity: 0.92;
+}
+.clasificacion body .marco .clasificacionTitulo .title {
+  padding-top: 20px;
+  padding-left: 400px;
+}
+.clasificacion body .marco .clasificacionTitulo hr {
+  border-color: #EE0000;
+  width: 63%;
+  border-width: 3px;
+}
+.clasificacion body .marco .clasificacionTitulo .tabla {
+  padding-top: 20px;
+}
+
+.tusPilotos body {
+  background-image: url(../../6b07772e0c7acb4c4954.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.tusPilotos body .marco {
+  background-color: antiquewhite;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 55px;
+  border-color: #090909;
+  opacity: 0.92;
+}
+.tusPilotos body .marco .tusPilotosTitulo .title {
+  padding-top: 20px;
+  padding-left: 400px;
+}
+.tusPilotos body .marco .tusPilotosTitulo hr {
+  border-color: #EE0000;
+  width: 63%;
+  border-width: 3px;
+}
+.tusPilotos body .marco .pilotos {
+  padding-top: 20px;
+}
+
+.pilotos {
+  /*body {
+      background-image: url('../imagenes/fotos/registro.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }*/
+}
+.pilotos .marco {
+  background-color: antiquewhite;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 55px;
+  border-color: #090909;
+  opacity: 0.92;
+  text-align: center;
+}
+.pilotos .marco .pilotosTitulo .title {
+  padding-top: 20px;
+  padding-left: 400px;
+}
+.pilotos .marco hr {
+  border-color: #EE0000;
+  width: 63%;
+  border-width: 3px;
+}
+.pilotos .marco .pilotos .pilotosContenedor {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 auto;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.pilotos .marco .pilotos .piloto {
+  padding: 10px;
+  flex: 0 0 calc(20% - 20px);
+  text-align: center;
+}
+.pilotos .marco .pilotos .piloto img {
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: "Titillium";
+  src: url(../../522ebad20fa0808ac284.ttf), url(../../5d039fdf13946f88018a.ttf), url(../../76704ec3a2c03a903ca7.ttf);
+}
+html {
+  font-family: "Titillium", sans-serif;
+}
+
+body {
+  background-color: #e0e1db;
+}
+
+.cabecera {
+  background-color: #000; /* Color de fondo de la cabecera */
+  color: #fff; /* Color del texto */
+  padding: 10px; /* Espaciado interno */
+}
+
+.cabecera2 {
+  background-color: #000;
+  color: #fff;
+  padding-top: 25px;
+}
+.cabecera2 .logo {
+  width: 10%;
+  padding-right: 220px;
+}
+.cabecera2 a {
+  text-decoration: none;
+  color: white;
+  padding-right: 40px;
+}
+.cabecera2 a:hover {
+  color: red; /* Cambiar a rojo cuando se pasa el mouse sobre el enlace */
+}
+.cabecera2 a p {
+  display: inline-block;
+  padding-left: 80px;
+}
+.cabecera2 .iconoPerfil {
+  padding-left: 100px;
+}
+.cabecera2 .cabeceraOrientacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cabecera2 .cabeceraOrientacion.orientacion-vertical {
+  flex-direction: column;
+  align-items: center;
+}
+.cabecera2 .color-alternativo {
+  background-color: #cbccc4;
+}
+
+.cabeceraOrientacion {
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+}
+
+.cabeceraOrientacion.orientacion-vertical {
+  flex-direction: column;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+}
+footer img {
+  width: 10%;
+  padding-right: 400px;
+  padding-top: 6px;
+}
+footer p {
+  display: inline-block;
+  padding-left: 35px;
+}

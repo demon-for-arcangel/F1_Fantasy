@@ -9,7 +9,7 @@
         <link rel = "stylesheet" href = "../Skeleton/css/skeleton.css">
 
         <link rel = "icon" href = "../imagenes/f1_logo.svg">
-    <script defer src="main.main.js"></script><script defer src="registro.main.js"></script><script defer src="tusPilotos.main.js"></script><script defer src="pilotos.main.js"></script><script defer src="perfil.main.js"></script><script defer src="objetos.main.js"></script><script defer src="inicio.main.js"></script><script defer src="clasificacion.main.js"></script><script defer src="administracion.main.js"></script><script defer src="cargarElementos.main.js"></script></head>
+    <script defer src="main.main.js"></script><script defer src="registro.main.js"></script><script defer src="tusPilotos.main.js"></script><script defer src="pilotos.main.js"></script><script defer src="perfil.main.js"></script><script defer src="objetos.main.js"></script><script defer src="inicio.main.js"></script><script defer src="clasificacion.main.js"></script><script defer src="administracion.main.js"></script><script defer src="cargarElementos.main.js"></script><link href="./src/style/estilo.css" rel="stylesheet"><link href="./src/Skeleton/css/normalize.css" rel="stylesheet"><link href="./src/Skeleton/css/skeleton.css" rel="stylesheet"></head>
     <body>
         <div id = "cabecera" class = "cabecera"></div>
         <div class="row">
@@ -34,25 +34,25 @@
                                 <label for="nombre">Nombre:</label>
                                 <input type="text" id="nombre" name="nombre" required>
                                 <p id="errorNombre" class="error"></p>
-        
+
                                 <label for="apellido">Apellido:</label>
                                 <input type="text" id="apellido" name="apellido" required>
                                 <p id="errorApellido" class="error"></p>
-        
+
                                 <label for="nick">Nick:</label>
                                 <input type="text" id="nick" name="nick" required>
                                 <p id ="errorNick" class="error"></p>
-        
+
                                 <label for="correo">Correo:</label>
                                 <input type="text" id="correo" name="correo" required>
                                 <p id="errorCorreo" class="error"></p>
-                    
+
                             </div>
                             <div class = "six columns">
                                 <label for="contrasena">Contraseña:</label>
                                 <input type="password" id="contrasena" name="contrasena" required>
                                 <p id="errorContrasena" class="error"></p>
-                    
+
                                 <label for="verificacionContrasena">Verificación de Contraseña:</label>
                                 <input type="password" id="verificacionContrasena" name="verificacionContrasena" required>
                                 <p id="errorVerificacionContrasena" class="error"></p>
@@ -64,8 +64,8 @@
             </div>
         </div>
         <div id = "piePagina"></div>
-        <script type = "module" src="../js/registro.js"></script>
-        <script src = "../js/cargarElementos.js"></script>
+        <script src = "../dist/cargarElementos.main.js"></script>
+        <script src = "../dist/registro.main.js"></script>
         <script>
             cargarCabecera();
             cargarPiePagina();

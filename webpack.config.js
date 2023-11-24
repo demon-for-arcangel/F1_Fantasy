@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     mode: 'development',
@@ -24,12 +25,36 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,
-                use: ['style-loader', 'css-loader'],
+                use: [MiniCssExtractPlugin.loader, 'css-loader'],
             },
         ],
     },
 
+    devServer: {
+      contentBase: path.join(__dirname, 'dist'), // Directorio base de contenido estático
+      publicPath: '/', // Ruta pública donde se sirven los archivos desde el servidor
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/javascript',
+      },
+    },
+
     plugins:[
+      new MiniCssExtractPlugin({
+        filename: './src/style/estilo.css',
+        chunkFilename: '[id].css',
+      }),
+
+      new MiniCssExtractPlugin({
+        filename: './src/Skeleton/css/normalize.css',
+        chunkFilename: '[id].css',
+      }),
+
+      new MiniCssExtractPlugin({
+        filename: './src/Skeleton/css/skeleton.css',
+        chunkFilename: '[id].css',
+      }),
+
       new HtmlWebpackPlugin({
         template: './src/html/index.html',
         filename: 'index.html',

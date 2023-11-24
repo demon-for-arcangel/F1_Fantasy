@@ -5,6 +5,7 @@ import { grandesPremios } from "./objetos.js";
 import { pilotos } from "./objetos.js";
 import { usuario } from "./objetos.js";
 import '../style/estilo.css';
+
 /*
 ----------LLamada a la funcion de carga inicial al cargar la página-------
 */
@@ -55,6 +56,8 @@ function asignarPilotos() {
     pilotoTitularSeleccionado.disponible = false;
     pilotoSuplenteSeleccionado.disponible = false;
 }
+export { asignarPilotos };
+
 
 function seleccionarJugadores() {
     const pilotosDisponibles = pilotos.filter(p => p.disponible);

@@ -9,7 +9,7 @@
         <link rel = "stylesheet" href = "../Skeleton/css/skeleton.css">
 
         <link rel = "icon" href = "../imagenes/f1_logo.svg">
-    <script defer src="main.main.js"></script><script defer src="registro.main.js"></script><script defer src="tusPilotos.main.js"></script><script defer src="pilotos.main.js"></script><script defer src="perfil.main.js"></script><script defer src="objetos.main.js"></script><script defer src="inicio.main.js"></script><script defer src="clasificacion.main.js"></script><script defer src="administracion.main.js"></script><script defer src="cargarElementos.main.js"></script></head>
+    <script defer src="main.main.js"></script><script defer src="registro.main.js"></script><script defer src="tusPilotos.main.js"></script><script defer src="pilotos.main.js"></script><script defer src="perfil.main.js"></script><script defer src="objetos.main.js"></script><script defer src="inicio.main.js"></script><script defer src="clasificacion.main.js"></script><script defer src="administracion.main.js"></script><script defer src="cargarElementos.main.js"></script><link href="./src/style/estilo.css" rel="stylesheet"><link href="./src/Skeleton/css/normalize.css" rel="stylesheet"><link href="./src/Skeleton/css/skeleton.css" rel="stylesheet"></head>
     <body>
         <div id = "cabecera2" class = "cabecera2"></div>
 
@@ -21,52 +21,52 @@
                             <h2><b>PERFIL</b></h2>
                         </div>
                         <hr>
-                    </div>                    
-                </div>   
-                
+                    </div>
+                </div>
+
                 <div class = "row formulario">
                     <div>
                         <form>
                             <div class = "izqd">
                                 <label for="nombre">Nombre</label>
                                 <input type="text" id="nombre" name="nombre" disabled>
-                    
+
                                 <label for="apellidos">Apellidos</label>
                                 <input type="text" id="apellido" name="apellidos" disabled>
-    
+
                                 <label for="correo">Correo</label>
                                 <input type="text" id="correo" name="correo" disabled>
-                    
+
                                 <label for="nick">Nick</label>
                                 <input type="text" id="nick" name="nick" disabled>
-        
-        
+
+
                             </div>
                             <div class = "drch">
                                 <label for="contrasenaAntigua">Contraseña Antigua</label>
                                 <input type="password" id="contrasenaAntigua" name="contrasenaAntigua" required>
                                 <p id="mensajeErrorAntigua" class="error"></p>
-    
+
                                 <label for="contrasenaNueva">Contraseña Nueva</label>
                                 <input type = "password" id = "contrasenaNueva" name = "contrasenaNueva" required>
                                 <p id="mensajeErrorNueva" class="error"></p>
-    
+
                                 <label for="confirmacionContrasena">Confirmación de contraseña</label>
                                 <input type = "password" id = "confirmacionContrasena" name = "confirmacionContrasena" required>
                                 <p id="mensajeErrorConfirmacion" class="error"></p>
-    
+
                                 <p id = "mensajeGeneral"></p>
                                 <input type="button" value="Modificar" id = "btnModificar">
-                            </div>         
-                        </form>                
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-   
+
         </div>
         <div id = "piePagina"></div>
-        <script src="../js/cargarElementos.js"></script>
-        <script src="../js/perfil.js"></script>
+        <script src = "../dist/cargarElementos.main.js"></script>
+        <script src = "..dist/perfil.main.js"></script>
         <script>
             cargarCabecera2();
             cargarPiePagina();
