@@ -3,16 +3,16 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-      main: './src/app.js',
-      registro: './src/registro.js',
-      tusPilotos: './src/tusPilotos.js',
-      pilotos: './src/pilotos.js',
-      perfil: './src/perfil.js',
-      objetos: './src/objetos.js',
-      inicio: './src/inicio.js',
-      clasificacion: './src/clasificacion.js',
-      administracion: './src/administracion.js',
-      cargarElementos: './src/cargarElementos.js'
+      main: './src/js/app.js',
+      registro: './src/js/registro.js',
+      tusPilotos: './src/js/tusPilotos.js',
+      pilotos: './src/js/pilotos.js',
+      perfil: './src/js/perfil.js',
+      objetos: './src/js/objetos.js',
+      inicio: './src/js/inicio.js',
+      clasificacion: './src/js/clasificacion.js',
+      administracion: './src/js/administracion.js',
+      cargarElementos: './src/js/cargarElementos.js'
     },
     output: {
         filename: '[name].main.js',
@@ -21,42 +21,42 @@ module.exports = {
 
     plugins:[
       new HtmlWebpackPlugin({
-        template: './src/index.html',
+        template: './src/html/index.html',
         filename: 'index.html',
       }),
 
       new HtmlWebpackPlugin({
-        template: './src/registro.html',
+        template: './src/html/registro.html',
         filename: 'registro.html',
       }),
 
       new HtmlWebpackPlugin({
-        template: './src/inicio.html',
+        template: './src/html/inicio.html',
         filename: 'inicio.html',
       }),
 
       new HtmlWebpackPlugin({
-        template: './src/clasificacion.html',
+        template: './src/html/clasificacion.html',
         filename: 'clasificacion.html',
       }),
 
       new HtmlWebpackPlugin({
-        template: './src/tusPilotos.html',
+        template: './src/html/tusPilotos.html',
         filename: 'tusPilotos.html',
       }),
 
       new HtmlWebpackPlugin({
-        template: './src/pilotos.html',
+        template: './src/html/pilotos.html',
         filename: 'pilotos.html',
       }),
 
       new HtmlWebpackPlugin({
-        template: './src/administracion.html',
+        template: './src/html/administracion.html',
         filename: 'administracion.html',
       }),
 
       new HtmlWebpackPlugin({
-        template: './src/perfil.html',
+        template: './src/html/perfil.html',
         filename: 'perfil.html',
       }),
     ]
